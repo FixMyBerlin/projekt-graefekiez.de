@@ -26,7 +26,7 @@ export const Card: React.FC<any> = ({ as: Component = 'div', className, children
 const CardLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => {
   return (
     <>
-      <div className="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl" />
+      <div className="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-gray-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl" />
       <Link to={href}>
         <span className="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl" />
         <span className="relative z-10">{children}</span>
@@ -41,24 +41,24 @@ export const CardTitle: React.FC<{ as?: any; href?: string; children: React.Reac
   children,
 }) => {
   return (
-    <Component className="text-base font-semibold tracking-tight text-zinc-800">
+    <Component className="text-base font-semibold tracking-tight text-gray-800">
       {href ? <CardLink href={href}>{children}</CardLink> : children}
     </Component>
   )
 }
 
 export const CardDescription: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  return <p className="relative z-10 mt-2 text-sm text-zinc-600">{children}</p>
+  return <p className="relative z-10 mt-2 text-sm text-gray-600">{children}</p>
 }
 
 export const CardCta: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div
       aria-hidden="true"
-      className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500"
+      className="text-teal-500 relative z-10 mt-4 flex items-center text-sm font-medium"
     >
       {children}
-      <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" />
+      <ChevronRightIcon className="stroke-current ml-1 h-4 w-4" />
     </div>
   )
 }
@@ -74,14 +74,14 @@ export const CardEyebrow: React.FC<{
     <Component
       className={clsx(
         className,
-        'relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400',
+        'relative z-10 order-first mb-3 flex items-center text-sm text-gray-400',
         decorate && 'pl-3.5'
       )}
       dateTime={dateTime}
     >
       {decorate && (
         <span className="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
-          <span className="h-4 w-0.5 rounded-full bg-zinc-200" />
+          <span className="h-4 w-0.5 rounded-full bg-gray-200" />
         </span>
       )}
       {children}

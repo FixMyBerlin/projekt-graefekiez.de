@@ -4,6 +4,7 @@ type Props = {
   quote: string
   author: string
   authorSubline: string
+  /** @desc height={320} className="h-12 w-12 lg:h-64 lg:w-64 xl:h-80 xl:w-80" */
   image: React.ReactNode
 }
 
@@ -18,7 +19,7 @@ export const Quote: React.FC<Props> = ({ quote, author, authorSubline, image }) 
 
           <div className="relative lg:ml-10">
             <svg
-              className="absolute top-0 left-0 h-36 w-36 -translate-x-8 -translate-y-16 transform text-indigo-200 opacity-50"
+              className="absolute top-0 left-0 h-36 w-36 -translate-x-8 -translate-y-16 transform text-yellow-200 opacity-50"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 144 144"
@@ -40,7 +41,7 @@ export const Quote: React.FC<Props> = ({ quote, author, authorSubline, image }) 
                   </div>
                   <div className="ml-4 lg:ml-0">
                     <div className="text-base font-medium text-gray-900">{author}</div>
-                    <div className="text-base font-medium text-indigo-600">{authorSubline}</div>
+                    <div className="text-base font-medium text-yellow-600">{authorSubline}</div>
                   </div>
                 </div>
               </footer>

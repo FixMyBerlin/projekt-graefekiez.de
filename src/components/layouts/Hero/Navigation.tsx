@@ -18,9 +18,9 @@ type Props = {
 export const DesktopNavigation: React.FC<Props> = ({ visibilityClassName }) => {
   return (
     <div className={visibilityClassName}>
-      <nav className="pointer-events-auto flex items-center bg-white/90 px-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
+      <nav className="pointer-events-auto flex items-center bg-white/90 px-2 text-sm font-medium text-gray-800 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur">
         <StaticImage
-          src="../../../images/logo-bezirks.png"
+          src="./assets/logo-bezirksamt.png"
           alt="Bezirksamt Friedrichshain-Kreuzberg"
           height={50}
         />
@@ -41,9 +41,9 @@ export const DesktopNavigation: React.FC<Props> = ({ visibilityClassName }) => {
 export const MobileNavigation: React.FC<Props> = ({ visibilityClassName }) => {
   return (
     <Popover className={visibilityClassName}>
-      <Popover.Button className="group flex items-center bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
+      <Popover.Button className="group flex items-center bg-white/90 px-4 py-2 text-sm font-medium text-gray-800 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur">
         Menu
-        <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
+        <ChevronDownIcon className="ml-3 h-auto w-2 stroke-gray-500 group-hover:stroke-gray-700 dark:group-hover:stroke-gray-400" />
       </Popover.Button>
       <Transition.Root>
         <Transition.Child
@@ -55,7 +55,7 @@ export const MobileNavigation: React.FC<Props> = ({ visibilityClassName }) => {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <Popover.Overlay className="fixed inset-0 z-50 bg-zinc-800/40 backdrop-blur-sm" />
+          <Popover.Overlay className="fixed inset-0 z-50 bg-gray-800/40 backdrop-blur-sm" />
         </Transition.Child>
         <Transition.Child
           as={Fragment}
@@ -68,23 +68,23 @@ export const MobileNavigation: React.FC<Props> = ({ visibilityClassName }) => {
         >
           <Popover.Panel
             focus
-            className="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:ring-zinc-800"
+            className="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-gray-900/5 dark:ring-gray-800"
           >
             <div className="flex flex-row-reverse items-center justify-between">
               <Popover.Button aria-label="Close menu" className="-m-1 p-1">
-                <XMarkIcon className="h-6 w-6 text-zinc-500" />
+                <XMarkIcon className="h-6 w-6 text-gray-500" />
               </Popover.Button>
-              <h2 className="sr-only text-sm font-medium text-zinc-600">Navigation</h2>
+              <h2 className="sr-only text-sm font-medium text-gray-600">Navigation</h2>
             </div>
             <div className="text-center">
               <StaticImage
-                src="../../../images/logo-bezirks.png"
+                src="./assets/logo-bezirksamt.png"
                 alt="Bezirksamt Friedrichshain-Kreuzberg"
                 height={100}
               />
             </div>
             <nav className="mt-6">
-              <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800">
+              <ul className="-my-2 divide-y divide-gray-100 text-base text-gray-800">
                 {navigation.map((item) => {
                   return (
                     <MobileNavigationNavItem key={item.name} href={item.href}>

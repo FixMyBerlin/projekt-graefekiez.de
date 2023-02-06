@@ -11,9 +11,9 @@ export type LinkProps = {
   children: React.ReactNode
 }
 
-export const linkStyle = 'underline-offset-4 hover:underline text-rsv-blau'
+export const linkStyle = 'underline-offset-4 hover:underline decoration-pink-500'
 export const buttonStyle =
-  'inline-flex items-center justify-center rounded-md py-2 px-4 text-sm border border-rsv-pink bg-white hover:bg-rsv-pink hover:text-white hover:no-underline'
+  'inline-flex items-center justify-center bg-white py-2 px-4 text-sm border border-pink-500 hover:no-underline'
 
 export const Link: React.FC<LinkProps> = ({
   to,
