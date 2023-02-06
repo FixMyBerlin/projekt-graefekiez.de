@@ -1,7 +1,8 @@
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import React, { useState } from 'react'
-import { Link } from '~/components/links'
+import { Popover, Transition } from '@headlessui/react'
+import { ChevronDownIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { StaticImage } from 'gatsby-plugin-image'
+import React, { Fragment } from 'react'
+import { DesktopNavigationNavItem, MobileNavigationNavItem } from './NavigationNavItem'
 
 const navigation = [
   { name: 'Projekt Graefekiez', href: '#' },
@@ -10,81 +11,94 @@ const navigation = [
   { name: 'Häufige Fragen', href: '#' },
 ]
 
-export const Navigation: React.FC = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+type Props = {
+  visibilityClassName: string
+}
 
+export const DesktopNavigation: React.FC<Props> = ({ visibilityClassName }) => {
   return (
-    <div className="px-6 lg:px-8">
-      <nav className="flex items-center justify-between pt-6" aria-label="Global">
-        <div className="flex lg:flex-1">
-          <Link to="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img
-              className="h-8"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-              alt=""
-            />
-          </Link>
-        </div>
-        <div className="flex lg:hidden">
-          <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
-            onClick={() => setMobileMenuOpen(true)}
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-          </button>
-        </div>
-        <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-sm font-semibold leading-6 text-white"
-            >
-              {item.name}
-            </a>
-          ))}
-        </div>
+    <div className={visibilityClassName}>
+      <nav className="pointer-events-auto flex items-center bg-white/90 px-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+        <StaticImage
+          src="../../../images/logo-bezirks.png"
+          alt="Bezirksamt Friedrichshain-Kreuzberg"
+          height={50}
+        />
+        <ul className="flex">
+          {navigation.map((item) => {
+            return (
+              <DesktopNavigationNavItem key={item.name} href={item.href}>
+                {item.name}
+              </DesktopNavigationNavItem>
+            )
+          })}
+        </ul>
       </nav>
-      <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-        <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-gray-900 px-6 py-6 lg:hidden">
-          <div className="flex items-center justify-between">
-            <Link to="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                alt=""
-              />
-            </Link>
-            <button
-              type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-400"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/25">
-              <div className="space-y-2 py-6">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-        </Dialog.Panel>
-      </Dialog>
     </div>
+  )
+}
+
+export const MobileNavigation: React.FC<Props> = ({ visibilityClassName }) => {
+  return (
+    <Popover className={visibilityClassName}>
+      <Popover.Button className="group flex items-center bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">
+        Menu
+        <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
+      </Popover.Button>
+      <Transition.Root>
+        <Transition.Child
+          as={Fragment}
+          enter="duration-150 ease-out"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="duration-150 ease-in"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <Popover.Overlay className="fixed inset-0 z-50 bg-zinc-800/40 backdrop-blur-sm dark:bg-black/80" />
+        </Transition.Child>
+        <Transition.Child
+          as={Fragment}
+          enter="duration-150 ease-out"
+          enterFrom="opacity-0 scale-95"
+          enterTo="opacity-100 scale-100"
+          leave="duration-150 ease-in"
+          leaveFrom="opacity-100 scale-100"
+          leaveTo="opacity-0 scale-95"
+        >
+          <Popover.Panel
+            focus
+            className="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800"
+          >
+            <div className="flex flex-row-reverse items-center justify-between">
+              <Popover.Button aria-label="Close menu" className="-m-1 p-1">
+                <XMarkIcon className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
+              </Popover.Button>
+              <h2 className="sr-only text-sm font-medium text-zinc-600 dark:text-zinc-400">
+                Navigation
+              </h2>
+            </div>
+            <div className="text-center">
+              <StaticImage
+                src="../../../images/logo-bezirks.png"
+                alt="Bezirksamt Friedrichshain-Kreuzberg"
+                height={100}
+              />
+            </div>
+            <nav className="mt-6">
+              <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
+                {navigation.map((item) => {
+                  return (
+                    <MobileNavigationNavItem key={item.name} href={item.href}>
+                      {item.name}
+                    </MobileNavigationNavItem>
+                  )
+                })}
+              </ul>
+            </nav>
+          </Popover.Panel>
+        </Transition.Child>
+      </Transition.Root>
+    </Popover>
   )
 }

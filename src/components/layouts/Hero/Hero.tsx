@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navigation } from './Navigation'
+import { DesktopNavigation, MobileNavigation, Navigation } from './Navigation'
 
 type Props = {
   title: string
@@ -44,9 +44,12 @@ export const Hero: React.FC<Props> = ({ title, subtitle, image: _todo }) => {
         </svg>
       </div>
 
-      <Navigation />
+      <div className="flex flex-1 justify-center p-6 md:justify-start lg:p-8">
+        <MobileNavigation visibilityClassName="md:hidden" />
+        <DesktopNavigation visibilityClassName="hidden md:block" />
+      </div>
 
-      <div className="px-6 lg:px-8">
+      <div className="px-6 pt-0 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">{title}</h1>
