@@ -1,5 +1,5 @@
 import React from 'react'
-import { DesktopNavigation, MobileNavigation, Navigation } from './Navigation'
+import { DesktopNavigation, MobileNavigation } from './Navigation'
 
 type Props = {
   title: string
