@@ -10,8 +10,8 @@ type Props = {
 
 export const Quote: React.FC<Props> = ({ quote, author, authorSubline, image }) => {
   return (
-    <section className="my-10 bg-white">
-      <div className="relative mx-auto max-w-7xl px-6 pt-20 pb-12 lg:px-8 lg:py-20">
+    <section className="my-10 border-t border-b border-yellow-400">
+      <div className="relative mx-auto max-w-7xl px-6 pt-20 pb-12 lg:px-8 lg:py-6">
         <div className="relative lg:flex lg:items-center">
           <div className="hidden lg:block lg:flex-shrink-0">
             <div className="overflow-clip rounded-full">{image}</div>
@@ -19,7 +19,7 @@ export const Quote: React.FC<Props> = ({ quote, author, authorSubline, image }) 
 
           <div className="relative lg:ml-10">
             <svg
-              className="absolute top-0 left-0 h-36 w-36 -translate-x-8 -translate-y-16 transform text-yellow-200 opacity-50"
+              className="-trangray-x-8 -trangray-y-16 absolute top-0 left-0 h-36 w-36 transform text-yellow-200 opacity-50"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 144 144"
@@ -31,17 +31,17 @@ export const Quote: React.FC<Props> = ({ quote, author, authorSubline, image }) 
               />
             </svg>
             <blockquote className="relative">
-              <div className="text-2xl font-medium leading-9 text-gray-900">
-                <p>{quote}</p>
+              <div className="text-2xl font-normal leading-9 text-gray-900">
+                <p>„{quote}“</p>
               </div>
-              <footer className="mt-8">
+              <footer className="mt-5">
                 <div className="flex">
                   <div className="flex-shrink-0 lg:hidden">
                     <div className="overflow-clip rounded-full">{image}</div>
                   </div>
                   <div className="ml-4 lg:ml-0">
-                    <div className="text-base font-medium text-gray-900">{author}</div>
-                    <div className="text-base font-medium text-yellow-600">{authorSubline}</div>
+                    <div className="text-base font-normal text-gray-900">{author}</div>
+                    <div className="text-base font-normal text-yellow-600">{authorSubline}</div>
                   </div>
                 </div>
               </footer>

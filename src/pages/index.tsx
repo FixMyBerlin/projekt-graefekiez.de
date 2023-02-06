@@ -3,7 +3,7 @@ import React from 'react'
 import { Layout, MetaTags } from '~/components/layouts'
 import { Container } from '~/components/layouts/Container'
 import { Hero } from '~/components/layouts/Hero/Hero'
-import { PageHomeCar } from '~/components/PageHome/PageHomeCar'
+import { PageHomeParking } from '~/components/PageHome/PageHomeParking'
 import { PageHomeFaq } from '~/components/PageHome/PageHomeFaq'
 import { PageHomeInto } from '~/components/PageHome/PageHomeInto'
 import { PageHomeLanduse } from '~/components/PageHome/PageHomeLanduse'
@@ -16,42 +16,40 @@ import { PageHomePartner } from '~/components/PageHome/PageHomePartner'
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
-      <Hero title="Projekt Gräfekiez" subtitle="Besser Leben ohne Auto" image={<>todo</>} />
-      <Container grid colorClass="bg-yellow-200">
+      <Hero title="Projekt Graefekiez" subtitle="Besser Leben ohne Auto" image={<>todo</>} />
+      <Container grid colorClass="bg-yellow-100 pb-12">
         <div className="col-span-2">
           <PageHomeInto />
         </div>
-        <PageHomeNews />
+        <div className="pl-10">
+          <PageHomeNews />
+        </div>
       </Container>
 
-      <Container grid colorClass="bg-yellow-500">
+      <Container grid colorClass="bg-yellow-300">
         <PageHomeMapText />
         <div className="col-span-2">
           <PageHomeMapMap />
         </div>
       </Container>
 
-      <Container colorClass="bg-yellow-200">
-        <PageHomeCar />
+      <Container colorClass="bg-yellow-100 pb-12">
+        <PageHomeParking />
       </Container>
 
-      <Container colorClass="bg-gray-50">
+      <Container colorClass="bg-yellow-300">
         <PageHomeOfferedFeatures />
       </Container>
 
-      <Container colorClass="bg-gray-50">
-        <PageHomeOfferedFeatures />
-      </Container>
-
-      <Container colorClass="bg-yellow-50">
+      <Container colorClass="bg-yellow-100">
         <PageHomeLanduse />
       </Container>
 
-      <Container colorClass="bg-yellow-300">
+      <Container colorClass="bg-yellow-100">
         <PageHomeFaq />
       </Container>
 
-      <Container colorClass="bg-yellow-300">
+      <Container colorClass="bg-yellow-100 pb-12">
         <PageHomePartner />
       </Container>
     </Layout>

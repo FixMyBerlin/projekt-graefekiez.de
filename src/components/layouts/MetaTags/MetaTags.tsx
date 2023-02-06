@@ -2,7 +2,7 @@ import React from 'react'
 import SocialSharingImage from './assets/default.png'
 
 const seoDefaultValues = {
-  defaultTitle: 'Projekt Gräfekiez Berlin',
+  defaultTitle: 'Projekt Graefekiez Berlin',
   defaultDescription: 'TODO',
   baseUrl: 'https://projekt-graefekiez.berlin',
 }

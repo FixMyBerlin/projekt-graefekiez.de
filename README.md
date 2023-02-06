@@ -2,7 +2,7 @@
   <!--<img alt="" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />-->
 </p>
 <h1 align="center">
-  Projektseite für das <a href="http://projekt-graefekiez.berlin/">Projekt Gräfekiez</a> in Berlin
+  Projektseite für das <a href="http://projekt-graefekiez.berlin/">Projekt Graefekiez</a> in Berlin
 </h1>
 
 # About

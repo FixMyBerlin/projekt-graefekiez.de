@@ -2,6 +2,7 @@ import { ShoppingCartIcon } from '@heroicons/react/24/outline'
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { FeatureItem, OfferedFeatures } from '../OfferedFeatures/OfferedFeatures'
+import { H1, Prose } from '../typography'
 
 const features: FeatureItem[] = [
   {
@@ -39,13 +40,15 @@ const features: FeatureItem[] = [
 export const PageHomeOfferedFeatures: React.FC = () => {
   return (
     <section>
-      <h2 className="mt-10 mb-8 text-3xl sm:text-4xl">Angebote für alle Anwohnenden</h2>
-      <div className="prose">
-        <p className="tracking-tight">
-          damit sie weiter gut Mobil sind und die Brötchen morgens pünktlich haben wir etwas
-          vorbereitet
+      <H1 className="mb-2">Angebote für alle Anwohnenden</H1>
+      <Prose className="leading-tight">
+        <p>
+          <strong className="text-yellow-600">
+            damit sie weiter gut Mobil sind und die Brötchen morgens pünktlich haben wir etwas
+            vorbereitet
+          </strong>
         </p>
-      </div>
+      </Prose>
       <OfferedFeatures features={features} />
     </section>
   )

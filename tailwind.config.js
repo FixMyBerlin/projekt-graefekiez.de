@@ -61,6 +61,23 @@ module.exports = {
         900: '#0E0107',
       },
     },
+    fontWeight: {
+      normal: '400',
+      bold: '700',
+    },
+    fontFamily: {
+      sans: ['BerlinType', 'Arial', 'sans-serif'],
+      mono: [
+        'ui-monospace',
+        'SFMono-Regular',
+        'Menlo',
+        'Monaco',
+        'Consolas',
+        'Liberation Mono',
+        'Courier New',
+        'monospace',
+      ],
+    },
   },
   plugins: [require('@tailwindcss/typography')],
 }

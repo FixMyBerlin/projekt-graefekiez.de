@@ -19,19 +19,35 @@ type FeatureProps = {
 
 const Feature: React.FC<FeatureProps> = ({ feature, isActive, className }) => {
   return (
-    <div className={clsx(className, !isActive && 'opacity-75 hover:opacity-100')}>
-      <div className={clsx('w-9 rounded-lg', isActive ? 'bg-blue-600' : 'bg-slate-500')}>
+    <div
+      className={clsx(
+        className,
+        'group rounded-lg p-6',
+        isActive ? 'bg-white/30 hover:opacity-100' : 'bg-white'
+      )}
+    >
+      <div
+        className={clsx(
+          'inline-block p-3',
+          isActive ? 'bg-blue-600 text-white' : 'bg-pink-500 text-white'
+        )}
+      >
         <svg aria-hidden="true" className="h-9 w-9" fill="none">
           {feature.icon}
         </svg>
       </div>
-      <h3
-        className={clsx('mt-6 text-sm font-medium', isActive ? 'text-blue-600' : 'text-slate-600')}
-      >
+      <h3 className={clsx('mt-2 text-sm font-bold', isActive ? 'text-blue-600' : 'text-gray-600')}>
         {feature.name}
       </h3>
-      <p className="font-display mt-2 text-xl text-slate-900">{feature.summary}</p>
-      <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
+      <p
+        className={clsx(
+          'mt-2 text-xl text-gray-900',
+          isActive ? '' : 'decoration-pink-500 underline-offset-4 group-hover:underline'
+        )}
+      >
+        {feature.summary}
+      </p>
+      <p className="mt-2 text-sm text-gray-600">{feature.description}</p>
     </div>
   )
 }
@@ -43,8 +59,8 @@ const FeaturesMobile: React.FC<{ features: FeatureItem[] }> = ({ features }) => 
         <div key={feature.name}>
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
           <div className="relative mt-10 pb-10">
-            <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
-            <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
+            <div className="absolute -inset-x-4 bottom-0 top-8 bg-gray-200 sm:-inset-x-6" />
+            <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-gray-900/5 ring-1 ring-gray-500/10">
               {feature.image}
             </div>
           </div>
@@ -56,7 +72,7 @@ const FeaturesMobile: React.FC<{ features: FeatureItem[] }> = ({ features }) => 
 
 const FeaturesDesktop: React.FC<{ features: FeatureItem[] }> = ({ features }) => {
   return (
-    <Tab.Group as="div" className="hidden lg:mt-20 lg:block">
+    <Tab.Group as="div" className="hidden lg:mt-16 lg:block">
       {({ selectedIndex }) => (
         <>
           <Tab.List className="grid grid-cols-3 gap-x-8">
@@ -77,7 +93,7 @@ const FeaturesDesktop: React.FC<{ features: FeatureItem[] }> = ({ features }) =>
               />
             ))}
           </Tab.List>
-          <Tab.Panels className="rounded-4xl relative mt-20 overflow-hidden bg-slate-200 px-14 py-16 xl:px-16">
+          <Tab.Panels className="relative mt-10 overflow-hidden rounded-xl bg-white px-14 py-16 xl:px-16">
             <div className="-mx-5 flex">
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
@@ -90,13 +106,13 @@ const FeaturesDesktop: React.FC<{ features: FeatureItem[] }> = ({ features }) =>
                   style={{ transform: `translateX(-${selectedIndex * 100}%)` }}
                   aria-hidden={featureIndex !== selectedIndex}
                 >
-                  <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
+                  <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-gray-900/5 ring-1 ring-gray-500/10">
                     {feature.image}
                   </div>
                 </Tab.Panel>
               ))}
             </div>
-            <div className="rounded-4xl pointer-events-none absolute inset-0 ring-1 ring-inset ring-slate-900/10" />
+            <div className="rounded-4xl pointer-events-none absolute inset-0 ring-1 ring-inset ring-gray-900/10" />
           </Tab.Panels>
         </>
       )}

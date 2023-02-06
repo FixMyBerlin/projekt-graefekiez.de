@@ -55,16 +55,16 @@ export const PageHomeLanduse: React.FC = () => {
           deine Ideen einreichen. Fülle dafür das Formular aus.
         </p>
         <p>
-          <Link external newWindow to="#foo">
+          <Link button external newWindow to="#foo">
             Idee einreichen – zum Formular
           </Link>
         </p>
-        <p>
-          <strong>Beispiele für Flächennutzung</strong>
-        </p>
       </div>
 
-      <ol className="mt-6 grid grid-cols-3 gap-3">
+      <p className="mt-10">
+        <strong>Beispiele für Flächennutzung</strong>
+      </p>
+      <ol className="mt-6 grid grid-cols-3 gap-12">
         {cards.map((card, index) => {
           return (
             <Card

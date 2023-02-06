@@ -67,8 +67,8 @@ export const PageHomeFaq: React.FC = () => {
               {column.map((faq, faqIndex) => (
                 // eslint-disable-next-line react/no-array-index-key
                 <li key={faqIndex}>
-                  <h3 className="font-display text-slate-900 text-lg leading-7">{faq.question}</h3>
-                  <p className="text-slate-700 mt-4 text-sm">{faq.answer}</p>
+                  <h3 className="text-lg leading-7 text-gray-900">{faq.question}</h3>
+                  <p className="mt-4 text-sm text-gray-700">{faq.answer}</p>
                 </li>
               ))}
             </ul>

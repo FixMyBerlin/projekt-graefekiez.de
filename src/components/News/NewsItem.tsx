@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardCta, CardDescription, CardEyebrow, CardTitle } from './Card'
+import { Card, CardDescription, CardEyebrow, CardTitle } from './Card'
 
 export type NewsItemProps = {
   slug?: string

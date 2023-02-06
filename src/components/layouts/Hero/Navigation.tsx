@@ -18,7 +18,7 @@ type Props = {
 export const DesktopNavigation: React.FC<Props> = ({ visibilityClassName }) => {
   return (
     <div className={visibilityClassName}>
-      <nav className="pointer-events-auto flex items-center bg-white/90 px-2 text-sm font-medium text-gray-800 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur">
+      <nav className="pointer-events-auto flex items-center bg-white/90 px-2 text-sm font-normal text-gray-800 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur">
         <StaticImage
           src="./assets/logo-bezirksamt.png"
           alt="Bezirksamt Friedrichshain-Kreuzberg"
@@ -41,7 +41,7 @@ export const DesktopNavigation: React.FC<Props> = ({ visibilityClassName }) => {
 export const MobileNavigation: React.FC<Props> = ({ visibilityClassName }) => {
   return (
     <Popover className={visibilityClassName}>
-      <Popover.Button className="group flex items-center bg-white/90 px-4 py-2 text-sm font-medium text-gray-800 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur">
+      <Popover.Button className="group flex items-center bg-white/90 px-4 py-2 text-sm font-normal text-gray-800 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur">
         Menu
         <ChevronDownIcon className="ml-3 h-auto w-2 stroke-gray-500 group-hover:stroke-gray-700 dark:group-hover:stroke-gray-400" />
       </Popover.Button>
@@ -74,7 +74,7 @@ export const MobileNavigation: React.FC<Props> = ({ visibilityClassName }) => {
               <Popover.Button aria-label="Close menu" className="-m-1 p-1">
                 <XMarkIcon className="h-6 w-6 text-gray-500" />
               </Popover.Button>
-              <h2 className="sr-only text-sm font-medium text-gray-600">Navigation</h2>
+              <h2 className="sr-only text-sm font-normal text-gray-600">Navigation</h2>
             </div>
             <div className="text-center">
               <StaticImage

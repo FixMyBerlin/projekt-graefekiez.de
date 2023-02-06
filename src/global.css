@@ -8,9 +8,31 @@ html {
 }
 
 body {
-  @apply flex h-full flex-col;
+  @apply flex h-full flex-col font-sans;
 }
 
 #__next {
   @apply min-h-full;
+}
+
+@font-face {
+  font-family: 'BerlinType';
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url('/fonts/BerlinTypeWeb-Regular.eot');
+  src: url('/fonts/BerlinTypeWeb-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/BerlinTypeWeb-Regular.woff2') format('woff2'),
+    url('/fonts/BerlinTypeWeb-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BerlinType';
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src: url('/fonts/BerlinTypeWeb-Bold.eot');
+  src: url('/fonts/BerlinTypeWeb-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/BerlinTypeWeb-Bold.woff2') format('woff2'),
+    url('/fonts/BerlinTypeWeb-Bold.woff') format('woff');
 }

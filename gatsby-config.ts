@@ -2,7 +2,7 @@ import type { GatsbyConfig } from 'gatsby'
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Projekt Gräfekiez Berlin`,
+    title: `Projekt Graefekiez Berlin`,
     siteUrl: `https://projekt-graefekiez.berlin`,
   },
   graphqlTypegen: true,
@@ -14,8 +14,8 @@ const config: GatsbyConfig = {
       // Docs https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Projekt Gräfekiez Berlin',
-        short_name: 'Gräfekiez',
+        name: 'Projekt Graefekiez Berlin',
+        short_name: 'Graefekiez',
         start_url: '/',
         background_color: 'white',
         theme_color: '#fff8e8',

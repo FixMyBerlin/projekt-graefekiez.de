@@ -13,11 +13,11 @@ export const Card: React.FC<CardProps> = ({ title, description, image }) => {
       <div className="flex-shrink-0">{image}</div>
       <div className="flex flex-1 flex-col justify-between bg-white p-6">
         <div className="flex-1">
-          {/* <p className="text-indigo-600 text-sm font-medium">
+          {/* <p className="text-indigo-600 text-sm font-normal">
               {cateogry}
           </p> */}
           <div className="mt-2 block">
-            <p className="text-xl font-semibold text-gray-900">{title}</p>
+            <p className="text-xl font-bold text-gray-900">{title}</p>
             <p className="mt-3 text-base text-gray-500">{description}</p>
           </div>
         </div>

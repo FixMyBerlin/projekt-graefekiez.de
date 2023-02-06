@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from '../links'
+import { H1, Prose } from '../typography'
 
 export const PageHomeMapText: React.FC = () => {
   return (
     <section>
-      <h2 className="mt-10 mb-8 text-3xl sm:text-4xl">Was passiert wo?</h2>
-      <div className="prose">
+      <H1>Was passiert wo?</H1>
+      <Prose>
         <p>
           Hier sollte die Karte erläutert werden mit den verschiedenen Layern, detailierter können
           die Einzelnen Themen dann unten erklärt werden.
@@ -20,13 +21,17 @@ export const PageHomeMapText: React.FC = () => {
           Fußgänger*innenzone... Ein Teil der Flächen ist noch nicht genutzt, Sie können uns dafür
           Vorschläge machen...
         </p>
-        <Link button to="#foo">
-          Details zu den Nutzungen
-        </Link>
-        <Link button to="#foo2">
-          Beteiligung zu freien Flächen
-        </Link>
-      </div>
+        <p>
+          <Link button to="#foo">
+            Details zu den Nutzungen
+          </Link>
+        </p>
+        <p>
+          <Link button to="#foo2">
+            Beteiligung zu freien Flächen
+          </Link>
+        </p>
+      </Prose>
     </section>
   )
 }
