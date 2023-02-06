@@ -19,7 +19,7 @@ const config: GatsbyConfig = {
         start_url: '/',
         background_color: 'white',
         theme_color: '#fff8e8',
-        icon: 'src/images/icon.png',
+        icon: 'src/components/layouts/Hero/assets/logo-bezirksamt.png',
         display: 'minimal-ui', // https://developer.mozilla.org/en-US/docs/Web/Manifest/display#values
         legacy: false,
         lang: 'de-DE', // https://developer.mozilla.org/en-US/docs/Web/Manifest/lang
