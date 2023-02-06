@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.editable {
+  @apply border border-dotted border-yellow-500;
+}
+.editor-mode .editable {
+  @apply border border-dotted border-orange-500;
+}
