@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.editable {
-  @apply border border-dotted border-yellow-500;
+/* https://salient.tailwindui.com/ */
+html {
+  @apply: h-full scroll-smooth bg-white antialiased;
 }
-.editor-mode .editable {
-  @apply border border-dotted border-orange-500;
+
+body {
+  @apply flex h-full flex-col;
+}
+
+#__next {
+  @apply min-h-full;
 }
