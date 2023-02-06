@@ -5,6 +5,7 @@ import React from 'react'
 export type LinkProps = {
   to: string
   className?: string
+  activeClassName?: string
   newWindow?: boolean
   button?: boolean
   external?: boolean
@@ -18,6 +19,7 @@ export const buttonStyle =
 export const Link: React.FC<LinkProps> = ({
   to,
   className,
+  activeClassName,
   newWindow = false,
   external = false,
   button,
@@ -37,7 +39,11 @@ export const Link: React.FC<LinkProps> = ({
   }
 
   return (
-    <GatsbyLink to={to} className={clsx(button ? buttonStyle : linkStyle, className)}>
+    <GatsbyLink
+      to={to}
+      className={clsx(button ? buttonStyle : linkStyle, className)}
+      activeClassName={activeClassName}
+    >
       {children}
     </GatsbyLink>
   )

@@ -5,10 +5,10 @@ import React, { Fragment } from 'react'
 import { DesktopNavigationNavItem, MobileNavigationNavItem } from './NavigationNavItem'
 
 const navigation = [
-  { name: 'Projekt Graefekiez', href: '#' },
-  { name: 'Forschung', href: '#' },
-  { name: 'Aktuelles / Termine', href: '#' },
-  { name: 'Häufige Fragen', href: '#' },
+  { name: 'Projekt Graefekiez', href: '/' },
+  { name: 'Forschung', href: '/forschung' },
+  { name: 'Aktuelles / Termine', href: '/neuigkeiten' },
+  { name: 'Häufige Fragen', href: '/faq' },
 ]
 
 type Props = {

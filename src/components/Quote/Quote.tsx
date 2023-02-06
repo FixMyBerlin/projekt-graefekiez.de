@@ -3,7 +3,7 @@ import React from 'react'
 type Props = {
   quote: string
   author: string
-  authorSubline: string
+  authorSubline?: string
   /** @desc height={320} className="h-12 w-12 lg:h-64 lg:w-64 xl:h-80 xl:w-80" */
   image: React.ReactNode
 }
@@ -41,7 +41,9 @@ export const Quote: React.FC<Props> = ({ quote, author, authorSubline, image }) 
                   </div>
                   <div className="ml-4 lg:ml-0">
                     <div className="text-base font-normal text-gray-900">{author}</div>
-                    <div className="text-base font-normal text-yellow-600">{authorSubline}</div>
+                    {authorSubline && (
+                      <div className="text-base font-normal text-yellow-600">{authorSubline}</div>
+                    )}
                   </div>
                 </div>
               </footer>

@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { DesktopNavigation, MobileNavigation } from './Navigation'
@@ -8,15 +9,19 @@ type Props = {
   image?: React.ReactNode
 }
 
-export const Hero: React.FC<Props> = ({ title, subtitle, image: _todo }) => {
+export const Hero: React.FC<Props> = ({ title, subtitle, image }) => {
   return (
-    <div className="relative isolate overflow-hidden bg-yellow-900">
+    <div className="relative isolate overflow-hidden bg-yellow-300">
       {/* Image: */}
-      <img
-        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-        alt=""
-        className="absolute inset-0 -z-10 h-full w-full object-cover"
-      />
+      {image ? (
+        <img
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+          alt=""
+          className="absolute inset-0 -z-10 h-full w-full object-cover"
+        />
+      ) : (
+        <div className="absolute inset-0 -z-10 h-full w-full bg-gradient-to-r from-[#F7BD64] to-yellow-100" />
+      )}
 
       {/* Gradient: */}
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
@@ -58,8 +63,19 @@ export const Hero: React.FC<Props> = ({ title, subtitle, image: _todo }) => {
               alt="Bezirksamt Friedrichshain-Kreuzberg"
               height={250}
             />
-            <h1 className="text-4xl font-normal tracking-tight text-white sm:text-6xl">{title}</h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300">{subtitle}</p>
+            <h1
+              className={clsx(
+                'text-4xl font-normal tracking-tight sm:text-6xl',
+                image ? 'text-white' : 'text-yellow-800'
+              )}
+            >
+              {title}
+            </h1>
+            <p
+              className={clsx('mt-6 text-lg leading-8', image ? 'text-gray-300' : 'text-gray-800')}
+            >
+              {subtitle}
+            </p>
           </div>
         </div>
       </div>

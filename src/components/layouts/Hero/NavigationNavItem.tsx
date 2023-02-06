@@ -19,6 +19,7 @@ export const DesktopNavigationNavItem: React.FC<Props> = ({ href, children }) =>
           'relative block px-3 py-2 transition',
           isActive ? 'text-blue-500' : 'hover:text-blue-500'
         )}
+        activeClassName="font-bold"
       >
         {children}
         {isActive && (

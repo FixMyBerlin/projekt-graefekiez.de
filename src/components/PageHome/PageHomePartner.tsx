@@ -6,7 +6,7 @@ const parnters = [
     name: 'Future Garden',
     image: (
       <StaticImage
-        src="../../images/logo-bezirksamt.png"
+        src="../layouts/Hero/assets/logo-bezirksamt.png"
         alt=""
         className="h-48 w-full object-cover"
         height={192}
@@ -17,7 +17,7 @@ const parnters = [
     name: 'Future Garden',
     image: (
       <StaticImage
-        src="../../images/logo-bezirksamt.png"
+        src="../layouts/Hero/assets/logo-bezirksamt.png"
         alt=""
         className="h-48 w-full object-cover"
         height={192}
