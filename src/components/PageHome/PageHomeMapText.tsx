@@ -27,7 +27,7 @@ export const PageHomeMapText: React.FC = () => {
           </Link>
         </p>
         <p>
-          <Link button to="#mitmachen">
+          <Link button to="#ideen">
             Beteiligung zu freien Flächen
           </Link>
         </p>
