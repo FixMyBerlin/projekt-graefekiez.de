@@ -8,7 +8,7 @@ type Props = {
   subtitle: string
   /** @default 'dark' */
   titleColor?: 'light' | 'dark'
-  /** @desc className="absolute inset-0 -z-10 h-full w-full object-cover" */
+  /** @desc className="h-full w-full" */
   image?: React.ReactNode
 }
 
@@ -16,7 +16,9 @@ export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', im
   return (
     <div className="relative isolate overflow-hidden bg-yellow-300">
       {/* Image: */}
-      {image || (
+      {image ? (
+        <div className="absolute inset-0 -z-10">{image}</div>
+      ) : (
         <div className="absolute inset-0 -z-10 h-full w-full bg-gradient-to-r from-[#F7BD64] to-yellow-100" />
       )}
 

@@ -20,7 +20,7 @@ const AktuellesPage: React.FC<PageProps<Queries.NewsQuery>> = ({
           <StaticImage
             src="../components/PageAktuelles/assets/hero.jpg"
             alt=""
-            className="absolute inset-0 -z-10 h-full w-full object-cover"
+            className="h-full w-full"
           />
         }
       />

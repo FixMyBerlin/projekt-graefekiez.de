@@ -25,7 +25,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <StaticImage
             src="../components/PageHome/assets/Hero/hero.jpg"
             alt=""
-            className="absolute inset-0 -z-10 h-full w-full object-cover"
+            className="h-full w-full"
           />
         }
       />
