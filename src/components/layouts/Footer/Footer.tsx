@@ -61,8 +61,8 @@ export const Footer: React.FC = () => {
         <Link to="https://twitter.com/BA_Xhain" newWindow>
           <StaticImage
             className="mt-8 h-5 w-5 opacity-50"
-            src="../../images/twitterIcon.svg"
-            alt="twitter"
+            src="../../../images/twitterIcon.svg"
+            alt="Twitter @BA_Xhain"
           />
         </Link>
         <p className="mt-8 text-gray-400">© 2023 Bezirksamt Friedrichshain-Kreuzberg</p>
