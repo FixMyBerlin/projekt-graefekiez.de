@@ -7,7 +7,7 @@ import { DesktopNavigationNavItem, MobileNavigationNavItem } from './NavigationN
 const navigation = [
   { name: 'Projekt Graefekiez', href: '/' },
   { name: 'Forschung', href: '/forschung' },
-  { name: 'Aktuelles / Termine', href: '/neuigkeiten' },
+  // { name: 'Aktuelles / Termine', href: '/aktuelles' },
   { name: 'Häufige Fragen', href: '/faq' },
 ]
 

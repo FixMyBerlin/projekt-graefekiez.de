@@ -48,4 +48,4 @@ const ForschungPage: React.FC<PageProps> = () => {
 
 export default ForschungPage
 
-export const Head: HeadFC = () => <MetaTags title="Homepage" />
+export const Head: HeadFC = () => <MetaTags title="Forschung" />

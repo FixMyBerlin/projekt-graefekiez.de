@@ -5,16 +5,16 @@ import { Link } from '~/components/links'
 const aboutItems = [
   {
     title: 'Impressum',
-    href: '',
+    href: '/impressum',
   },
   {
     title: 'Datenschutz',
-    href: '',
+    href: '/datenschutz',
   },
-  {
-    title: 'Presse',
-    href: '',
-  },
+  // {
+  //   title: 'Presse',
+  //   href: '',
+  // },
 ]
 const informationItems = [
   {
