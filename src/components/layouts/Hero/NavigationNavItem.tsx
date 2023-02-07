@@ -16,7 +16,7 @@ export const DesktopNavigationNavItem: React.FC<Props> = ({ href, children }) =>
       <Link
         to={href}
         className={clsx(
-          'relative block px-3 py-2 transition',
+          'relative block px-4 py-2 transition',
           isActive ? 'text-blue-500' : 'hover:text-blue-500'
         )}
         activeClassName="font-bold"

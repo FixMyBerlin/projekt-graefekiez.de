@@ -39,7 +39,7 @@ export const PageHomeInto: React.FC = () => {
           <p className="mb-2 text-gray-600">
             <strong>Ich habe ein Auto, wohin?</strong>
           </p>
-          <Link button to="#foo">
+          <Link button to="#parken">
             Wo kann ich mein Auto parken?
           </Link>
         </div>
@@ -47,7 +47,7 @@ export const PageHomeInto: React.FC = () => {
           <p className="mb-2 text-gray-600">
             <strong>Ich habe Ideen zu den freien Flächen:</strong>
           </p>
-          <Link button to="#bar">
+          <Link button to="#ideen">
             Wie kann ich mich einbringen?
           </Link>
         </div>

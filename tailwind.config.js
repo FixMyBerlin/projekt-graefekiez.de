@@ -16,8 +16,8 @@ module.exports = {
         50: '#FEFAF0',
         100: '#FCEDC5', // wzb light
         200: '#F9DD94',
-        300: '#F7CE66',
-        400: '#F4BE34', // wzb primary
+        300: '#F7CE66', // wzb primary
+        400: '#F4BE34',
         500: '#E9AB0C',
         600: '#B8870A', // wzb dark
         700: '#886407',

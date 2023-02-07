@@ -3,8 +3,8 @@ import clsx from 'clsx'
 import React from 'react'
 
 export type FeatureItem = {
-  name: string
-  summary: string
+  subTitle: string | null
+  title: string
   description: string
   /* @desc <Image className="w-full" src={feature.image} alt="" sizes="52.75rem" /> */
   image: React.ReactNode
@@ -12,7 +12,7 @@ export type FeatureItem = {
 }
 
 type FeatureProps = {
-  feature: Omit<FeatureItem, 'name'> & { name: string | React.ReactNode }
+  feature: Omit<FeatureItem, 'title'> & { title: string | React.ReactNode }
   isActive: boolean
   className: string
 }
@@ -36,17 +36,19 @@ const Feature: React.FC<FeatureProps> = ({ feature, isActive, className }) => {
           {feature.icon}
         </svg>
       </div>
-      <h3 className={clsx('mt-2 text-sm font-bold', isActive ? 'text-blue-600' : 'text-gray-600')}>
-        {feature.name}
-      </h3>
-      <p
+      {feature.subTitle && (
+        <p className={clsx('mt-2 text-sm font-bold', isActive ? 'text-blue-600' : 'text-gray-600')}>
+          {feature.subTitle}
+        </p>
+      )}
+      <h3
         className={clsx(
           'mt-2 text-xl text-gray-900',
           isActive ? '' : 'decoration-pink-500 underline-offset-4 group-hover:underline'
         )}
       >
-        {feature.summary}
-      </p>
+        {feature.title}
+      </h3>
       <p className="mt-2 text-sm text-gray-600">{feature.description}</p>
     </div>
   )
@@ -56,7 +58,7 @@ const FeaturesMobile: React.FC<{ features: FeatureItem[] }> = ({ features }) => 
   return (
     <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
       {features.map((feature) => (
-        <div key={feature.name}>
+        <div key={feature.title}>
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
           <div className="relative mt-10 pb-10">
             <div className="absolute -inset-x-4 bottom-0 top-8 bg-gray-200 sm:-inset-x-6" />
@@ -78,13 +80,13 @@ const FeaturesDesktop: React.FC<{ features: FeatureItem[] }> = ({ features }) =>
           <Tab.List className="grid grid-cols-3 gap-x-8">
             {features.map((feature, featureIndex) => (
               <Feature
-                key={feature.name}
+                key={feature.title}
                 feature={{
                   ...feature,
-                  name: (
+                  title: (
                     <Tab className="[&:not(:focus-visible)]:focus:outline-none">
                       <span className="absolute inset-0" />
-                      {feature.name}
+                      {feature.title}
                     </Tab>
                   ),
                 }}
@@ -98,7 +100,7 @@ const FeaturesDesktop: React.FC<{ features: FeatureItem[] }> = ({ features }) =>
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
                   static
-                  key={feature.name}
+                  key={feature.title}
                   className={clsx(
                     'px-5 transition duration-500 ease-in-out [&:not(:focus-visible)]:focus:outline-none',
                     featureIndex !== selectedIndex && 'opacity-60'

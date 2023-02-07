@@ -10,7 +10,7 @@ const cards: CardProps[] = [
       'Durch Einführung der Superblocks stieg die Aufenthaltsqualität und Unfälle wurden um 25 % reduziert.',
     image: (
       <StaticImage
-        src="./assets/PageHomeLanduse/placeholder.png"
+        src="./assets/PageHomeLanduse/placeholder-city.jpg"
         alt=""
         className="h-48 w-full object-cover"
         height={192}
@@ -18,12 +18,12 @@ const cards: CardProps[] = [
     ),
   },
   {
-    title: 'Future Garden',
+    title: 'Komposthaufen',
     description:
       'Durch Einführung der Superblocks stieg die Aufenthaltsqualität und Unfälle wurden um 25 % reduziert.',
     image: (
       <StaticImage
-        src="./assets/PageHomeLanduse/placeholder.png"
+        src="./assets/PageHomeLanduse/placeholder-nature.jpg"
         alt=""
         className="h-48 w-full object-cover"
         height={192}
@@ -31,12 +31,12 @@ const cards: CardProps[] = [
     ),
   },
   {
-    title: 'Future Garden',
+    title: 'Tischtennis platte',
     description:
       'Durch Einführung der Superblocks stieg die Aufenthaltsqualität und Unfälle wurden um 25 % reduziert.',
     image: (
       <StaticImage
-        src="./assets/PageHomeLanduse/placeholder.png"
+        src="./assets/PageHomeLanduse/placeholder-table-tennis.jpg"
         alt=""
         className="h-48 w-full object-cover"
         height={192}
@@ -47,7 +47,7 @@ const cards: CardProps[] = [
 
 export const PageHomeLanduse: React.FC = () => {
   return (
-    <section>
+    <section id="ideen" className="scroll-mt-10">
       <h2 className="mt-10 mb-8 text-3xl sm:text-4xl">Sie haben eine Idee zur Flächennutzung?</h2>
       <div className="prose">
         <p>

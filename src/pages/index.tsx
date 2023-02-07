@@ -12,6 +12,7 @@ import { PageHomeMapText } from '~/components/PageHome/PageHomeMapText'
 import { PageHomeNews } from '~/components/PageHome/PageHomeNews'
 import { PageHomeOfferedFeatures } from '~/components/PageHome/PageHomeOfferedFeatures'
 import { PageHomePartner } from '~/components/PageHome/PageHomePartner'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -19,10 +20,10 @@ const IndexPage: React.FC<PageProps> = () => {
       <Hero
         title="Projekt Graefekiez"
         subtitle="Besser Leben ohne Auto"
-        titleColor="light"
+        titleColor="dark"
         image={
-          <img
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+          <StaticImage
+            src="../components/PageHome/assets/Hero/hero.jpg"
             alt=""
             className="absolute inset-0 -z-10 h-full w-full object-cover"
           />

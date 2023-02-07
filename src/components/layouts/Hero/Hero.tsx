@@ -20,8 +20,11 @@ export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', im
         <div className="absolute inset-0 -z-10 h-full w-full bg-gradient-to-r from-[#F7BD64] to-yellow-100" />
       )}
 
-      {/* Gradient: */}
-      <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+      {/* Gradient Top */}
+      <div className="absolute inset-x-0 top-0 -z-10 h-64 overflow-hidden bg-gradient-to-b from-white/100 to-white/0" />
+
+      {/* Gradient Dots: */}
+      {/* <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
           className="-trangray-x-1/2 relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
           viewBox="0 0 1155 678"
@@ -45,15 +48,15 @@ export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', im
             </linearGradient>
           </defs>
         </svg>
-      </div>
+      </div> */}
 
       <div className="flex flex-1 justify-center p-6 pb-0 md:justify-start lg:p-8 lg:pb-0">
         <MobileNavigation visibilityClassName="md:hidden" />
         <DesktopNavigation visibilityClassName="hidden md:block" />
       </div>
 
-      <div className="px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl py-10 sm:pt-20 sm:pb-24">
+      <div className="px-6 pt-0 pb-20 sm:pt-10 sm:pb-44 md:pt-16">
+        <div className="mx-auto max-w-2xl">
           <div className="text-center">
             <StaticImage
               src="../../../images/logos/logo-bezirksamt.png"
@@ -62,26 +65,26 @@ export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', im
             />
             <h1
               className={clsx(
-                'text-4xl font-normal tracking-tight sm:text-6xl',
-                titleColor === 'light' ? 'text-white' : 'text-yellow-800'
+                'text-6xl font-bold tracking-tight sm:text-7xl',
+                titleColor === 'light' ? 'text-white' : 'text-black'
               )}
             >
               {title}
             </h1>
             <p
               className={clsx(
-                'mt-6 text-lg leading-8',
-                titleColor === 'light' ? 'text-gray-300' : 'text-gray-800'
+                'mt-10 text-xl leading-8 sm:text-3xl',
+                titleColor === 'light' ? 'text-gray-300' : 'text-black'
               )}
             >
-              {subtitle}
+              <span className="bg-yellow-300 py-3 px-12">{subtitle}</span>
             </p>
           </div>
         </div>
       </div>
 
-      {/* Gradient: */}
-      <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+      {/* Gradient Dots: */}
+      {/* <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
         <svg
           className="-trangray-x-1/2 relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
           viewBox="0 0 1155 678"
@@ -105,7 +108,7 @@ export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', im
             </linearGradient>
           </defs>
         </svg>
-      </div>
+      </div> */}
     </div>
   )
 }

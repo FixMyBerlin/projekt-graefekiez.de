@@ -56,7 +56,11 @@ export const PageHomeFaq: React.FC = () => {
     <section>
       <h2 className="mt-10 mb-8 text-3xl sm:text-4xl">Fragen und Antworten</h2>
       <div className="prose">
-        <p>Lorem Ipsum</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nesciunt labore pariatur,
+          voluptatum numquam qui quis quaerat, aliquam provident sit mollitia necessitatibus
+          similique ea libero totam ab alias dicta odit?
+        </p>
       </div>
 
       <ul className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">

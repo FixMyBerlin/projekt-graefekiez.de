@@ -22,12 +22,12 @@ export const PageHomeMapText: React.FC = () => {
           Vorschläge machen...
         </p>
         <p>
-          <Link button to="#foo">
+          <Link button to="#angebote">
             Details zu den Nutzungen
           </Link>
         </p>
         <p>
-          <Link button to="#foo2">
+          <Link button to="#mitmachen">
             Beteiligung zu freien Flächen
           </Link>
         </p>

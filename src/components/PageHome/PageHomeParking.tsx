@@ -12,7 +12,7 @@ const steps = [
 
 export const PageHomeParking: React.FC = () => {
   return (
-    <section>
+    <section id="parken" className="scroll-mt-10">
       <H1>Wo kann ich mein Auto parken?</H1>
       <Prose>
         <p>

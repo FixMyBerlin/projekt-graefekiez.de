@@ -6,32 +6,42 @@ import { H1, Prose } from '../typography'
 
 const features: FeatureItem[] = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    subTitle: 'Lieferverkehr',
+    title: 'Gewerbetreibende',
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
+      'Für Gewerbetreibende und Ihre Lieferanten haben wir Lieferzonen eingerichtet, so wird es  viel unkomplizierter und schneller mit der Anlieferung',
     image: (
-      <StaticImage src="./assets/PageHomeOfferedFeatures/placeholder.png" className="" alt="" />
+      <StaticImage
+        src="./assets/PageHomeOfferedFeatures/feature-placeholder-delivery.jpg"
+        className=""
+        alt=""
+      />
     ),
     icon: <ShoppingCartIcon className="" />,
   },
   {
-    name: 'Inventory',
-    summary: 'Never lose track of what’s in stock with accurate inventory tracking.',
-    description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
+    subTitle: 'Schulzone, Sicherheit',
+    title: 'Kinder und Eltern',
+    description: 'Schulzone, Spielstraßen.',
     image: (
-      <StaticImage src="./assets/PageHomeOfferedFeatures/placeholder.png" className="" alt="" />
+      <StaticImage
+        src="./assets/PageHomeOfferedFeatures/feature-placeholder-school.jpg"
+        className=""
+        alt=""
+      />
     ),
     icon: <ShoppingCartIcon className="" />,
   },
   {
-    name: 'Contacts',
-    summary: 'Organize all of your contacts, service providers, and invoices in one place.',
-    description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
+    subTitle: null,
+    title: 'Jelbi, Bus und Fahrrad',
+    description: 'Jelbi stationen, ÖPNV Stationen, Fahrradverleih.',
     image: (
-      <StaticImage src="./assets/PageHomeOfferedFeatures/placeholder.png" className="" alt="" />
+      <StaticImage
+        src="./assets/PageHomeOfferedFeatures/feature-placeholder-map.jpg"
+        className=""
+        alt=""
+      />
     ),
     icon: <ShoppingCartIcon className="" />,
   },
@@ -39,7 +49,7 @@ const features: FeatureItem[] = [
 
 export const PageHomeOfferedFeatures: React.FC = () => {
   return (
-    <section>
+    <section id="angebote" className="scroll-mt-10">
       <H1 className="mb-2">Angebote für alle Anwohnenden</H1>
       <Prose className="leading-tight">
         <p>
