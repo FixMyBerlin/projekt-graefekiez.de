@@ -14,7 +14,7 @@ export type LinkProps = {
 
 export const linkStyle = 'underline-offset-4 hover:underline decoration-pink-500'
 export const buttonStyle =
-  'py-2.5 px-7 font-bold inline-flex items-center justify-center border-[1.5px] border-pink-500 bg-white font-bold no-underline ring-pink-600 hover:bg-pink-50 hover:ring-1 active:border-2 active:border-pink-50 active:bg-pink-500 active:ring-0;'
+  'py-2.5 px-7 font-bold inline-flex items-center justify-center border-[1.5px] border-pink-500 bg-white font-bold no-underline ring-pink-600 hover:bg-pink-50 hover:ring-1 active:border-2 active:border-pink-50 active:bg-pink-500 active:ring-0 leading-tight'
 
 export const Link: React.FC<LinkProps> = ({
   to,

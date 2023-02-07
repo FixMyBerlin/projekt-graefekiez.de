@@ -30,10 +30,10 @@ const IndexPage: React.FC<PageProps> = () => {
         }
       />
       <Container grid colorClass="bg-yellow-100 pb-12">
-        <div className="col-span-2">
+        <div className="sm:col-span-2">
           <PageHomeInto />
         </div>
-        <div className="pl-10">
+        <div className="sm:mx-auto md:mx-0 md:pl-10">
           <PageHomeNews />
         </div>
       </Container>

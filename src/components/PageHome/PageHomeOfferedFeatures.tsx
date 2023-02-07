@@ -1,6 +1,7 @@
 import { ShoppingCartIcon } from '@heroicons/react/24/outline'
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
+import { Link } from '../links'
 import { FeatureItem, OfferedFeatures } from '../OfferedFeatures/OfferedFeatures'
 import { H1, Prose } from '../typography'
 
@@ -37,11 +38,23 @@ const features: FeatureItem[] = [
     title: 'Jelbi, Bus und Fahrrad',
     description: 'Jelbi stationen, ÖPNV Stationen, Fahrradverleih.',
     image: (
-      <StaticImage
-        src="./assets/PageHomeOfferedFeatures/feature-placeholder-map.jpg"
-        className=""
-        alt=""
-      />
+      <div className="relative">
+        <StaticImage
+          src="./assets/PageHomeOfferedFeatures/feature-placeholder-map.jpg"
+          className=""
+          alt=""
+        />
+        <div className="absolute top-5 right-5">
+          <Link button external newWindow to="#todo-download">
+            Jelbi App laden
+          </Link>
+        </div>
+        <div className="p-3">
+          <Link button external newWindow to="#todo-download">
+            Jelbi App laden
+          </Link>
+        </div>
+      </div>
     ),
     icon: <ShoppingCartIcon className="" />,
   },

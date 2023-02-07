@@ -33,7 +33,7 @@ export const PageHomeParking: React.FC = () => {
       <p className="mt-10">
         <strong>Karstadt Parkhaus nutzen, so gehts</strong>
       </p>
-      <ol className="mt-3 grid grid-cols-3 gap-3">
+      <ol className="mt-3 grid gap-3 md:grid-cols-3">
         {steps.map((step, index) => {
           return (
             <li key={step.title} className="prose flex gap-3 border bg-white">

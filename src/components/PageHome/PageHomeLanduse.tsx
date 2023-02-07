@@ -64,7 +64,7 @@ export const PageHomeLanduse: React.FC = () => {
       <p className="mt-10">
         <strong>Beispiele für Flächennutzung</strong>
       </p>
-      <ol className="mt-6 grid grid-cols-3 gap-12">
+      <ol className="mt-6 grid gap-8 sm:grid-cols-2 md:gap-10 lg:grid-cols-3 xl:gap-12">
         {cards.map((card, index) => {
           return (
             <Card

@@ -60,9 +60,8 @@ const FeaturesMobile: React.FC<{ features: FeatureItem[] }> = ({ features }) => 
       {features.map((feature) => (
         <div key={feature.title}>
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
-          <div className="relative mt-10 pb-10">
-            <div className="absolute -inset-x-4 bottom-0 top-8 bg-gray-200 sm:-inset-x-6" />
-            <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-gray-900/5 ring-1 ring-gray-500/10">
+          <div className="relative mt-3 mb-3">
+            <div className="relative mx-auto w-full overflow-hidden rounded-xl bg-white shadow-lg shadow-gray-900/5 ring-1 ring-gray-500/10">
               {feature.image}
             </div>
           </div>
