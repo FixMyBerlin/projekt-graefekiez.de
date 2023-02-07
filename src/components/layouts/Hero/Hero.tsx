@@ -59,7 +59,7 @@ export const Hero: React.FC<Props> = ({ title, subtitle, image }) => {
         <div className="mx-auto max-w-2xl py-10 sm:pt-20 sm:pb-24">
           <div className="text-center">
             <StaticImage
-              src="./assets/logo-bezirksamt.png"
+              src="../../../images/logos/logo-bezirksamt.png"
               alt="Bezirksamt Friedrichshain-Kreuzberg"
               height={250}
             />

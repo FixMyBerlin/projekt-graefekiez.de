@@ -20,7 +20,7 @@ export const DesktopNavigation: React.FC<Props> = ({ visibilityClassName }) => {
     <div className={visibilityClassName}>
       <nav className="pointer-events-auto flex items-center bg-white/90 px-2 text-sm font-normal text-gray-800 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur">
         <StaticImage
-          src="./assets/logo-bezirksamt.png"
+          src="../../../images/logos/logo-bezirksamt.png"
           alt="Bezirksamt Friedrichshain-Kreuzberg"
           height={50}
         />
@@ -78,7 +78,7 @@ export const MobileNavigation: React.FC<Props> = ({ visibilityClassName }) => {
             </div>
             <div className="text-center">
               <StaticImage
-                src="./assets/logo-bezirksamt.png"
+                src="../../../images/logos/logo-bezirksamt.png"
                 alt="Bezirksamt Friedrichshain-Kreuzberg"
                 height={100}
               />

@@ -4,25 +4,11 @@ import React from 'react'
 const parnters = [
   {
     name: 'Future Garden',
-    image: (
-      <StaticImage
-        src="../layouts/Hero/assets/logo-bezirksamt.png"
-        alt=""
-        className="h-48 w-full object-cover"
-        height={192}
-      />
-    ),
+    image: <StaticImage src="../../images/logos/logo-bezirksamt.png" alt="" height={192} />,
   },
   {
     name: 'Future Garden',
-    image: (
-      <StaticImage
-        src="../layouts/Hero/assets/logo-bezirksamt.png"
-        alt=""
-        className="h-48 w-full object-cover"
-        height={192}
-      />
-    ),
+    image: <StaticImage src="../../images/logos/logo-wzb.png" alt="" height={192} />,
   },
 ]
 
