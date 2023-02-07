@@ -1,11 +1,11 @@
 import React from 'react'
-import { Card, CardDescription, CardEyebrow, CardTitle } from './Card'
+import { Card, CardCta, CardDescription, CardEyebrow, CardTitle } from './Card'
 
 export type NewsItemProps = {
   slug?: string
   title: string
   date: string
-  children: string
+  body?: React.ReactNode | string
 }
 
 function formatDate(dateString: string) {
@@ -17,16 +17,15 @@ function formatDate(dateString: string) {
   })
 }
 
-export const NewsItem: React.FC<NewsItemProps> = ({ slug: _, title, date, children }) => {
+export const NewsItem: React.FC<NewsItemProps> = ({ slug, title, date, body }) => {
   return (
     <Card as="article">
-      {/* <CardTitle href={`/articles/${slug}`}>{title}</CardTitle> */}
-      <CardTitle>{title}</CardTitle>
+      <CardTitle href={slug ? `/aktuelles/${slug}` : undefined}>{title}</CardTitle>
       <CardEyebrow as="time" dateTime={date} decorate>
         {formatDate(date)}
       </CardEyebrow>
-      <CardDescription>{children}</CardDescription>
-      {/* <CardCta>Mehr erfahren</CardCta> */}
+      {body && <CardDescription>{body}</CardDescription>}
+      {slug && <CardCta>Weiterlesen…</CardCta>}
     </Card>
   )
 }

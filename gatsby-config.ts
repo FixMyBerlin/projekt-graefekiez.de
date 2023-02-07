@@ -27,20 +27,28 @@ const config: GatsbyConfig = {
     },
     {
       resolve: `gatsby-plugin-mdx`,
-      // options: {
-      //   mdxOptions: {
-      //     remarkPlugins: [],
-      //     rehypePlugins: [],
-      //   },
-      // },
+      options: {
+        extensions: [`.mdx`, `.md`],
+        //   mdxOptions: {
+        //     remarkPlugins: [],
+        //     rehypePlugins: [],
+        //   },
+      },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `content`,
-    //     path: `${__dirname}/content`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
+    // Required https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#mdxprovider
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/content`,
+      },
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     // {
