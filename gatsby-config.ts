@@ -1,6 +1,11 @@
 import type { GatsbyConfig } from 'gatsby'
 
 const config: GatsbyConfig = {
+  flags: {
+    // https://www.gatsbyjs.com/docs/debugging-html-builds/#ssr-during-gatsby-develop
+    // Hopefully helps with https://github.com/gatsbyjs/gatsby/issues/9911#issuecomment-846318739
+    DEV_SSR: true,
+  },
   siteMetadata: {
     title: `Projekt Graefekiez Berlin`,
     siteUrl: `https://projekt-graefekiez.berlin`,
