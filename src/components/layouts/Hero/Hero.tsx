@@ -6,20 +6,17 @@ import { DesktopNavigation, MobileNavigation } from './Navigation'
 type Props = {
   title: string
   subtitle: string
+  /** @default 'dark' */
+  titleColor?: 'light' | 'dark'
+  /** @desc className="absolute inset-0 -z-10 h-full w-full object-cover" */
   image?: React.ReactNode
 }
 
-export const Hero: React.FC<Props> = ({ title, subtitle, image }) => {
+export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', image }) => {
   return (
     <div className="relative isolate overflow-hidden bg-yellow-300">
       {/* Image: */}
-      {image ? (
-        <img
-          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-          alt=""
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
-        />
-      ) : (
+      {image || (
         <div className="absolute inset-0 -z-10 h-full w-full bg-gradient-to-r from-[#F7BD64] to-yellow-100" />
       )}
 
@@ -66,13 +63,16 @@ export const Hero: React.FC<Props> = ({ title, subtitle, image }) => {
             <h1
               className={clsx(
                 'text-4xl font-normal tracking-tight sm:text-6xl',
-                image ? 'text-white' : 'text-yellow-800'
+                titleColor === 'light' ? 'text-white' : 'text-yellow-800'
               )}
             >
               {title}
             </h1>
             <p
-              className={clsx('mt-6 text-lg leading-8', image ? 'text-gray-300' : 'text-gray-800')}
+              className={clsx(
+                'mt-6 text-lg leading-8',
+                titleColor === 'light' ? 'text-gray-300' : 'text-gray-800'
+              )}
             >
               {subtitle}
             </p>
