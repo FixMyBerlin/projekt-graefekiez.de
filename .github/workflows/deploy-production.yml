@@ -25,4 +25,4 @@ jobs:
         known_hosts: "seeed5"
     - name: Adding Known Hosts
       run: ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
-    - run: rsync -avz ./public/ ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ secrets.TARGET }}
+    - run: rsync -avz ./public/ .htaccess ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ secrets.TARGET }}
