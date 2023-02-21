@@ -204,8 +204,8 @@ const PrivacyPolicyPage: React.FC<PageProps> = () => {
             Weitere Informationen zur Datenverarbeitung durch Mapbox finden Sie in der
             Datenschutzerklärung des Unternehmens:
             <br />
-            <Link newWindow to="https://www.mapbox.com/legal/privacy?tid=134815432">
-              https://www.mapbox.com/legal/privacy?tid=134815432
+            <Link newWindow to="https://www.mapbox.com/legal/privacy">
+              mapbox.com/legal/privacy
             </Link>
           </p>
           {/* TODO Opt-Out Option einfügen */}
