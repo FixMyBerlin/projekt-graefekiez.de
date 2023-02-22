@@ -23,15 +23,17 @@ export const faqs: TFaqs = {
     [
       {
         id: 1,
-        question: 'Fallen Parkplätze weg?',
+        question:
+          'Kann ich überhaupt noch mit einem Auto in den Kiez fahren? Was macht mein Besuch, wenn es mit dem Auto kommen will?',
         answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
+          'Alle Ziele im Kiez sind wie bisher auch weiterhin mit dem Auto erreichbar. Auch das Ein- und Ausladen ist weiterhin fast überall möglich. Die neuen Ladezonen machen das sogar einfacher und verhindern das Halten in der zweiten Reihe. Lediglich das dauerhafte Parken wird durch den Wegfall von Stellplätzen schwieriger und ist möglicherweise mit längeren Fußwegen verbunden. Das gilt auch für Besucher:innen, die mit dem eigenen Auto anreisen.',
       },
       {
         id: 2,
-        question: 'Fallen Parkplätze weg?',
+        question:
+          'Nun habe ich als Anwohner:in aber selber ein Auto, wo kann ich es denn abstellen?',
         answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
+          'Es gibt die Möglichkeit, das Fahrzeug für einen monatlichen Tarif von 60 Euro im Parkhaus am Hermannplatz abzustellen.',
       },
       {
         id: 3,
@@ -49,9 +51,9 @@ export const faqs: TFaqs = {
       },
       {
         id: 5,
-        question: 'Fallen Parkplätze weg?',
+        question: 'Warum wählen wir diesen Ansatz?',
         answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
+          'Wir müssen dringend die Verkehrssicherheit im Bezirk erhöhen. Das dies notwendig ist, zeigen immer wieder schwere oder gar tödliche Unfälle mit Rad- oder Fußbeteiligung. Wir sind den Verkehrsteilnehmenden verpflichtet, die besonders gefährdet sind. Dazu gehören z.B. Kinder, ältere Menschen – und im Allgemeinen alle, die zu Fuß oder mit dem Rad unterwegs sind. Wir wählen einen flächendeckenden Ansatz, um die Umweltgerechtigkeit im Bezirk zu erhöhen. Die Daten des Umweltatlas zeigen, dass die Wohngebiete in XHain unterschiedlich stark von negativen Umweltbelastungen betroffen sind. Mit zunehmenden Hitzesommern steigt der Bedarf für qualitativ hochwertige öffentliche Räume. Gerade in Gebieten des Bezirks mit hoher Einwohner*innen-Dichte und geringer Grünraumversorgung ist dies wichtig.',
       },
       {
         id: 6,
@@ -75,9 +77,9 @@ export const faqs: TFaqs = {
       },
       {
         id: 9,
-        question: 'Fallen Parkplätze weg?',
+        question: 'Warum wählen wir diesen Ansatz?',
         answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
+          'Wir müssen dringend die Verkehrssicherheit im Bezirk erhöhen. Das dies notwendig ist, zeigen immer wieder schwere oder gar tödliche Unfälle mit Rad- oder Fußbeteiligung. Wir sind den Verkehrsteilnehmenden verpflichtet, die besonders gefährdet sind. Dazu gehören z.B. Kinder, ältere Menschen – und im Allgemeinen alle, die zu Fuß oder mit dem Rad unterwegs sind. Wir wählen einen flächendeckenden Ansatz, um die Umweltgerechtigkeit im Bezirk zu erhöhen. Die Daten des Umweltatlas zeigen, dass die Wohngebiete in XHain unterschiedlich stark von negativen Umweltbelastungen betroffen sind. Mit zunehmenden Hitzesommern steigt der Bedarf für qualitativ hochwertige öffentliche Räume. Gerade in Gebieten des Bezirks mit hoher Einwohner*innen-Dichte und geringer Grünraumversorgung ist dies wichtig.',
       },
     ],
   ],
