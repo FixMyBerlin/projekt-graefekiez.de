@@ -11,7 +11,8 @@ export const Prose: React.FC<Props> = ({ className, children }) => {
     <div
       className={clsx(
         className,
-        'prose prose-p:text-gray-900 prose-a:no-underline',
+        'max-w-full',
+        'prose prose-p:text-gray-900 prose-a:no-underline prose-ul:list-none prose-ul:pl-0 prose-li:m-0 prose-li:p-0',
         'prose-code:before:content-none prose-code:after:content-none'
       )}
     >
