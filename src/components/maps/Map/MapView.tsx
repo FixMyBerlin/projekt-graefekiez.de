@@ -185,14 +185,18 @@ export const MapView: React.FC<MapViewProps> = ({
     if (showMapDebugHelper) {
       const { layers, sources } = map.getStyle()
       setDebugData({
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore "Property 'style' does not exist on type 'Map'" but it does
         styleModified: map.style.stylesheet.modified,
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore "Property 'style' does not exist on type 'Map'" but it does
         styleId: map.style.stylesheet.id,
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore "Property 'style' does not exist on type 'Map'" but it does
         styleName: map.style.stylesheet.name,
         ourLayers: ourLayers(layers),
         ourUpdatedLayers: [],
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore "Property 'url' does not exist on type 'AnySourceData'"
         source: sources?.composite?.url,
         zoom: map.getZoom(),
