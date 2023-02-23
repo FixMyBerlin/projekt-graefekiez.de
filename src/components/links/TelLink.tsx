@@ -1,17 +1,18 @@
-import clsx from 'clsx'
 import React from 'react'
-import { linkStyle } from './Link'
+import { LinkProps } from './Link'
+import { selectLinkStyle } from './styles'
 
 type Props = {
-  /** @desc: If no `to` given, `children` is used for `tel:` */
-  to?: string
   className?: string
+  tel?: string
+  /** @desc Style Link as Button */
+  button?: LinkProps['button']
   children: React.ReactNode
-}
+} & React.AnchorHTMLAttributes<HTMLAnchorElement>
 
-export const TelLink: React.FC<Props> = ({ to, className, children }) => {
+export const TelLink: React.FC<Props> = ({ className, tel, button, children, ...props }) => {
   return (
-    <a href={`tel:${to || children}`} className={clsx(linkStyle, className)}>
+    <a href={`tel:${tel || children}`} className={selectLinkStyle(button, className)} {...props}>
       {children}
     </a>
   )

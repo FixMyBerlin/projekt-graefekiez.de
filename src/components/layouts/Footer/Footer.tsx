@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
           <ul className="mt-4 flex flex-col gap-4">
             {aboutItems.map((item) => (
               <li key={item.title}>
-                <Link to={item.href}>{item.title}</Link>
+                <Link href={item.href}>{item.title}</Link>
               </li>
             ))}
           </ul>
@@ -42,23 +42,18 @@ export const Footer: React.FC = () => {
           <ul className="mt-4 flex flex-col gap-4">
             {informationItems.map((item) => (
               <li key={item.title}>
-                <Link newWindow to={item.href}>
-                  {item.title}
-                </Link>
+                <Link href={item.href}>{item.title}</Link>
               </li>
             ))}
           </ul>
         </div>
       </div>
       <div className="index mt-20 uppercase">
-        Abonnieren Sie{' '}
-        <Link to="#todo" external newWindow>
-          unseren Telegramkanal Projekt-Graefekiez
-        </Link>{' '}
-        um aktuelle Informationen zu Veranstaltungen und Ergebnissen zu erhalten.
+        Abonnieren Sie <Link href="#todo">unseren Telegramkanal Projekt-Graefekiez</Link> um
+        aktuelle Informationen zu Veranstaltungen und Ergebnissen zu erhalten.
       </div>
       <div className="mt-8 border-t border-gray-600">
-        <Link to="https://twitter.com/BA_Xhain" newWindow>
+        <Link href="https://twitter.com/BA_Xhain">
           <StaticImage
             className="mt-8 h-5 w-5 opacity-50"
             src="../../../images/twitterIcon.svg"

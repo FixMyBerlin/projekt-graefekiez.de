@@ -55,7 +55,7 @@ export const PageHomeLanduse: React.FC = () => {
           deine Ideen einreichen. Fülle dafür das Formular aus.
         </p>
         <p>
-          <Link button external newWindow to="#foo">
+          <Link button href="#foo">
             Idee einreichen – zum Formular
           </Link>
         </p>

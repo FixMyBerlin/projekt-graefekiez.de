@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import React from 'react'
-import { pinkButtonStyles } from '../links/styles'
+import { pinkButtonStyles } from '../links'
 
 type Props = {
   handleClick: () => void

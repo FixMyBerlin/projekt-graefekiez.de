@@ -62,7 +62,7 @@ const PrivacyPolicyPage: React.FC<PageProps> = () => {
           </p>
           <p>
             Der/die Datenschutzbeauftragte des Bezirksamtes Friedrichshain-Kreuzberg ist:{' '}
-            <Link to="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/beauftragte/datenschutz/">
+            <Link href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/beauftragte/datenschutz/">
               Behördlicher Datenschutzbeauftragter
             </Link>
             <br />
@@ -193,10 +193,7 @@ const PrivacyPolicyPage: React.FC<PageProps> = () => {
             abgeschlossen. Diese Klauseln verpflichten Mapbox, das europäische Datenschutzniveau
             auch außerhalb der EU sicherzustellen. Den Beschluss der EU-Kommission zum Erlass der
             Standarddatenschutzklauseln können Sie hier einsehen: <br />
-            <Link
-              newWindow
-              to="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=EN"
-            >
+            <Link href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=EN">
               https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=EN
             </Link>
           </p>
@@ -204,9 +201,7 @@ const PrivacyPolicyPage: React.FC<PageProps> = () => {
             Weitere Informationen zur Datenverarbeitung durch Mapbox finden Sie in der
             Datenschutzerklärung des Unternehmens:
             <br />
-            <Link newWindow to="https://www.mapbox.com/legal/privacy">
-              mapbox.com/legal/privacy
-            </Link>
+            <Link href="https://www.mapbox.com/legal/privacy">mapbox.com/legal/privacy</Link>
           </p>
           {/* TODO Opt-Out Option einfügen */}
           <h3>Speicherdauer</h3>
@@ -303,7 +298,7 @@ const PrivacyPolicyPage: React.FC<PageProps> = () => {
             Tel.: +49 30 13889-0
             <br />
             E-Mail:{' '}
-            <MailLink to="mailbox@datenschutz-berlin.de">mailbox@datenschutz-berlin.de</MailLink>
+            <MailLink href="mailbox@datenschutz-berlin.de">mailbox@datenschutz-berlin.de</MailLink>
           </p>
         </Prose>
       </Container>

@@ -169,7 +169,7 @@ const FaqPage: React.FC<PageProps> = () => {
               <p>Direkt zu einer Kategorie springen:</p>
               {faqToc.map((item, itemIndex) => (
                 <div key={itemIndex}>
-                  <Link to={item.href}>{item.title}</Link>
+                  <Link href={item.href}>{item.title}</Link>
                 </div>
               ))}
             </div>

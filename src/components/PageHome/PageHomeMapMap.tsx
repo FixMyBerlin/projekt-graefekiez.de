@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { buttonStyle } from '../links'
+import { pinkButtonStyles } from '../links'
 import { DataMap } from '../maps/DataMap/DataMap'
 import { MapButton } from '../maps/MapButton'
 
@@ -93,16 +93,16 @@ export const PageHomeMapMap: React.FC = () => {
 
       <nav className="mt-4 space-x-2 space-y-2 bg-gray-300 p-4">
         {/* TODO: Anschauen dafür https://tailwindui.com/components/application-ui/forms/radio-groups#component-245cb777f4a9823e97d8b1c2dfb87e0c */}
-        <button type="button" className={buttonStyle}>
+        <button type="button" className={pinkButtonStyles}>
           Parkmöglichkeiten
         </button>
-        <button type="button" className={buttonStyle}>
+        <button type="button" className={pinkButtonStyles}>
           Jelbi-Stationen
         </button>
-        <button type="button" className={buttonStyle}>
+        <button type="button" className={pinkButtonStyles}>
           Lieferzonen
         </button>
-        <button type="button" className={buttonStyle}>
+        <button type="button" className={pinkButtonStyles}>
           Neunutzungen
         </button>
       </nav>

@@ -14,7 +14,7 @@ export const DesktopNavigationNavItem: React.FC<Props> = ({ href, children }) =>
   return (
     <li>
       <Link
-        to={href}
+        href={href}
         className={clsx(
           'relative block px-4 py-2 transition',
           isActive ? 'text-blue-500' : 'hover:text-blue-500'
@@ -33,7 +33,7 @@ export const DesktopNavigationNavItem: React.FC<Props> = ({ href, children }) =>
 export const MobileNavigationNavItem: React.FC<Props> = ({ href, children }) => {
   return (
     <li>
-      <Popover.Button as={Link} to={href} className="block py-2">
+      <Popover.Button as={Link} href={href} className="block py-2">
         {children}
       </Popover.Button>
     </li>

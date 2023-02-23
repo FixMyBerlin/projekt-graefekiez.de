@@ -28,21 +28,19 @@ const ImprintPage: React.FC<PageProps> = () => {
           </p>
           <p>
             Konzeption und Umsetzung der Website durch FixMyCity GmbH{' '}
-            <Link newWindow to="https://www.fixmycity.de/">
-              https://www.fixmycity.de/
-            </Link>
+            <Link href="https://www.fixmycity.de/">https://www.fixmycity.de/</Link>
           </p>
 
           <p>
             Die Daten der interaktiven Karten stammen aus unterschiedlichen Quellen und sind
             entsprechend gekennzeichnet. Die genutzten Geodaten der Stadt Berlin stammen aus dem
             Geodatenportel FIS-Broker und können unter{' '}
-            <Link newWindow to="https://fbinter.stadt-berlin.de/fb/index.jsp">
+            <Link href="https://fbinter.stadt-berlin.de/fb/index.jsp">
               https://fbinter.stadt-berlin.de/fb/index.jsp
             </Link>{' '}
             eingesehen werden. Für OSM Daten: © OpenStreetMap-Mitwirkende. Weitere Informationen zu
             den Nutzungsrechten unter:{' '}
-            <Link newWindow to="https://www.openstreetmap.org/copyright">
+            <Link href="https://www.openstreetmap.org/copyright">
               https://www.openstreetmap.org/copyright
             </Link>
           </p>

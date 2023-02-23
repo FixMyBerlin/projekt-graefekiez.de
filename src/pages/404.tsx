@@ -13,7 +13,7 @@ export const NotFoundPage: React.FC<PageProps> = () => {
       <Container>
         <Prose className="max-w-full text-center">
           <H1>Leider konnten wir diese Seite nicht finden.</H1>
-          <Link button to="/">
+          <Link button href="/">
             Zur Startseite
             <span aria-hidden="true"> &rarr;</span>
           </Link>
