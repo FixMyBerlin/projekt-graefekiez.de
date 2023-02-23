@@ -4,6 +4,7 @@ import { HeadFC, PageProps } from 'gatsby'
 import React from 'react'
 import { Layout, MetaTags } from '~/components/layouts'
 import { Hero } from '~/components/layouts/Hero/Hero'
+import { Link } from '~/components/links'
 import { FaqItem } from '~/components/PageFaq/FaqItem'
 import { H1, H3, Prose } from '~/components/typography'
 
@@ -147,6 +148,13 @@ export const faqs: TFaqs = {
   ],
 }
 
+const faqToc = [
+  { title: 'Veränderungen für Autofahrende', href: '#autofahrende' },
+  { title: 'Fragen zum Fußverkehr', href: '#fussverkehr' },
+  { title: 'Veränderungen für X', href: '#autofahrende' },
+  { title: 'Veränderungen für Y', href: '#autofahrende' },
+]
+
 const FaqPage: React.FC<PageProps> = () => {
   const { carFaqs, pedestrianFaqs } = faqs
   return (
@@ -157,49 +165,59 @@ const FaqPage: React.FC<PageProps> = () => {
           <div className="mx-auto max-w-5xl px-4">
             <H1>Antworten auf häufige Fragen</H1>
 
-            <H3 line>
-              <strong className="text-blue-600">Veränderungen für Autofahrende</strong>
-            </H3>
-
-            <ul
-              role="list"
-              className="mt-16 grid max-w-2xl grid-cols-1 gap-y-2 gap-x-8 lg:max-w-none lg:grid-cols-3"
-            >
-              {carFaqs.map((column, columnIndex) => (
-                <li key={columnIndex}>
-                  <ul role="list" className="flex flex-col gap-8">
-                    {column.map((faq) => (
-                      <li key={faq.id}>
-                        <FaqItem question={faq} />
-                      </li>
-                    ))}
-                  </ul>
-                </li>
+            <div className="mb-12">
+              <p>Direkt zu einer Kategorie springen:</p>
+              {faqToc.map((item, itemIndex) => (
+                <div key={itemIndex}>
+                  <Link to={item.href}>{item.title}</Link>
+                </div>
               ))}
-            </ul>
-          </div>
+            </div>
 
-          <div className="mx-auto mt-16 max-w-5xl px-4">
-            <H3 line>
-              <strong className="text-blue-600">Fragen zum Fußverkehr</strong>
-            </H3>
+            <section id="autofahrende">
+              <H3 line>
+                <strong>Veränderungen für Autofahrende</strong>
+              </H3>
 
-            <ul
-              role="list"
-              className="mt-16 grid max-w-2xl grid-cols-1 gap-y-2 gap-x-8 lg:max-w-none lg:grid-cols-3"
-            >
-              {pedestrianFaqs.map((column, columnIndex) => (
-                <li key={columnIndex}>
-                  <ul role="list" className="flex flex-col gap-8">
-                    {column.map((faq) => (
-                      <li key={faq.id}>
-                        <FaqItem question={faq} />
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-            </ul>
+              <ul
+                role="list"
+                className="mt-10 grid max-w-2xl grid-cols-1 gap-y-2 gap-x-8 lg:max-w-none lg:grid-cols-3"
+              >
+                {carFaqs.map((column, columnIndex) => (
+                  <li key={columnIndex}>
+                    <ul role="list" className="flex flex-col gap-8">
+                      {column.map((faq) => (
+                        <li key={faq.id}>
+                          <FaqItem question={faq} />
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ul>
+            </section>
+            <section id="fussverkehr">
+              <H3 line>
+                <strong>Fragen zum Fußverkehr</strong>
+              </H3>
+
+              <ul
+                role="list"
+                className="mt-10 grid max-w-2xl grid-cols-1 gap-y-2 gap-x-8 lg:max-w-none lg:grid-cols-3"
+              >
+                {pedestrianFaqs.map((column, columnIndex) => (
+                  <li key={columnIndex}>
+                    <ul role="list" className="flex flex-col gap-8">
+                      {column.map((faq) => (
+                        <li key={faq.id}>
+                          <FaqItem question={faq} />
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ul>
+            </section>
           </div>
         </Prose>
       </section>
