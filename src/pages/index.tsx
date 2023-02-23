@@ -1,18 +1,17 @@
 import { HeadFC, PageProps } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Layout, MetaTags } from '~/components/layouts'
 import { Container } from '~/components/layouts/Container'
 import { Hero } from '~/components/layouts/Hero/Hero'
-import { PageHomeParking } from '~/components/PageHome/PageHomeParking'
-import { PageHomeFaq } from '~/components/PageHome/PageHomeFaq'
 import { PageHomeInto } from '~/components/PageHome/PageHomeInto'
 import { PageHomeLanduse } from '~/components/PageHome/PageHomeLanduse'
 import { PageHomeMapMap } from '~/components/PageHome/PageHomeMapMap'
 import { PageHomeMapText } from '~/components/PageHome/PageHomeMapText'
 import { PageHomeNews } from '~/components/PageHome/PageHomeNews'
 import { PageHomeOfferedFeatures } from '~/components/PageHome/PageHomeOfferedFeatures'
+import { PageHomeParking } from '~/components/PageHome/PageHomeParking'
 import { PageHomePartner } from '~/components/PageHome/PageHomePartner'
-import { StaticImage } from 'gatsby-plugin-image'
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -57,11 +56,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <PageHomeLanduse />
       </Container>
 
-      <Container colorClass="bg-yellow-100">
-        <PageHomeFaq />
-      </Container>
-
-      <Container colorClass="bg-yellow-100 pb-12">
+      <Container colorClass="bg-yellow-300 pb-12">
         <PageHomePartner />
       </Container>
     </Layout>
