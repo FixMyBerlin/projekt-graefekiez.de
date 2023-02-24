@@ -7,13 +7,10 @@ export const linkStyles =
 
 // HOVER:
 const hoverStyleForButtonElement = clsx(
-  'enabled:hover:bg-pink-50 enabled:hover:ring-1',
-  'enabled:active:border-pink-500 enabled:active:bg-pink-500 enabled:active:ring-0'
+  'enabled:hover:ring-1',
+  'enabled:active:border-pink-50 enabled:active:bg-pink-50 enabled:active:ring-0'
 )
-const hoverStyleForLinkElement = clsx(
-  'hover:bg-pink-50 hover:ring-1',
-  'active:border-pink-500 active:bg-pink-500 active:ring-0'
-)
+const hoverStyleForLinkElement = clsx('hover:ring-1', 'active:bg-pink-50 active:ring-0')
 
 // BUTTON
 const buttonBase = 'py-2.5 px-7 font-bold'
@@ -22,7 +19,7 @@ export const buttonStyles = clsx(buttonBase, hoverStyleForButtonElement)
 
 // BUTTON PINK
 const pinkButtonBase =
-  'inline-flex items-center justify-center border-[1.5px] border-pink-500 bg-white font-bold no-underline ring-pink-600'
+  'inline-flex items-center justify-center border-[1.5px] border-gray-300 bg-white font-bold no-underline ring-gray-700'
 const pinkButtonStylesForLinkElement = clsx(buttonStylesForLinkElement, pinkButtonBase)
 export const pinkButtonStyles = clsx(buttonStyles, pinkButtonBase)
 

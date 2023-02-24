@@ -13,7 +13,12 @@ export const MapButton: React.FC<Props> = ({ handleClick, active, fly, children 
   return (
     <button
       type="button"
-      className={clsx(pinkButtonStyles, { '!bg-pink-50 ring-1': active }, { 'shadow-xl': fly })}
+      className={clsx(
+        pinkButtonStyles,
+        'bg-gray-200',
+        { '!bg-white !ring-1': active },
+        { 'shadow-xl': fly }
+      )}
       onClick={handleClick}
     >
       {children}
