@@ -9,7 +9,6 @@ export const ConsentAndMap: React.FC<MapViewProps> = ({
   config,
   visibleLayerSearchterms,
   visibleLayerIds,
-  layerFilter,
   markers,
   mapStyle,
   boundsPadding,
@@ -49,7 +48,6 @@ export const ConsentAndMap: React.FC<MapViewProps> = ({
           config={config}
           visibleLayerSearchterms={visibleLayerSearchterms}
           visibleLayerIds={visibleLayerIds}
-          layerFilter={layerFilter}
           markers={markers}
           mapStyle={mapStyle}
           boundsPadding={boundsPadding}

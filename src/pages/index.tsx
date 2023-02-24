@@ -37,11 +37,9 @@ const IndexPage: React.FC<PageProps> = () => {
         </div>
       </Container>
 
-      <Container grid colorClass="bg-yellow-300">
+      <Container colorClass="bg-yellow-300">
         <PageHomeMapText />
-        <div className="col-span-2">
-          <PageHomeMapMap />
-        </div>
+        <PageHomeMapMap />
       </Container>
 
       <Container colorClass="bg-yellow-100 pb-12">

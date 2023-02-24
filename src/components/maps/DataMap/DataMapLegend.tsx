@@ -18,8 +18,13 @@ export const DataMapLegend: React.FC<Props> = ({ legendConfig, legendClassName }
   return (
     <div className="p-4 text-gray-600">
       <h2 className="mb-2">
-        <strong>{legendConfig.title}</strong> (Quelle:{' '}
-        <Link href={legendConfig.sourceLink}>{legendConfig.sourceName}</Link>)
+        <strong>{legendConfig.title}</strong>{' '}
+        {legendConfig.sourceName && (
+          <span>
+            {' '}
+            (Quelle: <Link href={legendConfig.sourceLink}>{legendConfig.sourceName}</Link>)
+          </span>
+        )}
       </h2>
       <ul className={clsx(legendClassName, 'flex flex-wrap gap-y-3 gap-x-5')}>
         {legendConfig.items.map(({ title, color }) => {

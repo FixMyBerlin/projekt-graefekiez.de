@@ -51,7 +51,7 @@ export const MapView: React.FC<MapViewProps> = ({
   layerFilter,
   markers,
   mapStyle,
-  boundsPadding = 10,
+  boundsPadding = 20,
   minZoom,
   maxZoom,
   fullscreenOption = false,
@@ -66,7 +66,9 @@ export const MapView: React.FC<MapViewProps> = ({
     // | BackgroundLayer | CustomLayerInterface | SkyLayer | FillExtrusionLayer | HillshadeLayer | RasterLayer
     CircleLayer | FillLayer | HeatmapLayer | LineLayer | SymbolLayer
   const ourLayers = (allLayers: AnyLayer[]) => {
-    return allLayers.filter((l) => l.id.startsWith('fmc-')) as OurLayerReturnType[]
+    return allLayers.filter((l) => {
+      return l.id.startsWith('wzb-') && l.id !== 'wzb--border copy' // TODO: undo second condition when layer is fixed
+    }) as OurLayerReturnType[]
   }
 
   // When {config} changes, move the map

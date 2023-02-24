@@ -1,63 +1,94 @@
-import React, { useState } from 'react'
-import { pinkButtonStyles } from '../links'
+import React, { useEffect, useState } from 'react'
 import { DataMap } from '../maps/DataMap/DataMap'
 import { MapButton } from '../maps/MapButton'
 
+const wzbLayers = ['wzb-buildings', 'wzb--border', 'wzb--area', 'wzb--spaceuses', 'wzb--noentry']
+
 const mapConfig = {
-  einwohnerdichte: {
-    visibleLayerSearchTerms: ['fmc--BXH-All', 'fmc--BXH-Berlin-Einwohnerdichte'],
+  jelbi: {
+    visibleLayerSearchTerms: ['wzb--jelbi'],
     legendConfig: {
-      title: 'Einwohnerdichte',
-      sourceName: 'Umweltatlas',
-      sourceLink:
-        'https://www.berlin.de/umweltatlas/mensch/umweltgerechtigkeit/2022/auswertungsergebnisse-gesamtstadt-und-bezirke/',
+      title: 'Legende',
+      sourceName: '',
+      sourceLink: '',
       items: [
         {
-          title: 'unter 10.000',
-          color: '#F7C297',
+          title: 'Lieferflächen',
+          color: '#4FACC2',
         },
         {
-          title: '10.000 bis 20.000',
-          color: '#E28436',
+          title: 'Grünflächen',
+          color: '#5EA739',
         },
         {
-          title: '20.000 und mehr',
-          color: '#A93F0A',
+          title: 'Entsiegelung',
+          color: '#2B781C',
         },
       ],
     },
   },
-  mehrfachbelastung: {
-    visibleLayerSearchTerms: ['fmc--BXH-All', 'fmc--BXH-Berlin-Mehrfachbelastung'],
+  logistik: {
+    visibleLayerSearchTerms: ['wzb--logisti'],
     legendConfig: {
-      title: 'Mehrfachbelastung',
-      sourceName: 'Umweltatlas',
-      sourceLink:
-        'https://www.berlin.de/umweltatlas/mensch/umweltgerechtigkeit/2022/auswertungsergebnisse-gesamtstadt-und-bezirke/',
+      title: 'Legende',
+      sourceName: '',
+      sourceLink: '',
       items: [
         {
-          title: 'keine starke Belastung',
-          color: '#E7CBCB',
+          title: 'Lieferflächen',
+          color: '#4FACC2',
         },
         {
-          title: 'einfach',
-          color: '#D19999',
+          title: 'Grünflächen',
+          color: '#5EA739',
         },
         {
-          title: 'zweifach',
-          color: '#CF6E6E',
+          title: 'Entsiegelung',
+          color: '#2B781C',
+        },
+      ],
+    },
+  },
+  fuzo: {
+    visibleLayerSearchTerms: ['wzb--fuzo'],
+    legendConfig: {
+      title: 'Legende',
+      sourceName: '',
+      sourceLink: '',
+      items: [
+        {
+          title: 'Lieferflächen',
+          color: '#4FACC2',
         },
         {
-          title: 'dreifach',
-          color: '#B43131',
+          title: 'Grünflächen',
+          color: '#5EA739',
         },
         {
-          title: 'vierfach',
-          color: '#891515',
+          title: 'Entsiegelung',
+          color: '#2B781C',
+        },
+      ],
+    },
+  },
+  schule: {
+    visibleLayerSearchTerms: ['wzb--school'],
+    legendConfig: {
+      title: 'Legende',
+      sourceName: '',
+      sourceLink: '',
+      items: [
+        {
+          title: 'Lieferflächen',
+          color: '#4FACC2',
         },
         {
-          title: 'fünffach',
-          color: '#480404',
+          title: 'Grünflächen',
+          color: '#5EA739',
+        },
+        {
+          title: 'Entsiegelung',
+          color: '#2B781C',
         },
       ],
     },
@@ -65,47 +96,69 @@ const mapConfig = {
 }
 
 export const PageHomeMapMap: React.FC = () => {
-  const [mapConfigState, setMapConfigState] = useState<keyof typeof mapConfig>('einwohnerdichte')
+  const [mapConfigState, setMapConfigState] = useState(['jelbi', 'logistik', 'schule', 'fuzo'])
+  const [layers, setLayers] = useState(wzbLayers)
+
+  useEffect(() => {
+    const layerStatus = mapConfigState
+    const newLayers = Object.entries(mapConfig)
+      .filter((item) => layerStatus.includes(item[0]))
+      .map((item) => item[1].visibleLayerSearchTerms)
+      .flat()
+    setLayers(wzbLayers.concat(newLayers))
+  }, [])
+
+  const toggleMapLayer = (layerName: string) => {
+    let layerStatus = mapConfigState
+    if (layerStatus.includes(layerName)) {
+      layerStatus = layerStatus.filter((item) => item !== layerName)
+    } else {
+      layerStatus.push(layerName)
+    }
+    setMapConfigState(layerStatus)
+    const newLayers = Object.entries(mapConfig)
+      .filter((item) => layerStatus.includes(item[0]))
+      .map((item) => item[1].visibleLayerSearchTerms)
+      .flat()
+    setLayers(wzbLayers.concat(newLayers))
+  }
+
   return (
-    <section className="">
+    <section className="bg-gray-50 ">
       <DataMap
-        mapBounds="berlin"
-        mapClass="h-[380px]"
-        visibleLayerSearchterms={mapConfig[mapConfigState].visibleLayerSearchTerms}
+        mapBounds="xhain"
+        mapClass="h-[340px] md:h-[590px]"
+        visibleLayerSearchterms={layers}
         buttons={
           <>
             <MapButton
-              active={mapConfigState === 'einwohnerdichte'}
-              handleClick={() => setMapConfigState('einwohnerdichte')}
+              handleClick={() => toggleMapLayer('jelbi')}
+              active={mapConfigState.includes('jelbi')}
             >
-              Einwohnerdichte
+              Jelbi-Stationen
             </MapButton>
             <MapButton
-              active={mapConfigState === 'mehrfachbelastung'}
-              handleClick={() => setMapConfigState('mehrfachbelastung')}
+              handleClick={() => toggleMapLayer('logistik')}
+              active={mapConfigState.includes('logistik')}
             >
-              Mehrfachbelastung
+              Logistikflächen
+            </MapButton>
+            <MapButton
+              handleClick={() => toggleMapLayer('schule')}
+              active={mapConfigState.includes('schule')}
+            >
+              Schulstraße
+            </MapButton>
+            <MapButton
+              handleClick={() => toggleMapLayer('fuzo')}
+              active={mapConfigState.includes('fuzo')}
+            >
+              Fußgänger*innenzone
             </MapButton>
           </>
         }
-        legendConfig={mapConfig[mapConfigState].legendConfig}
+        legendConfig={mapConfig.jelbi.legendConfig}
       />
-
-      <nav className="mt-4 space-x-2 space-y-2 bg-gray-300 p-4">
-        {/* TODO: Anschauen dafür https://tailwindui.com/components/application-ui/forms/radio-groups#component-245cb777f4a9823e97d8b1c2dfb87e0c */}
-        <button type="button" className={pinkButtonStyles}>
-          Parkmöglichkeiten
-        </button>
-        <button type="button" className={pinkButtonStyles}>
-          Jelbi-Stationen
-        </button>
-        <button type="button" className={pinkButtonStyles}>
-          Lieferzonen
-        </button>
-        <button type="button" className={pinkButtonStyles}>
-          Neunutzungen
-        </button>
-      </nav>
     </section>
   )
 }
