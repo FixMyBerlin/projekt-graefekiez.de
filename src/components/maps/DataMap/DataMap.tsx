@@ -13,7 +13,7 @@ export type TLegendConfig = {
 }
 
 type Props = {
-  legendConfig: TLegendConfig
+  legendConfigs: TLegendConfig[]
   visibleLayerSearchterms: MapViewProps['visibleLayerSearchterms']
   mapBounds: 'berlin' | 'xhain'
   mapClass?: string
@@ -55,7 +55,7 @@ export const DataMap: React.FC<Props> = ({
   visibleLayerSearchterms,
   buttons,
   legendClassName,
-  legendConfig,
+  legendConfigs,
   mapBounds,
 }) => {
   return (
@@ -71,7 +71,7 @@ export const DataMap: React.FC<Props> = ({
             {buttons}
           </div>
         )}
-        <DataMapLegend legendConfig={legendConfig} legendClassName={legendClassName} />
+        <DataMapLegend legendConfigs={legendConfigs} legendClassName={legendClassName} />
       </div>
     </>
   )

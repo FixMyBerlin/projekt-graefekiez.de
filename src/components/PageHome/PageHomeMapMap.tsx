@@ -1,8 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { DataMap } from '../maps/DataMap/DataMap'
 import { MapButton } from '../maps/MapButton'
 
-const wzbLayers = ['wzb-buildings', 'wzb--border', 'wzb--area', 'wzb--spaceuses', 'wzb--noentry']
+const wzbStandardLayers = [
+  'wzb-buildings',
+  'wzb--border',
+  'wzb--area',
+  'wzb--spaceuses',
+  'wzb--noentry',
+]
 
 const mapConfig = {
   jelbi: {
@@ -13,16 +19,8 @@ const mapConfig = {
       sourceLink: '',
       items: [
         {
-          title: 'Lieferflächen',
+          title: 'Jelbi',
           color: '#4FACC2',
-        },
-        {
-          title: 'Grünflächen',
-          color: '#5EA739',
-        },
-        {
-          title: 'Entsiegelung',
-          color: '#2B781C',
         },
       ],
     },
@@ -35,38 +33,8 @@ const mapConfig = {
       sourceLink: '',
       items: [
         {
-          title: 'Lieferflächen',
-          color: '#4FACC2',
-        },
-        {
-          title: 'Grünflächen',
+          title: 'Logistik',
           color: '#5EA739',
-        },
-        {
-          title: 'Entsiegelung',
-          color: '#2B781C',
-        },
-      ],
-    },
-  },
-  fuzo: {
-    visibleLayerSearchTerms: ['wzb--fuzo'],
-    legendConfig: {
-      title: 'Legende',
-      sourceName: '',
-      sourceLink: '',
-      items: [
-        {
-          title: 'Lieferflächen',
-          color: '#4FACC2',
-        },
-        {
-          title: 'Grünflächen',
-          color: '#5EA739',
-        },
-        {
-          title: 'Entsiegelung',
-          color: '#2B781C',
         },
       ],
     },
@@ -79,15 +47,25 @@ const mapConfig = {
       sourceLink: '',
       items: [
         {
-          title: 'Lieferflächen',
+          title: 'Schulstraße',
           color: '#4FACC2',
         },
         {
-          title: 'Grünflächen',
-          color: '#5EA739',
+          title: 'Schule',
+          color: '#4FACC2',
         },
+      ],
+    },
+  },
+  fuzo: {
+    visibleLayerSearchTerms: ['wzb--fuzo'],
+    legendConfig: {
+      title: 'Legende',
+      sourceName: '',
+      sourceLink: '',
+      items: [
         {
-          title: 'Entsiegelung',
+          title: 'Fußgänger*innenzone',
           color: '#2B781C',
         },
       ],
@@ -96,31 +74,38 @@ const mapConfig = {
 }
 
 export const PageHomeMapMap: React.FC = () => {
-  const [mapConfigState, setMapConfigState] = useState(['jelbi', 'logistik', 'schule', 'fuzo'])
-  const [layers, setLayers] = useState(wzbLayers)
+  // array of all visibleLayerSearchTerms in mapConfig
+  const additionalLayers = Object.entries(mapConfig)
+    .map(([_key, value]) => value.visibleLayerSearchTerms)
+    .flat()
+  // array of all legendConfigs in mapConfig
+  const legendConfigs = Object.entries(mapConfig).map(([_key, value]) => value.legendConfig)
 
-  useEffect(() => {
-    const layerStatus = mapConfigState
-    const newLayers = Object.entries(mapConfig)
-      .filter((item) => layerStatus.includes(item[0]))
-      .map((item) => item[1].visibleLayerSearchTerms)
-      .flat()
-    setLayers(wzbLayers.concat(newLayers))
-  }, [])
+  const [mapConfigState, setMapConfigState] = useState(['jelbi', 'logistik', 'schule', 'fuzo'])
+  const [layers, setLayers] = useState(wzbStandardLayers.concat(additionalLayers))
+  const [legends, setLegends] = useState(legendConfigs)
 
   const toggleMapLayer = (layerName: string) => {
-    let layerStatus = mapConfigState
-    if (layerStatus.includes(layerName)) {
-      layerStatus = layerStatus.filter((item) => item !== layerName)
+    // update mapConfigState - toggle terms
+    let layerStatus: string[] = []
+    if (mapConfigState.includes(layerName)) {
+      layerStatus = mapConfigState.filter((item) => item !== layerName)
     } else {
+      layerStatus = [...mapConfigState]
       layerStatus.push(layerName)
     }
     setMapConfigState(layerStatus)
+    // update visibleLayerSearchTerms layer state
     const newLayers = Object.entries(mapConfig)
-      .filter((item) => layerStatus.includes(item[0]))
-      .map((item) => item[1].visibleLayerSearchTerms)
+      .filter(([key, _value]) => layerStatus.includes(key))
+      .map(([_key, value]) => value.visibleLayerSearchTerms)
       .flat()
-    setLayers(wzbLayers.concat(newLayers))
+    setLayers(wzbStandardLayers.concat(newLayers))
+    // update legendConfigs in legends state
+    const newLegendConfigs = Object.entries(mapConfig)
+      .filter(([key, _value]) => layerStatus.includes(key))
+      .map(([_key, value]) => value.legendConfig)
+    setLegends(newLegendConfigs)
   }
 
   return (
@@ -157,7 +142,7 @@ export const PageHomeMapMap: React.FC = () => {
             </MapButton>
           </>
         }
-        legendConfig={mapConfig.jelbi.legendConfig}
+        legendConfigs={legends}
       />
     </section>
   )
