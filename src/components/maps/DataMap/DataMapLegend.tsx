@@ -26,12 +26,6 @@ export const DataMapLegend: React.FC<Props> = ({ legendConfigs, legendClassName 
         )} */}
       </h2>
       <div className="flex flex-wrap gap-3">
-        <ul className={clsx(legendClassName, 'flex flex-wrap gap-y-3 gap-x-5')}>
-          <li className="flex items-center gap-2">
-            <div className="h-5 w-8" style={{ backgroundColor: '#fff' }} />
-            Grenze
-          </li>
-        </ul>
         {legendConfigs.map((legendConfig) => (
           <ul className={clsx(legendClassName, 'flex flex-wrap gap-y-3 gap-x-5')}>
             {legendConfig.items.map(({ title, color }) => {

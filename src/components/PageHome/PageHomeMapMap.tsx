@@ -2,12 +2,28 @@ import React, { useState } from 'react'
 import { DataMap } from '../maps/DataMap/DataMap'
 import { MapButton } from '../maps/MapButton'
 
+// layer names of layers which are aways active
 const wzbStandardLayers = [
   'wzb-buildings',
   'wzb--border',
   'wzb--area',
   'wzb--spaceuses',
   'wzb--noentry',
+]
+
+// static part of legend (unnecessary title info etc. to keep component structures for now)
+const wzbStandardLegend = [
+  {
+    title: 'Legende',
+    sourceName: '',
+    sourceLink: '',
+    items: [
+      {
+        title: 'Grenze',
+        color: '#fff',
+      },
+    ],
+  },
 ]
 
 const mapConfig = {
@@ -83,7 +99,7 @@ export const PageHomeMapMap: React.FC = () => {
 
   const [mapConfigState, setMapConfigState] = useState(['jelbi', 'logistik', 'schule', 'fuzo'])
   const [layers, setLayers] = useState(wzbStandardLayers.concat(additionalLayers))
-  const [legends, setLegends] = useState(legendConfigs)
+  const [legends, setLegends] = useState(legendConfigs.concat(wzbStandardLegend))
 
   const toggleMapLayer = (layerName: string) => {
     // update mapConfigState - toggle terms
@@ -105,7 +121,7 @@ export const PageHomeMapMap: React.FC = () => {
     const newLegendConfigs = Object.entries(mapConfig)
       .filter(([key, _value]) => layerStatus.includes(key))
       .map(([_key, value]) => value.legendConfig)
-    setLegends(newLegendConfigs)
+    setLegends(newLegendConfigs.concat(wzbStandardLegend))
   }
 
   return (
