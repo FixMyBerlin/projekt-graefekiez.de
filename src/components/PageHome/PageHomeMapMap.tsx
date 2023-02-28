@@ -1,91 +1,83 @@
 import React, { useState } from 'react'
-import { DataMap } from '../maps/DataMap/DataMap'
+import { DataMap, TLegendConfig } from '../maps/DataMap/DataMap'
 import { MapButton } from '../maps/MapButton'
+import GesamtgebietIcon from './assets/MapLegend/gesamtgebiet-icon.inline.svg'
+import JelbiSIcon from './assets/MapLegend/jelbi-s-icon.inline.svg'
+import JelbiPIcon from './assets/MapLegend/jelbi-p-icon.inline.svg'
+import SchuleIcon from './assets/MapLegend/schule-icon.inline.svg'
+import NoEntryIcon from './assets/MapLegend/noentry-icon.inline.svg'
 
 // layer names of layers which are aways active
 const wzbStandardLayers = [
-  'wzb-buildings',
-  'wzb--border',
-  'wzb--area',
-  'wzb--spaceuses',
+  'wzb--Kerngebiet',
+  'wzb--kerngebiet-outline',
+  'wzb--schools',
   'wzb--noentry',
+  'wzb--durchfahrtssperre',
+  'wzb--border',
+  'wzb--border-bg',
+  'wzb-buildings',
+  'wzb--bundeslander-berlinbezirke',
 ]
 
-// static part of legend (unnecessary title info etc. to keep component structures for now)
-const wzbStandardLegend = [
-  {
-    title: 'Legende',
-    sourceName: '',
-    sourceLink: '',
-    items: [
-      {
-        title: 'Grenze',
-        color: '#fff',
-      },
-    ],
-  },
-]
+const wzbStandardLegend: TLegendConfig = {
+  title: 'Legende',
+  itemsFirstRow: [
+    {
+      title: 'Kerngebiet',
+      color: '#E7A297',
+    },
+    {
+      title: 'Gesamtgebiet',
+      icon: <GesamtgebietIcon />,
+    },
+  ],
+  itemsSecondRow: [
+    {
+      title: 'Aktionsflächen',
+      color: '#ED07D3',
+    },
+    {
+      title: 'Entsiegelte Flächen',
+      color: '#82DB14',
+    },
+    {
+      title: 'Lade- und Lieferflächen',
+      color: '#14BCD2',
+    },
+  ],
+  itemsThirdRow: [
+    {
+      title: 'Jelbi-Station (inkl. Carsharing)',
+      icon: <JelbiSIcon />,
+    },
+    {
+      title: 'Jelbi-Punkt (Nur Mikromobilität)',
+      icon: <JelbiPIcon />,
+    },
+    {
+      title: 'Schule',
+      icon: <SchuleIcon />,
+    },
+    {
+      title: 'Durchfahrtssperre',
+      icon: <NoEntryIcon />,
+    },
+  ],
+}
 
 const mapConfig = {
   jelbi: {
     visibleLayerSearchTerms: ['wzb--jelbi'],
-    legendConfig: {
-      title: 'Legende',
-      sourceName: '',
-      sourceLink: '',
-      items: [
-        {
-          title: 'Jelbi',
-          color: '#4FACC2',
-        },
-      ],
-    },
   },
   logistik: {
-    visibleLayerSearchTerms: ['wzb--logisti'],
-    legendConfig: {
-      title: 'Legende',
-      sourceName: '',
-      sourceLink: '',
-      items: [
-        {
-          title: 'Logistik',
-          color: '#5EA739',
-        },
-      ],
-    },
+    visibleLayerSearchTerms: ['wzb--logistic'],
   },
-  schule: {
-    visibleLayerSearchTerms: ['wzb--school'],
-    legendConfig: {
-      title: 'Legende',
-      sourceName: '',
-      sourceLink: '',
-      items: [
-        {
-          title: 'Schulstraße',
-          color: '#4FACC2',
-        },
-        {
-          title: 'Schule',
-          color: '#4FACC2',
-        },
-      ],
-    },
+  aktion: {
+    visibleLayerSearchTerms: ['wzb--aktion'],
   },
-  fuzo: {
-    visibleLayerSearchTerms: ['wzb--fuzo'],
-    legendConfig: {
-      title: 'Legende',
-      sourceName: '',
-      sourceLink: '',
-      items: [
-        {
-          title: 'Fußgänger*innenzone',
-          color: '#2B781C',
-        },
-      ],
-    },
+  entsiegelt: {
+    visibleLayerSearchTerms: ['wzb--noseal'],
   },
 }
 
@@ -94,12 +86,14 @@ export const PageHomeMapMap: React.FC = () => {
   const additionalLayers = Object.entries(mapConfig)
     .map(([_key, value]) => value.visibleLayerSearchTerms)
     .flat()
-  // array of all legendConfigs in mapConfig
-  const legendConfigs = Object.entries(mapConfig).map(([_key, value]) => value.legendConfig)
 
-  const [mapConfigState, setMapConfigState] = useState(['jelbi', 'logistik', 'schule', 'fuzo'])
+  const [mapConfigState, setMapConfigState] = useState([
+    'jelbi',
+    'logistik',
+    'aktion',
+    'entsiegelt',
+  ])
   const [layers, setLayers] = useState(wzbStandardLayers.concat(additionalLayers))
-  const [legends, setLegends] = useState(legendConfigs.concat(wzbStandardLegend))
 
   const toggleMapLayer = (layerName: string) => {
     // update mapConfigState - toggle terms
@@ -117,11 +111,6 @@ export const PageHomeMapMap: React.FC = () => {
       .map(([_key, value]) => value.visibleLayerSearchTerms)
       .flat()
     setLayers(wzbStandardLayers.concat(newLayers))
-    // update legendConfigs in legends state
-    const newLegendConfigs = Object.entries(mapConfig)
-      .filter(([key, _value]) => layerStatus.includes(key))
-      .map(([_key, value]) => value.legendConfig)
-    setLegends(newLegendConfigs.concat(wzbStandardLegend))
   }
 
   return (
@@ -142,23 +131,23 @@ export const PageHomeMapMap: React.FC = () => {
               handleClick={() => toggleMapLayer('logistik')}
               active={mapConfigState.includes('logistik')}
             >
-              Logistikflächen
+              Lieferflächen
             </MapButton>
             <MapButton
-              handleClick={() => toggleMapLayer('schule')}
-              active={mapConfigState.includes('schule')}
+              handleClick={() => toggleMapLayer('aktion')}
+              active={mapConfigState.includes('aktion')}
             >
-              Schulstraße
+              Aktionsflächen
             </MapButton>
             <MapButton
-              handleClick={() => toggleMapLayer('fuzo')}
-              active={mapConfigState.includes('fuzo')}
+              handleClick={() => toggleMapLayer('entsiegelt')}
+              active={mapConfigState.includes('entsiegelt')}
             >
-              Fußgänger*innenzone
+              Entsiegelte Flächen
             </MapButton>
           </>
         }
-        legendConfigs={legends}
+        legendConfig={wzbStandardLegend}
       />
     </section>
   )

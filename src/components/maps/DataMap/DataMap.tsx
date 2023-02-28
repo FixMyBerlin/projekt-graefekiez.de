@@ -1,19 +1,19 @@
 import clsx from 'clsx'
 import type { LngLatBoundsLike } from 'mapbox-gl'
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { ConsentAndMap } from '../Map/ConsentAndMap'
 import { MapViewProps } from '../Map/MapView'
 import { DataMapLegend } from './DataMapLegend'
 
 export type TLegendConfig = {
   title: string
-  sourceName: string
-  sourceLink: string
-  items: { title: string; color: string }[]
+  itemsFirstRow: { title: string; color?: string; icon?: ReactNode }[]
+  itemsSecondRow: { title: string; color?: string; icon?: ReactNode }[]
+  itemsThirdRow: { title: string; color?: string; icon?: ReactNode }[]
 }
 
 type Props = {
-  legendConfigs: TLegendConfig[]
+  legendConfig: TLegendConfig
   visibleLayerSearchterms: MapViewProps['visibleLayerSearchterms']
   mapBounds: 'berlin' | 'xhain'
   mapClass?: string
@@ -55,7 +55,7 @@ export const DataMap: React.FC<Props> = ({
   visibleLayerSearchterms,
   buttons,
   legendClassName,
-  legendConfigs,
+  legendConfig,
   mapBounds,
 }) => {
   return (
@@ -65,13 +65,13 @@ export const DataMap: React.FC<Props> = ({
         mapBounds={mapBounds}
         mapClass={mapClass}
       />
-      <div className="w-full">
+      <div>
         {buttons && (
-          <div className="mb-2 flex flex-col justify-start gap-2 px-2 md:flex-row md:items-center">
+          <div className="mb-2 flex flex-col justify-start gap-2 px-2 sm:grid sm:grid-cols-2 md:flex md:flex-row">
             {buttons}
           </div>
         )}
-        <DataMapLegend legendConfigs={legendConfigs} legendClassName={legendClassName} />
+        <DataMapLegend legendConfig={legendConfig} legendClassName={legendClassName} />
       </div>
     </>
   )

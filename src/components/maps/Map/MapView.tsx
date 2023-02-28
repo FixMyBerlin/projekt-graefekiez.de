@@ -67,7 +67,7 @@ export const MapView: React.FC<MapViewProps> = ({
     CircleLayer | FillLayer | HeatmapLayer | LineLayer | SymbolLayer
   const ourLayers = (allLayers: AnyLayer[]) => {
     return allLayers.filter((l) => {
-      return l.id.startsWith('wzb-') && l.id !== 'wzb--border copy' // TODO: undo second condition when layer is fixed
+      return l.id.startsWith('wzb-')
     }) as OurLayerReturnType[]
   }
 
