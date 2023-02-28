@@ -1,4 +1,4 @@
-import { StaticImage } from 'gatsby-plugin-image'
+import TwitterIcon from '../../../images/twitterIcon.inline.svg'
 import React from 'react'
 import { Link } from '~/components/links'
 
@@ -52,13 +52,9 @@ export const Footer: React.FC = () => {
         Abonnieren Sie <Link href="#todo">unseren Telegramkanal Projekt-Graefekiez</Link> um
         aktuelle Informationen zu Veranstaltungen und Ergebnissen zu erhalten.
       </div>
-      <div className="mt-8 border-t border-gray-600">
+      <div className="mt-8 border-t border-gray-600 pt-8">
         <Link href="https://twitter.com/BA_Xhain">
-          <StaticImage
-            className="mt-8 h-5 w-5 opacity-50"
-            src="../../../images/twitterIcon.svg"
-            alt="Twitter @BA_Xhain"
-          />
+          <TwitterIcon width={20} />
         </Link>
         <p className="mt-8 text-gray-400">© 2023 Bezirksamt Friedrichshain-Kreuzberg</p>
       </div>
