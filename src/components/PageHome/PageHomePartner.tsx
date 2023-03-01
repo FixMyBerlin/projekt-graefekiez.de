@@ -50,7 +50,7 @@ const parnters = [
 export const PageHomePartner: React.FC = () => {
   return (
     <section>
-      <H3 className="mb-8 text-3xl sm:text-4xl">Projektpartner</H3>
+      <H3>Projektpartner</H3>
 
       <ul className="mt-12 grid grid-cols-3 gap-3 md:grid-cols-6 lg:gap-6">
         {parnters.map((partner, index) => {
