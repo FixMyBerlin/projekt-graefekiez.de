@@ -45,12 +45,12 @@ const IndexPage: React.FC<PageProps> = () => (
       <div className="sm:col-span-3">
         <StaticImage
           className="sm:hidden"
-          src="./../components/PageHome/assets/PageHomeSteps/schritt-1-mobile.jpg"
+          src="./../components/PageHome/assets/PageHomeSteps/schritt1-mobile.jpg"
           alt="Schematische Darstellung des Kerngebiets („L“)"
         />
         <StaticImage
           className="hidden max-w-5xl sm:block"
-          src="./../components/PageHome/assets/PageHomeSteps/schritt-1.jpg"
+          src="./../components/PageHome/assets/PageHomeSteps/schritt1.jpg"
           alt="Schematische Darstellung des Kerngebiets („L“)"
         />
       </div>
@@ -60,12 +60,12 @@ const IndexPage: React.FC<PageProps> = () => (
       <div className="sm:col-span-3">
         <StaticImage
           className="sm:hidden"
-          src="./../components/PageHome/assets/PageHomeSteps/schritt-2-mobile.jpg"
+          src="./../components/PageHome/assets/PageHomeSteps/schritt2-mobile.jpg"
           alt="Zweischrittigkeit“ bzw. Prozessablauf"
         />
         <StaticImage
           className="hidden max-w-5xl sm:block"
-          src="./../components/PageHome/assets/PageHomeSteps/schritt-2.jpg"
+          src="./../components/PageHome/assets/PageHomeSteps/schritt2.jpg"
           alt="Zweischrittigkeit“ bzw. Prozessablauf"
         />
       </div>
