@@ -18,7 +18,7 @@ const IndexPage: React.FC<PageProps> = () => {
     <Layout>
       <Hero
         title="Projekt Graefekiez"
-        subtitle="Besser Leben ohne Auto"
+        subtitle="Schrittweise mehr Platz"
         titleColor="dark"
         image={
           <StaticImage

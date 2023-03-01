@@ -7,6 +7,20 @@ import { H1, Prose } from '../typography'
 export const PageHomeInto: React.FC = () => {
   return (
     <section>
+      <Quote
+        quote="Öffentlicher Raum ist knapp – und sehr viel davon ist mit parkenden Autos belegt. Mit dem Projekt Graefekiez erproben wir gemeinsam mit der Nachbarschaft, wie Straßen der Zukunft aussehen können. Wir erhöhen die Verkehrssicherheit, verbessern die Situation für Gewerbe und Lieferdienste und schaffen Zugang zu geteilten Mobilitätsangeboten. So geht öffentlicher Raum für alle und mit allen."
+        author="Annika Gerold"
+        authorSubline="Bezirksstadträtin von Friedrichshain-Kreuzberg"
+        image={
+          <StaticImage
+            src="./assets/PageHomeIntro/annika-gerold-bildnachweis-kilian-vitt.jpg"
+            height={320}
+            alt=""
+            className="h-12 w-12 lg:h-52 lg:w-52"
+          />
+        }
+      />
+
       <H1>Autofrei im Kiez Mobil - Ein Verkehrsversuch</H1>
       <Prose>
         <p>
@@ -19,20 +33,6 @@ export const PageHomeInto: React.FC = () => {
           gubergren, no sea takimata sanctus
         </p>
       </Prose>
-
-      <Quote
-        quote="Gutes Leben ohne eigenes Auto, geht das? Ich glaube ja. In 6 Monaten wollen wir es gemeinsam mit Ihnen herausfinden."
-        author="Annika Gerold"
-        authorSubline="Bezirksstadträtin von Friedrichshain-Kreuzberg"
-        image={
-          <StaticImage
-            src="./assets/PageHomeIntro/annika-gerold-bildnachweis-kilian-vitt.jpg"
-            height={320}
-            alt=""
-            className="h-12 w-12 lg:h-44 lg:w-44 xl:h-52 xl:w-52"
-          />
-        }
-      />
 
       <div className="grid grid-cols-2 gap-4">
         <div>
