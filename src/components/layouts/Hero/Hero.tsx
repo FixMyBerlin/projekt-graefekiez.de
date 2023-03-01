@@ -75,7 +75,7 @@ export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', im
             </h1>
             <p
               className={clsx(
-                'mt-10 text-xl leading-8 sm:text-3xl',
+                'mt-10 flex justify-center text-xl leading-8 sm:block sm:text-3xl',
                 titleColor === 'light' ? 'text-gray-300' : 'text-black'
               )}
             >
