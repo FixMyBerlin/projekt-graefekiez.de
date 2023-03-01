@@ -1,6 +1,6 @@
-import TwitterIcon from '../../../images/twitterIcon.inline.svg'
 import React from 'react'
 import { Link } from '~/components/links'
+import TwitterIcon from '../../../images/twitterIcon.inline.svg'
 
 const aboutItems = [
   {
