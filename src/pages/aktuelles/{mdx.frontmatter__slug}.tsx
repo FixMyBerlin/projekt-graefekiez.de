@@ -20,7 +20,7 @@ const NewsPostPage: React.FC<PageProps<Queries.NewsPostQuery>> = ({ data, childr
   return (
     <Layout>
       <Hero
-        title={`Aktuelles: ${data.mdx.frontmatter.title}`}
+        title="Aktuelles"
         subtitle="Neuigkeiten und Termine"
         image={
           <StaticImage
