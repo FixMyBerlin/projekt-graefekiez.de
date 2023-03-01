@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from '~/components/links'
+import { Link, linkStyles } from '~/components/links'
 import TwitterIcon from '../../../images/twitterIcon.inline.svg'
 
 const aboutItems = [
@@ -11,10 +11,6 @@ const aboutItems = [
     title: 'Datenschutz',
     href: '/datenschutz',
   },
-  // {
-  //   title: 'Presse',
-  //   href: '',
-  // },
 ]
 const informationItems = [
   {
@@ -35,6 +31,14 @@ export const Footer: React.FC = () => {
                 <Link href={item.href}>{item.title}</Link>
               </li>
             ))}
+            <a
+              target="_blank"
+              className={linkStyles}
+              href="https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/"
+              rel="noreferrer"
+            >
+              Presse
+            </a>
           </ul>
         </div>
         <div>
@@ -47,10 +51,6 @@ export const Footer: React.FC = () => {
             ))}
           </ul>
         </div>
-      </div>
-      <div className="index mt-20 uppercase">
-        Abonnieren Sie <Link href="#todo">unseren Telegramkanal Projekt-Graefekiez</Link> um
-        aktuelle Informationen zu Veranstaltungen und Ergebnissen zu erhalten.
       </div>
       <div className="mt-8 border-t border-gray-600 pt-8">
         <Link href="https://twitter.com/BA_Xhain">
