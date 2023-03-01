@@ -9,7 +9,6 @@ import { PageHomeLanduse } from '~/components/PageHome/PageHomeLanduse'
 import { PageHomeMapMap } from '~/components/PageHome/PageHomeMapMap'
 import { PageHomeMapText } from '~/components/PageHome/PageHomeMapText'
 import { PageHomeNews } from '~/components/PageHome/PageHomeNews'
-import { PageHomeOfferedFeatures } from '~/components/PageHome/PageHomeOfferedFeatures'
 import { PageHomeParking } from '~/components/PageHome/PageHomeParking'
 import { PageHomePartner } from '~/components/PageHome/PageHomePartner'
 import { PageHomeStepsOne } from '~/components/PageHome/PageHomeStepsOne'
@@ -82,15 +81,11 @@ const IndexPage: React.FC<PageProps> = () => (
       <PageHomeParking />
     </Container>
 
-    <Container colorClass="bg-yellow-300">
-      <PageHomeOfferedFeatures />
-    </Container>
-
-    <Container colorClass="bg-yellow-100">
+    <Container>
       <PageHomeLanduse />
     </Container>
 
-    <Container colorClass="bg-yellow-300 pb-12">
+    <Container colorClass="pb-12">
       <PageHomePartner />
     </Container>
   </Layout>
