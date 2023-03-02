@@ -114,7 +114,7 @@ export const PageHomeMapMap: React.FC = () => {
   }
 
   return (
-    <section className="bg-gray-50 ">
+    <section className="bg-gray-100 ">
       <DataMap
         mapBounds="xhain"
         mapClass="h-[340px] md:h-[590px]"

@@ -11,7 +11,7 @@ export const DataMapLegend: React.FC<Props> = ({ legendConfig, legendClassName }
   return (
     <div className="p-4 text-gray-600">
       <h2 className="mb-2 font-bold">Legende</h2>
-      <div className="flex flex-col flex-wrap gap-3">
+      <div className="flex flex-col flex-wrap gap-6">
         <ul className={clsx(legendClassName, 'flex flex-wrap gap-y-3 gap-x-5')}>
           {legendConfig.itemsFirstRow.map((item) => {
             return (

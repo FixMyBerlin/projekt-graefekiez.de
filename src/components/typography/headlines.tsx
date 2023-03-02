@@ -13,7 +13,11 @@ export const H1: React.FC<Props> = ({ className, children, line, noStyle }) => {
   return (
     <>
       {line && <PinkLine />}
-      <h2 className={clsx(className, { 'mt-10 mb-8 text-3xl font-normal sm:text-4xl': !noStyle })}>
+      <h2
+        className={clsx(className, {
+          'mt-11 mb-5 text-3xl font-normal leading-10 sm:text-4xl': !noStyle,
+        })}
+      >
         {children}
       </h2>
     </>

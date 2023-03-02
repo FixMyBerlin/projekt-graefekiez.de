@@ -18,7 +18,7 @@ type Props = {
 export const DesktopNavigation: React.FC<Props> = ({ visibilityClassName }) => {
   return (
     <div className={visibilityClassName}>
-      <nav className="pointer-events-auto flex items-center bg-white/90 px-6 py-2 text-sm font-normal text-gray-800 shadow-xl ring-1 ring-gray-400/5">
+      <nav className="pointer-events-auto flex items-center bg-white px-6 py-2 text-sm font-normal text-gray-800 shadow-xl ring-1 ring-gray-400/5">
         <StaticImage
           src="../../../images/logos/logo-bezirksamt.png"
           alt="Bezirksamt Friedrichshain-Kreuzberg"
@@ -41,7 +41,7 @@ export const DesktopNavigation: React.FC<Props> = ({ visibilityClassName }) => {
 export const MobileNavigation: React.FC<Props> = ({ visibilityClassName }) => {
   return (
     <Popover className={visibilityClassName}>
-      <Popover.Button className="group flex items-center bg-white/90 px-4 py-2 text-sm font-normal text-gray-800 shadow-xl ring-1 ring-gray-900/5">
+      <Popover.Button className="group flex items-center bg-white px-4 py-2 text-sm font-normal text-gray-800 shadow-xl ring-1 ring-gray-900/5">
         Menu
         <ChevronDownIcon className="ml-3 h-auto w-2 stroke-gray-500 group-hover:stroke-gray-700 dark:group-hover:stroke-gray-400" />
       </Popover.Button>
