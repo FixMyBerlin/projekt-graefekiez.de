@@ -23,7 +23,7 @@ export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', im
       )}
 
       {/* Gradient Top */}
-      <div className="absolute inset-x-0 top-0 -z-10 h-64 overflow-hidden bg-gradient-to-b from-white/100 to-white/0" />
+      <div className="absolute inset-x-0 top-0 -z-10 h-full overflow-hidden bg-gradient-to-t from-white/70 to-white/0" />
 
       {/* Gradient Dots: */}
       {/* <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
@@ -68,7 +68,7 @@ export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', im
             <h1
               className={clsx(
                 'text-6xl font-bold tracking-tight sm:text-7xl',
-                titleColor === 'light' ? 'text-white' : 'text-black'
+                titleColor === 'light' ? 'text-white' : 'text-gray-900'
               )}
             >
               {title}
