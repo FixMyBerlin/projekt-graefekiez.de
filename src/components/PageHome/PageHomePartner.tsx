@@ -52,7 +52,7 @@ export const PageHomePartner: React.FC = () => {
     <section>
       <H3>Projektpartner</H3>
 
-      <ul className="mt-12 grid grid-cols-3 gap-3 md:grid-cols-6 lg:gap-6">
+      <ul className="mt-12 grid grid-cols-3 gap-12 md:grid-cols-6 lg:gap-14">
         {parnters.map((partner, index) => {
           return (
             // eslint-disable-next-line react/no-array-index-key
