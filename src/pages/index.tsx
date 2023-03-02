@@ -43,31 +43,37 @@ const IndexPage: React.FC<PageProps> = () => (
         <PageHomeStepsOne />
       </div>
       <div className="sm:col-span-3">
-        <StaticImage
-          className="sm:hidden"
-          src="./../components/PageHome/assets/PageHomeSteps/schritt1-mobile.jpg"
-          alt="Schematische Darstellung des Kerngebiets („L“)"
-        />
-        <StaticImage
-          className="hidden max-w-5xl sm:block"
-          src="./../components/PageHome/assets/PageHomeSteps/schritt1.jpg"
-          alt="Schematische Darstellung des Kerngebiets („L“)"
-        />
+        <div className="sm:hidden">
+          <StaticImage
+            src="./../components/PageHome/assets/PageHomeSteps/schritt1-mobile.jpg"
+            alt="Schematische Darstellung des Kerngebiets („L“)"
+          />
+        </div>
+        <div className="hidden max-w-5xl sm:block">
+          <StaticImage
+            src="./../components/PageHome/assets/PageHomeSteps/schritt1.jpg"
+            alt="Schematische Darstellung des Kerngebiets („L“)"
+          />
+        </div>
       </div>
       <div className="sm:col-span-2">
         <PageHomeStepsTwo />
       </div>
       <div className="sm:col-span-3">
-        <StaticImage
-          className="sm:hidden"
-          src="./../components/PageHome/assets/PageHomeSteps/schritt2-mobile.jpg"
-          alt="Zweischrittigkeit“ bzw. Prozessablauf"
-        />
-        <StaticImage
-          className="hidden max-w-5xl sm:block"
-          src="./../components/PageHome/assets/PageHomeSteps/schritt2.jpg"
-          alt="Zweischrittigkeit“ bzw. Prozessablauf"
-        />
+        <div className="sm:hidden">
+          <StaticImage
+            className="sm:hidden"
+            src="./../components/PageHome/assets/PageHomeSteps/schritt2-mobile.jpg"
+            alt="Zweischrittigkeit“ bzw. Prozessablauf"
+          />
+        </div>
+        <div className="hidden max-w-5xl sm:block">
+          <StaticImage
+            className="hidden max-w-5xl sm:block"
+            src="./../components/PageHome/assets/PageHomeSteps/schritt2.jpg"
+            alt="Zweischrittigkeit“ bzw. Prozessablauf"
+          />
+        </div>
       </div>
       {/* TODO Grafik kommt noch */}
     </Container>
