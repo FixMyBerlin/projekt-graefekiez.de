@@ -29,11 +29,11 @@ const IndexPage: React.FC<PageProps> = () => (
       }
     />
     <Container grid>
+      <div className="sm:mx-auto md:order-last md:mx-0 md:pl-10">
+        <PageHomeNews />
+      </div>
       <div className="sm:col-span-2">
         <PageHomeInto />
-      </div>
-      <div className="sm:mx-auto md:mx-0 md:pl-10">
-        <PageHomeNews />
       </div>
     </Container>
 
