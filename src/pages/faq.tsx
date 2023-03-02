@@ -17,6 +17,7 @@ export type TQuestion = {
 export type TFaqs = {
   carFaqs: TQuestion[][]
   pedestrianFaqs: TQuestion[][]
+  backgroundFaqs: TQuestion[][]
 }
 
 export const faqs: TFaqs = {
@@ -97,14 +98,14 @@ export const faqs: TFaqs = {
         answer:
           'Das Projekt läuft in zwei Schritten. Ab Juni werden im „Kerngebiet“ in der Böckh- und Graefestraße Parkplätze für 12 Monate umgenutzt. Durch bessere Querungsmöglichkeiten und Einsehbarkeit werden die Schulwege sicherer. Die Parkplätze werden in enger Beteiligung mit Anwohner*innen neugestaltet und Nutzungsmöglichkeiten entwickelt. In den genannten Straßen werden Lade- und Lieferflächen zur Anlieferung, Ver- und Entsorgung sowie Plätze für Gewerbebetriebe und Behindertenstellplätze zur Verfügung gestellt. Zusätzlich werden Radabstellanlagen und insgesamt 13 Car- bzw. Bikesharing- Stationen der BVG (Jelbi) im gesamten Graefekiez auf früheren Stellplätzen geschaffen. Eine Durchfahrtssperre in der Schönleinstraße zwischen Lachmann- und Dieffenbachstr. wird eingerichtet, um das Abkürzen von Lkw durch das Viertel zu verhindern. Bereits parallel zum ersten Schritt beginnt die Vorbereitung für den zweiten Schritt. Für die zweite Stufe wird ein Freiflächenkonzept erstellt. Das ist auf Grundlage einer umfassenden Bürger*innen-Beteiligung die Voraussetzung für eine Ausweitung der tatsächlichen Verkehrsberuhigung auf den gesamten Graefekiez.',
       },
-    ],
-    [
       {
         id: 4,
         question: 'Wer führt das Projekt durch?',
         answer:
           'Das Projekt wird vom Bezirksamt Friedrichshain-Kreuzberg verantwortet, zuständig ist das Straßen- und Grünflächenamt. Es kümmert sich um alle baulichen und verkehrstechnischen Maßnahmen.',
       },
+    ],
+    [
       {
         id: 5,
         question: 'Wer macht die wissenschaftliche Begleitung und die Beteiligung vor Ort?',
@@ -164,16 +165,80 @@ export const faqs: TFaqs = {
       },
     ],
   ],
+  backgroundFaqs: [
+    [
+      {
+        id: 1,
+        question: 'Wie wurde entschieden, dass das Projekt Graefekiez stattfindet? ',
+        answer:
+          'Es handelt sich um eine Umsetzung eines Beschlusses der Bezirksverordnetenversammlung vom 29.06.2022 (Drucksache DS/0154/VI). Darin wird das Bezirksamt aufgefordert, „im Graefekiez einen Feldversuch zur Neugestaltung des öffentlichen Raums durchzuführen“.',
+      },
+      {
+        id: 2,
+        question:
+          'Warum gibt es ein zweistufiges Projekt und nicht sofort eine finale Umgestaltung?',
+        answer:
+          'Nein, es werden weiterhin alle Wohnungen und Betriebe mit dem Auto erreichbar sein.',
+      },
+      {
+        id: 9,
+        question: 'Ist nicht eine Parkraumbewirtschaftung die bessere Lösung?',
+        answer:
+          'Parkraumbewirtschaftung hat generell eine entlastende Wirkung, sie wird im Bezirk auch schrittweise eingeführt. Sie führt vor allem dazu, dass das Parken von Besucher*innen und Pendler*innen abnimmt und mehr Parkraum für Anwohner*innen zur Verfügung steht. Das Projekt geht jedoch darüber hinaus und erprobt nicht nur die Verteilung, sondern auch die Umnutzung von Kfz-Stellplätzen zu Gunsten aller.',
+      },
+    ],
+    [
+      {
+        id: 4,
+        question: 'Wie soll die Verkehrssicherheit gewährleistet werden?',
+        answer:
+          'Durch die Umnutzung von Kfz-Parkplätzen werden Sichtverhältnisse verbessert. Die Durchfahrtssperre am Hohenstaufenplatz reduziert Abkürzungsverkehr. Besonders die Menschen zu Fuß und die Radfahrer*innen werden besser gesehen und können ihrerseits die Verkehrslage besser einschätzen.',
+      },
+      {
+        id: 5,
+        question: 'Wie viele haben eigentlich ein Auto im Graefekiez?',
+        answer:
+          'Wie in allen Kiezen innerhalb des S-Bahnrings liegt auch im Graefekiez der Autobesitz weit unter dem Berliner Durchschnitt. Im Jahr 2021 kommen auf 1.000 Einwohner*innen nur 182 Pkw (Berlinweit: 335 Pkw auf 1.000 Einwohner*innen).',
+      },
+      {
+        id: 6,
+        question: 'Wird das Projekt Auswirkungen auf die Mieten haben?',
+        answer:
+          'Ob Mieten steigen oder nicht, hängt in erster Linie vom Wohnungsmarkt und von seiner Regulierung ab. Die Ziele des Projektes sind eine höhere Verkehrssicherheit und eine bessere Aufenthaltsqualität.',
+      },
+    ],
+    [
+      {
+        id: 7,
+        question:
+          'Führt eine bessere Aufenthaltsqualität nicht zu mehr Lärmbelästigung und mehr Müll?',
+        answer:
+          'Die Stellplätze werden teils entsiegelt und begrünt, teils zu Liefer- und Ladeflächen umgestaltet und teils als Aktionsflächen ausgewiesen. Auf den Aktionsflächen finden durch die Projektpartner*innen verschiedene Formate zur Diskussion, Beteiligung und Gestaltung mit der Nachbarschaft statt.',
+      },
+      {
+        id: 8,
+        question: 'Wird durch das Projekt der Parksuchverkehr in anderen Kiezen erhöht?',
+        answer:
+          'Das ist kurzfristig möglich. Ähnliche Projekte zeigen, dass diese Effekte jedoch nachlassen, da zum Beispiel auf Alternativen ausgewichen wird. In diesem Fall das Parkhaus am Hermannplatz, die Sharing-Angebote oder der öffentliche Nahverkehr.',
+      },
+      {
+        id: 3,
+        question: 'Auf welcher rechtlichen Grundlage wird hier agiert?',
+        answer:
+          'Die maßgeblichen Gesetze bzw. Verordnungen sind die Straßenverkehrsordnung (StVO sowie das Berliner Straßengesetz (BerlStrG) und das Berliner Mobilitätsgesetz (MobG BE).',
+      },
+    ],
+  ],
 }
 
 const faqToc = [
   { title: 'Praktische Fragen von Anwohner*innen', href: '#anwohnende' },
   { title: 'Allgemeine Fragen zum Projekt Graefekiez', href: '#graefekiez' },
-  { title: 'Hintergründe zum Projekt', href: '#"hintergruende' },
+  { title: 'Hintergründe zum Projekt', href: '#hintergruende' },
 ]
 
 const FaqPage: React.FC<PageProps> = () => {
-  const { carFaqs, pedestrianFaqs } = faqs
+  const { carFaqs, pedestrianFaqs, backgroundFaqs } = faqs
   return (
     <Layout>
       <Hero title="Häufige Fragen" subtitle="und Antworten" />
@@ -184,11 +249,13 @@ const FaqPage: React.FC<PageProps> = () => {
 
             <div className="mb-12">
               <p>Direkt zu einer Kategorie springen:</p>
-              {faqToc.map((item, itemIndex) => (
-                <div key={itemIndex}>
-                  <Link href={item.href}>{item.title}</Link>
-                </div>
-              ))}
+              {faqToc.map((item, itemIndex) => {
+                return (
+                  <div key={itemIndex}>
+                    <Link href={item.href}>{item.title}</Link>
+                  </div>
+                )
+              })}
             </div>
 
             <section id="anwohnende">
@@ -246,7 +313,7 @@ const FaqPage: React.FC<PageProps> = () => {
                 role="list"
                 className="mt-10 grid max-w-2xl grid-cols-1 gap-y-2 gap-x-8 lg:max-w-none lg:grid-cols-3"
               >
-                {pedestrianFaqs.map((column, columnIndex) => (
+                {backgroundFaqs.map((column, columnIndex) => (
                   <li key={columnIndex}>
                     <ul role="list" className="flex flex-col gap-8">
                       {column.map((faq) => (

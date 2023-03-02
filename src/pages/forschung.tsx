@@ -40,7 +40,7 @@ const parnters = [
 const ForschungPage: React.FC<PageProps> = () => {
   return (
     <Layout>
-      <Hero title="Forschung" subtitle="Wissenschaftliche Begleitung" />
+      <Hero title="Wissenschaftliche Begleitung" />
       <Container colorClass="bg-white mx-auto max-w-prose">
         <H1>
           Wissenschaftliche Begleitung durch das Wissenschaftszentrum Berlin für Sozialforschung
