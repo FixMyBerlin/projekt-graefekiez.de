@@ -24,63 +24,56 @@ export const faqs: TFaqs = {
     [
       {
         id: 1,
-        question:
-          'Kann ich überhaupt noch mit einem Auto in den Kiez fahren? Was macht mein Besuch, wenn es mit dem Auto kommen will?',
+        question: 'Kann ich oder mein Besuch noch mit dem Auto in den Kiez fahren?',
         answer:
-          'Alle Ziele im Kiez sind wie bisher auch weiterhin mit dem Auto erreichbar. Auch das Ein- und Ausladen ist weiterhin fast überall möglich. Die neuen Ladezonen machen das sogar einfacher und verhindern das Halten in der zweiten Reihe. Lediglich das dauerhafte Parken wird durch den Wegfall von Stellplätzen schwieriger und ist möglicherweise mit längeren Fußwegen verbunden. Das gilt auch für Besucher:innen, die mit dem eigenen Auto anreisen.',
+          'Alle Ziele im Kiez sind wie bisher auch weiterhin mit dem Auto erreichbar. Auch das Ein-und Ausladen ist weiterhin fast überall möglich. Die neuen Ladezonen machen das sogar einfacher und verhindern das Halten in der zweiten Reihe. Lediglich für das dauerhafte Parken gibt es durch die Umgestaltung von Pkw-Stellplätzen weniger Platz.',
       },
       {
         id: 2,
-        question:
-          'Nun habe ich als Anwohner:in aber selber ein Auto, wo kann ich es denn abstellen?',
+        question: 'Wo können Anwohner*innen in Zukunft ihr Auto abstellen?',
         answer:
-          'Es gibt die Möglichkeit, das Fahrzeug für einen monatlichen Tarif von 60 Euro im Parkhaus am Hermannplatz abzustellen.',
+          'Es gibt die Möglichkeit, das Fahrzeug für einen monatlichen Tarif im Parkhaus am Hermannplatz abzustellen.',
       },
       {
         id: 3,
-        question: 'Warum wählen wir diesen Ansatz?',
+        question:
+          'Wenn die Wege zwischen Parkplatz und Wohnung länger werden, fühle ich mich gerade nachts unsicher. Was wird für mehr Sicherheit getan?',
         answer:
-          'Wir müssen dringend die Verkehrssicherheit im Bezirk erhöhen. Das dies notwendig ist, zeigen immer wieder schwere oder gar tödliche Unfälle mit Rad- oder Fußbeteiligung. Wir sind den Verkehrsteilnehmenden verpflichtet, die besonders gefährdet sind. Dazu gehören z.B. Kinder, ältere Menschen – und im Allgemeinen alle, die zu Fuß oder mit dem Rad unterwegs sind. Wir wählen einen flächendeckenden Ansatz, um die Umweltgerechtigkeit im Bezirk zu erhöhen. Die Daten des Umweltatlas zeigen, dass die Wohngebiete in XHain unterschiedlich stark von negativen Umweltbelastungen betroffen sind. Mit zunehmenden Hitzesommern steigt der Bedarf für qualitativ hochwertige öffentliche Räume. Gerade in Gebieten des Bezirks mit hoher Einwohner*innen-Dichte und geringer Grünraumversorgung ist dies wichtig.',
+          'Im Graefekiez entsteht ein enges Netz an Shared-Mobility-Standorten im öffentlichen Straßenland, sie sind gut einsehbar und verlässlich zu nutzen. Das Parkhaus am Hermannplatz ist beleuchtet und bewacht. ',
       },
     ],
     [
       {
         id: 4,
-        question: 'Fallen Parkplätze weg?',
+        question: 'Was passiert mit den Stellplätzen für Menschen mit Behinderungen?',
         answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
+          'Bestehende Stellplätze für Menschen mit Beeinträchtigungen bleiben erhalten oder werden in unmittelbarer Nähe neu ausgewiesen.',
       },
       {
         id: 5,
-        question: 'Warum wählen wir diesen Ansatz?',
+        question: 'Wie funktionieren Anlieferungen, Paketdienste oder andere Wirtschaftsverkehre?',
         answer:
-          'Wir müssen dringend die Verkehrssicherheit im Bezirk erhöhen. Das dies notwendig ist, zeigen immer wieder schwere oder gar tödliche Unfälle mit Rad- oder Fußbeteiligung. Wir sind den Verkehrsteilnehmenden verpflichtet, die besonders gefährdet sind. Dazu gehören z.B. Kinder, ältere Menschen – und im Allgemeinen alle, die zu Fuß oder mit dem Rad unterwegs sind. Wir wählen einen flächendeckenden Ansatz, um die Umweltgerechtigkeit im Bezirk zu erhöhen. Die Daten des Umweltatlas zeigen, dass die Wohngebiete in XHain unterschiedlich stark von negativen Umweltbelastungen betroffen sind. Mit zunehmenden Hitzesommern steigt der Bedarf für qualitativ hochwertige öffentliche Räume. Gerade in Gebieten des Bezirks mit hoher Einwohner*innen-Dichte und geringer Grünraumversorgung ist dies wichtig.',
+          'In der Graefestraße, Böckhstraße, Dieffenbachstraße und Grimmstraße werden Liefer- und Ladeflächen für den Wirtschaftsverkehr ausgewiesen. Für die LKW-Anlieferung werden 20m-Zonen und für die Anlieferung durch Kurier- Express- und Paketlieferungen 10m-Zonen eingerichtet. Die Liefer- und Ladeflächen entstehen schwerpunktmäßig in der Nähe anlieferungsintensiver Gewerbestandorten und werden so ausgewählt, dass eine Belieferung bis zur Zieladresse innerhalb von 75-100 Metern gewährleistet ist. ',
       },
       {
         id: 6,
-        question: 'Fallen Parkplätze weg?',
+        question: 'Wer darf die Liefer- und Ladeflächen nutzen?',
         answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
+          'Ladeflächen dürfen zum Be- und Entladen genutzt werden – sowohl für gewerbliche als auch für private Zwecke.',
       },
     ],
     [
       {
         id: 7,
-        question: 'Fallen Parkplätze weg?',
+        question: 'Wo kann ich mich zum Projekt Graefekiez informieren?',
         answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
+          'Das Bezirksamt Friedrichshain-Kreuzberg informiert laufend über alle geplanten Aktivitäten im Rahmen des Projektes. Alle Aktivitäten und Termine sind auf der Homepage www.projekt-graefekiez.de unter der Rubrik „Aktuelles“ zu finden. Bis Ende 2023 sind eine Reihe Info- und Diskussionsveranstaltungen geplant.',
       },
       {
         id: 8,
-        question: 'Fallen Parkplätze weg?',
+        question: 'Wo kann ich meine Ideen und Vorschläge einbringen?',
         answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
-      },
-      {
-        id: 9,
-        question: 'Warum wählen wir diesen Ansatz?',
-        answer:
-          'Wir müssen dringend die Verkehrssicherheit im Bezirk erhöhen. Das dies notwendig ist, zeigen immer wieder schwere oder gar tödliche Unfälle mit Rad- oder Fußbeteiligung. Wir sind den Verkehrsteilnehmenden verpflichtet, die besonders gefährdet sind. Dazu gehören z.B. Kinder, ältere Menschen – und im Allgemeinen alle, die zu Fuß oder mit dem Rad unterwegs sind. Wir wählen einen flächendeckenden Ansatz, um die Umweltgerechtigkeit im Bezirk zu erhöhen. Die Daten des Umweltatlas zeigen, dass die Wohngebiete in XHain unterschiedlich stark von negativen Umweltbelastungen betroffen sind. Mit zunehmenden Hitzesommern steigt der Bedarf für qualitativ hochwertige öffentliche Räume. Gerade in Gebieten des Bezirks mit hoher Einwohner*innen-Dichte und geringer Grünraumversorgung ist dies wichtig.',
+          'Auf der Homepage des Projekts finden Sie Informationen zu anstehenden Beteiligungsmöglichkeiten. Dort können Sie Ihre Ideen einbringen. Ab Juni gibt es eine Infobox vor Ort, in die Sie Ihre Ideen und Vorschläge einwerfen bzw. abgeben können.',
       },
     ],
   ],
@@ -88,71 +81,95 @@ export const faqs: TFaqs = {
     [
       {
         id: 1,
-        question: 'Fallen Parkplätze weg?',
+        question: 'Was sind die Ziele des Projektes?',
         answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
+          'Das Projekt Graefekiez soll die Verkehrssicherheit für Fußgänger*innen und Radfahrende sowie insbesondere für Schüler*innen erhöhen. Der Wirtschaftsverkehr soll verbessert und die Stadt gegenüber den Folgen des Klimawandels widerstandsfähiger gemacht werden.',
       },
       {
         id: 2,
-        question: 'Fallen Parkplätze weg?',
+        question: 'Wird der Kiez autofrei?',
         answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
+          'Nein, es werden weiterhin alle Wohnungen und Betriebe mit dem Auto erreichbar sein.',
       },
       {
         id: 3,
-        question: 'Warum wählen wir diesen Ansatz?',
+        question: 'Was passiert wann im Graefekiez?',
         answer:
-          'Wir müssen dringend die Verkehrssicherheit im Bezirk erhöhen. Das dies notwendig ist, zeigen immer wieder schwere oder gar tödliche Unfälle mit Rad- oder Fußbeteiligung. Wir sind den Verkehrsteilnehmenden verpflichtet, die besonders gefährdet sind. Dazu gehören z.B. Kinder, ältere Menschen – und im Allgemeinen alle, die zu Fuß oder mit dem Rad unterwegs sind. Wir wählen einen flächendeckenden Ansatz, um die Umweltgerechtigkeit im Bezirk zu erhöhen. Die Daten des Umweltatlas zeigen, dass die Wohngebiete in XHain unterschiedlich stark von negativen Umweltbelastungen betroffen sind. Mit zunehmenden Hitzesommern steigt der Bedarf für qualitativ hochwertige öffentliche Räume. Gerade in Gebieten des Bezirks mit hoher Einwohner*innen-Dichte und geringer Grünraumversorgung ist dies wichtig.',
+          'Das Projekt läuft in zwei Schritten. Ab Juni werden im „Kerngebiet“ in der Böckh- und Graefestraße Parkplätze für 12 Monate umgenutzt. Durch bessere Querungsmöglichkeiten und Einsehbarkeit werden die Schulwege sicherer. Die Parkplätze werden in enger Beteiligung mit Anwohner*innen neugestaltet und Nutzungsmöglichkeiten entwickelt. In den genannten Straßen werden Lade- und Lieferflächen zur Anlieferung, Ver- und Entsorgung sowie Plätze für Gewerbebetriebe und Behindertenstellplätze zur Verfügung gestellt. Zusätzlich werden Radabstellanlagen und insgesamt 13 Car- bzw. Bikesharing- Stationen der BVG (Jelbi) im gesamten Graefekiez auf früheren Stellplätzen geschaffen. Eine Durchfahrtssperre in der Schönleinstraße zwischen Lachmann- und Dieffenbachstr. wird eingerichtet, um das Abkürzen von Lkw durch das Viertel zu verhindern. Bereits parallel zum ersten Schritt beginnt die Vorbereitung für den zweiten Schritt. Für die zweite Stufe wird ein Freiflächenkonzept erstellt. Das ist auf Grundlage einer umfassenden Bürger*innen-Beteiligung die Voraussetzung für eine Ausweitung der tatsächlichen Verkehrsberuhigung auf den gesamten Graefekiez.',
       },
     ],
     [
       {
         id: 4,
-        question: 'Fallen Parkplätze weg?',
+        question: 'Wer führt das Projekt durch?',
         answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
+          'Das Projekt wird vom Bezirksamt Friedrichshain-Kreuzberg verantwortet, zuständig ist das Straßen- und Grünflächenamt. Es kümmert sich um alle baulichen und verkehrstechnischen Maßnahmen.',
       },
       {
         id: 5,
-        question: 'Fallen Parkplätze weg?',
+        question: 'Wer macht die wissenschaftliche Begleitung und die Beteiligung vor Ort?',
         answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
+          'Die wissenschaftliche Begleitung und die Koordination der vielfältigen Beteiligungsformen obliegt dem Wissenschaftszentrum Berlin für Sozialforschung (WZB), weitere Partner wie das DLR, das RIFS, die HfWU und inter 3 (CompAIR) sowie die Vereine Berlin 21, NaturFreunde e.V und paper planes e.V. verantworten die Beteiligung und die Befragung der Anwohner*innen und der Gewerbetreibenden.',
       },
       {
         id: 6,
-        question: 'Fallen Parkplätze weg?',
+        question: 'Was passiert mit den Stellplätzen, die im Kerngebiet umgenutzt werden?',
         answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
+          'Die Sperrung des Durchgangsverkehrs am Hohenstaufenplatz dient zur Unterbindung von Abkürzungs- und Umwegungsverkehr vom Kottbusser Damm über die Schönleinstraße zur Urbanstraße. Dies soll unterbunden werden, da Durchgangsverkehr auf die Hauptstraßen gehört. Durch weniger Durchgangsverkehr soll die Verkehrssicherheit erhöht werden. Mit Verkehrszählungen wird geprüft, welchen Effekt diese Sperrung hat.',
+      },
+      {
+        id: 7,
+        question: 'Warum wird die Durchfahrt am Hohenstaufenplatz gesperrt?',
+        answer:
+          'Die Stellplätze werden teils entsiegelt und begrünt, teils zu Liefer- und Ladeflächen umgestaltet und teils als Aktionsflächen ausgewiesen. Auf den Aktionsflächen finden durch die Projektpartner*innen verschiedene Formate zur Diskussion, Beteiligung und Gestaltung mit der Nachbarschaft statt.',
+      },
+      {
+        id: 8,
+        question: 'Der Graefekiez ist schon verkehrsberuhigt, warum wird so viel verändert?',
+        answer:
+          'Die schon in den 1980er Jahren eingeführten verkehrsberuhigten Bereiche im Graefekiez wurden baulich nie umgesetzt. Rechtlich sind alle Verkehrsteilnehmenden gleichgestellt, baulich gibt es jedoch weiterhin Gehweg und Fahrbahn. Hierbei handelt es sich um ein “gebautes Missverständnis“, welches zu unklaren und gefährlichen Situationen im Straßenverkehr führen kann. Es braucht eine eindeutige und im Ergebnis sicherere Straßengestaltung. Dafür muss der gesamte Straßenquerschnitt umgestaltet werden. Dies wird im Rahmen des Projekts ausprobiert.',
       },
     ],
     [
       {
-        id: 7,
-        question: 'Fallen Parkplätze weg?',
-        answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
-      },
-      {
-        id: 8,
-        question: 'Fallen Parkplätze weg?',
-        answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
-      },
-      {
         id: 9,
-        question: 'Fallen Parkplätze weg?',
+        question: 'Wie werden Anwohner*innen und Gewerbetreibende beteiligt?',
         answer:
-          'Ja es fallen parkplätze weg, allerding nur 0,000001%. mehr dazu sehen sie hier in der Statistik',
+          'Im Kerngebiet sind verschiedene Formate der Projektpartner geplant. Für Gewerbetreibende gibt es gesonderte Angebote. Über alle Termine und Aktivitäten wird auf dieser Webseite informiert.',
+      },
+      {
+        id: 10,
+        question:
+          'Wie wird das Freihalten der Lieferzonen und der umgenutzten Parkplätze sichergestellt?',
+        answer:
+          'Das Ordnungsamt wird verstärkt kontrollieren. Die freiwerdenden Plätze werden zudem bespielt und umgenutzt.',
+      },
+      {
+        id: 11,
+        question: 'Werden Rettungs- und Einsatzfahrzeuge eingeschränkt?',
+        answer:
+          'Nein, alle Rettungswege werden freigehalten. Es ist im Gegenteil zu erwarten, dass Rettungs- und andere Einsatzfahrzeuge besser durchkommen, wenn das Halten in der zweiten Reihe aufgrund neuer Lade- und Lieferflächen weniger häufig vorkommt.',
+      },
+      {
+        id: 12,
+        question: 'Können die Maßnahmen zurückgebaut werden?',
+        answer:
+          'Ja, die Bezirksverordnetenversammlung von Friedrichshain-Kreuzberg kann nach dem Schritt 1 beschließen, dass die Maßnahmen teilweise oder ganz zurückgenommen werden.',
+      },
+      {
+        id: 13,
+        question: 'Was kostet das Projekt und wer finanziert es?',
+        answer:
+          'Das Projekt wird zum Teil aus Mitteln der Senatsverwaltung für Umwelt, Mobilität, Verbraucher- und Klimaschutz und des Straßen- und Grünflächenamtes Friedrichshain-Kreuzberg finanziert. Die mit dem Projekt Graefekiez verbundenen Beteiligungsaktivitäten und Forschungsarbeiten werden aus Drittmitteln finanziert, die die beteiligten Institute eingeworben haben.',
       },
     ],
   ],
 }
 
 const faqToc = [
-  { title: 'Veränderungen für Autofahrende', href: '#autofahrende' },
-  { title: 'Fragen zum Fußverkehr', href: '#fussverkehr' },
-  { title: 'Veränderungen für X', href: '#autofahrende' },
-  { title: 'Veränderungen für Y', href: '#autofahrende' },
+  { title: 'Praktische Fragen von Anwohner*innen', href: '#anwohnende' },
+  { title: 'Allgemeine Fragen zum Projekt Graefekiez', href: '#graefekiez' },
+  { title: 'Hintergründe zum Projekt', href: '#"hintergruende' },
 ]
 
 const FaqPage: React.FC<PageProps> = () => {
@@ -174,9 +191,9 @@ const FaqPage: React.FC<PageProps> = () => {
               ))}
             </div>
 
-            <section id="autofahrende">
+            <section id="anwohnende">
               <H3 line>
-                <strong>Veränderungen für Autofahrende</strong>
+                <strong>Praktische Fragen von Anwohner*innen</strong>
               </H3>
 
               <ul
@@ -196,9 +213,33 @@ const FaqPage: React.FC<PageProps> = () => {
                 ))}
               </ul>
             </section>
-            <section id="fussverkehr">
+
+            <section id="graefekiez">
               <H3 line>
-                <strong>Fragen zum Fußverkehr</strong>
+                <strong>Allgemeine Fragen zum Projekt Graefekiez</strong>
+              </H3>
+
+              <ul
+                role="list"
+                className="mt-10 grid max-w-2xl grid-cols-1 gap-y-2 gap-x-8 lg:max-w-none lg:grid-cols-3"
+              >
+                {pedestrianFaqs.map((column, columnIndex) => (
+                  <li key={columnIndex}>
+                    <ul role="list" className="flex flex-col gap-8">
+                      {column.map((faq) => (
+                        <li key={faq.id}>
+                          <FaqItem question={faq} />
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            <section id="hintergruende">
+              <H3 line>
+                <strong>Hintergründe zum Projekt</strong>
               </H3>
 
               <ul
