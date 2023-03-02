@@ -5,7 +5,7 @@ import { DesktopNavigation, MobileNavigation } from './Navigation'
 
 type Props = {
   title: string
-  subtitle: string
+  subtitle?: string
   /** @default 'dark' */
   titleColor?: 'light' | 'dark'
   /** @desc className="h-full w-full" */
@@ -63,11 +63,11 @@ export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', im
             <StaticImage
               src="../../../images/logos/logo-bezirksamt.png"
               alt="Bezirksamt Friedrichshain-Kreuzberg"
-              height={250}
+              height={175}
             />
             <h1
               className={clsx(
-                'text-6xl font-bold tracking-tight sm:text-7xl',
+                'text-5xl font-bold tracking-tight sm:text-7xl',
                 titleColor === 'light' ? 'text-white' : 'text-gray-900'
               )}
             >
@@ -79,7 +79,7 @@ export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', im
                 titleColor === 'light' ? 'text-gray-300' : 'text-black'
               )}
             >
-              <span className="bg-yellow-300 py-3 px-12">{subtitle}</span>
+              {subtitle && <span className="bg-yellow-300 py-3 px-12">{subtitle}</span>}
             </p>
           </div>
         </div>

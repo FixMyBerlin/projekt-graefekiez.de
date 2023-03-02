@@ -9,14 +9,13 @@ export const PageHomeInto: React.FC = () => {
       <Quote
         quote="Öffentlicher Raum ist knapp – und sehr viel davon ist mit parkenden Autos belegt. Mit dem Projekt Graefekiez erproben wir gemeinsam mit der Nachbarschaft, wie Straßen der Zukunft aussehen können. Wir erhöhen die Verkehrssicherheit, verbessern die Situation für Gewerbe und Lieferdienste und schaffen Zugang zu geteilten Mobilitätsangeboten. So geht öffentlicher Raum für alle und mit allen."
         author="Annika Gerold"
-        authorSubline="Annika Gerold
-Bezirksstadträtin für Verkehr, Grünflächen, Ordnung und Umwelt"
+        authorSubline="Bezirksstadträtin für Verkehr, Grünflächen, Ordnung und Umwelt"
         image={
           <StaticImage
             src="./assets/PageHomeIntro/Annika-Gerold_klein_bildnachweis-kilian-vitt.jpg"
             height={320}
             alt=""
-            className="h-12 w-12 lg:h-52 lg:w-52"
+            className="h-20 w-20 lg:h-52 lg:w-52"
           />
         }
       />
