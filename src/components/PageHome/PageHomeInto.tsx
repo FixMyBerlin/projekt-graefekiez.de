@@ -13,7 +13,7 @@ export const PageHomeInto: React.FC = () => {
 Bezirksstadträtin für Verkehr, Grünflächen, Ordnung und Umwelt"
         image={
           <StaticImage
-            src="./assets/PageHomeIntro/annika-gerold-bildnachweis-kilian-vitt.jpg"
+            src="./assets/PageHomeIntro/Annika-Gerold_klein_bildnachweis-kilian-vitt.jpg"
             height={320}
             alt=""
             className="h-12 w-12 lg:h-52 lg:w-52"

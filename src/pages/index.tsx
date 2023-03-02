@@ -22,7 +22,7 @@ const IndexPage: React.FC<PageProps> = () => (
       titleColor="dark"
       image={
         <StaticImage
-          src="../components/PageHome/assets/Hero/hero.jpg"
+          src="../components/PageHome/assets/Hero/LandingPage_Graefestraße_Ecke_Böckhstraße_(autumn_2008)_Uli Herrmann.jpg"
           alt=""
           className="h-full w-full"
         />

@@ -18,7 +18,7 @@ const AktuellesPage: React.FC<PageProps<Queries.NewsQuery>> = ({
         subtitle="Neuigkeiten und Termine"
         image={
           <StaticImage
-            src="../components/PageAktuelles/assets/hero.jpg"
+            src="../components/PageHome/assets/Hero/LandingPage_Graefestraße_Ecke_Böckhstraße_(autumn_2008)_Uli Herrmann.jpg"
             alt=""
             className="h-full w-full"
           />
