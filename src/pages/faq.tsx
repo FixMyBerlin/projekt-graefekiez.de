@@ -1,10 +1,10 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable jsx-a11y/no-redundant-roles */
 import { HeadFC, PageProps } from 'gatsby'
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { Layout, MetaTags } from '~/components/layouts'
 import { Hero } from '~/components/layouts/Hero/Hero'
-import { Link } from '~/components/links'
+import { Link, linkStyles } from '~/components/links'
 import { FaqItem } from '~/components/PageFaq/FaqItem'
 import { H1, H3, Prose } from '~/components/typography'
 
@@ -12,6 +12,7 @@ export type TQuestion = {
   id: number
   question: string
   answer: string
+  answerNode?: ReactNode
 }
 
 export type TFaqs = {
@@ -170,6 +171,21 @@ export const faqs: TFaqs = {
       {
         id: 1,
         question: 'Wie wurde entschieden, dass das Projekt Graefekiez stattfindet? ',
+        answerNode: (
+          <p>
+            Es handelt sich um eine Umsetzung eines{' '}
+            <a
+              className={linkStyles}
+              target="_blank"
+              href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10383"
+              rel="noreferrer"
+            >
+              Beschlusses der Bezirksverordnetenversammlung vom 29.06.2022 (Drucksache DS/0154/VI)
+            </a>
+            . Darin wird das Bezirksamt aufgefordert, „im Graefekiez einen Feldversuch zur
+            Neugestaltung des öffentlichen Raums durchzuführen“.
+          </p>
+        ),
         answer:
           'Es handelt sich um eine Umsetzung eines Beschlusses der Bezirksverordnetenversammlung vom 29.06.2022 (Drucksache DS/0154/VI). Darin wird das Bezirksamt aufgefordert, „im Graefekiez einen Feldversuch zur Neugestaltung des öffentlichen Raums durchzuführen“.',
       },
@@ -242,7 +258,7 @@ const FaqPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <Hero title="Häufige Fragen" subtitle="und Antworten" />
-      <section className="mx-auto w-full max-w-7xl py-6 px-4 lg:mt-6 lg:py-8 lg:px-24">
+      <section className="mx-auto w-full max-w-7xl py-6 px-4 lg:py-8 lg:px-24">
         <Prose>
           <div className="mx-auto max-w-5xl px-4">
             <H1>Antworten auf häufige Fragen</H1>

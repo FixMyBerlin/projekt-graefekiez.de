@@ -11,7 +11,7 @@ export const FaqItem: React.FC<Props> = ({ question }) => {
   return (
     <div className={clsx(gray ? 'bg-gray-50' : '', 'border border-gray-100 px-4')}>
       <p className="font-bold">{question.question}</p>
-      <p>{question.answer}</p>
+      {question.answerNode ?? <p>{question.answer}</p>}
     </div>
   )
 }

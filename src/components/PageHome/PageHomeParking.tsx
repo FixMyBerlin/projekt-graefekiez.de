@@ -1,5 +1,6 @@
 import React from 'react'
 import { ContainerTwoThirdWidth } from '../layouts/ContainerTwoThirdWidth'
+import { linkStyles } from '../links'
 import { H1, Prose } from '../typography'
 
 export const PageHomeParking: React.FC = () => {
@@ -32,8 +33,11 @@ export const PageHomeParking: React.FC = () => {
             Sharing-Angeboten im Graefekiez ein. Hier lassen sich schnell, komfortabel und auf
             kurzem Weg Roller, Räder, Scooter, Lastenräder oder Autos leihen. An den U-Bahnhöfen
             Schönleinstraße und Südstern besteht die direkte Verbindung zwischen Jelbi und den
-            öffentlichen Verkehrsmitteln. Für die Nutzung von Jelbi muss die Jelbi-App installiert
-            werden.
+            öffentlichen Verkehrsmitteln. Für die Nutzung von Jelbi muss die{' '}
+            <a className={linkStyles} target="_blank" href="https://www.jelbi.de/" rel="noreferrer">
+              Jelbi-App
+            </a>{' '}
+            installiert werden.
           </p>
         </Prose>
       </ContainerTwoThirdWidth>

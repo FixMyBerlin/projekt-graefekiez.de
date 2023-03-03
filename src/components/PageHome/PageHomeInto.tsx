@@ -1,5 +1,6 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
+import { linkStyles } from '../links'
 import { Quote } from '../Quote/Quote'
 import { H1, Prose } from '../typography'
 
@@ -36,7 +37,16 @@ export const PageHomeInto: React.FC = () => {
           – aber auch für alle anderen, die zu Fuß oder mit dem Rad unterwegs sind. Mit dem Projekt
           Graefekiez soll dieses Problem testweise behoben werden. Ziel ist es, einen
           verkehrsberuhigten Bereich zu schaffen, der diesen Namen auch verdient. Das Projekt setzt
-          einen Beschluss der Bezirksverordnetenversammlung (BVV) vom 29.6.2022 um.
+          einen{' '}
+          <a
+            className={linkStyles}
+            target="_blank"
+            href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10383"
+            rel="noreferrer"
+          >
+            Beschlusses der Bezirksverordnetenversammlung (BVV)
+          </a>{' '}
+          vom 29.6.2022 um.
         </p>
       </Prose>
       <H1>Platz für den Alltag der Vielen</H1>
