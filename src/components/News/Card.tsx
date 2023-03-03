@@ -55,7 +55,7 @@ export const CardCta: React.FC<{ children: React.ReactNode }> = ({ children }) =
   return (
     <div
       aria-hidden="true"
-      className="text-teal-500 relative z-10 mt-4 flex items-center text-sm font-normal"
+      className="relative z-10 mt-4 flex items-center text-sm font-normal text-gray-500"
     >
       {children}
       <ChevronRightIcon className="stroke-current ml-1 h-4 w-4" />
@@ -74,14 +74,14 @@ export const CardEyebrow: React.FC<{
     <Component
       className={clsx(
         className,
-        'relative z-10 order-first mb-3 flex items-center text-sm text-yellow-600',
+        'relative z-10 order-first mb-3 flex items-center text-sm text-gray-400',
         decorate && 'pl-3.5'
       )}
       dateTime={dateTime}
     >
       {decorate && (
         <span className="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
-          <span className="h-4 w-0.5 rounded-full bg-yellow-600" />
+          <span className="h-4 w-0.5 rounded-full bg-gray-400" />
         </span>
       )}
       {children}

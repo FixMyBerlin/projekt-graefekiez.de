@@ -25,7 +25,7 @@ const AktuellesPage: React.FC<PageProps<Queries.NewsQuery>> = ({
         }
       />
       <Container colorClass="bg-white mx-auto max-w-prose">
-        <div className="flex max-w-3xl flex-col space-y-16">
+        <div className="mt-8 flex max-w-3xl flex-col space-y-16">
           {edges.map((edge, index) => {
             const { frontmatter } = edge.node
             if (!frontmatter?.slug || !frontmatter?.title || !frontmatter?.date) return null
