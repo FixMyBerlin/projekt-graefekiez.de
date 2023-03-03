@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, linkStyles } from '~/components/links'
 import TwitterIcon from '../../../images/twitterIcon.inline.svg'
-import { Container } from '../Container'
 
 const aboutItems = [
   {

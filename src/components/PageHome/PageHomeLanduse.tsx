@@ -2,6 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Card, CardProps } from '../Card/Card'
 import { ContainerTwoThirdWidth } from '../layouts/ContainerTwoThirdWidth'
+import { Link } from '../links'
 import { H1, H3, Prose } from '../typography'
 
 const cards: CardProps[] = [
@@ -80,6 +81,16 @@ export const PageHomeLanduse: React.FC = () => {
             über den gesamten Projektzeitraum beleben.
           </p>
         </Prose>
+        <H3>Hier können Sie sich beteiligen</H3>
+
+        <li>
+          <Link href="aktuelles/auftaktveranstaltung/">
+            22. April 2023 - <strong>Auftaktveranstaltung</strong>
+            <p className="ml-6">
+              Vorstellung des Projekts und der Beteiligungsformate. Alle sind willkommen!
+            </p>
+          </Link>
+        </li>
       </ContainerTwoThirdWidth>
 
       <p className="mt-10">
