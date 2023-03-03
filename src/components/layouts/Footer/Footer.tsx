@@ -21,7 +21,7 @@ const informationItems = [
 
 export const Footer: React.FC = () => {
   return (
-    <div className="mt-40 flex-col bg-gray-800 py-10 px-8 text-gray-300">
+    <div className="mt-40 flex-col bg-gray-800 py-10 px-5 text-gray-300 md:px-12">
       <div className="flex gap-8 lg:gap-36">
         <div>
           <p className="index uppercase text-gray-400">About</p>
