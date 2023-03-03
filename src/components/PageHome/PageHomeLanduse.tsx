@@ -83,14 +83,14 @@ export const PageHomeLanduse: React.FC = () => {
         </Prose>
         <H3>Hier können Sie sich beteiligen</H3>
 
-        <li>
+        <div className="flex justify-start gap-4">
+          <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-gray-300" />
           <Link href="aktuelles/auftaktveranstaltung/">
             22. April 2023 - <strong>Auftaktveranstaltung</strong>
-            <p className="ml-6">
-              Vorstellung des Projekts und der Beteiligungsformate. Alle sind willkommen!
-            </p>
+            <br />
+            Vorstellung des Projekts und der Beteiligungsformate. Alle sind willkommen!
           </Link>
-        </li>
+        </div>
       </ContainerTwoThirdWidth>
 
       <p className="mt-10">
