@@ -21,7 +21,7 @@ AddOutputFilterByType DEFLATE application/x-javascript
 # Caching
 <IfModule mod_headers.c>
 # Two weeks for multimedia files
-  <FilesMatch "\.(ico|jpg|jpeg|avif|webp|gif|png|pdf|mp4)$">
+  <FilesMatch "\.(ico|jpg|jpeg|avif|webp|gif|png|pdf|mp4|woff2)$">
   Header set Cache-Control "public, max-age=1209600, no-transform, must-revalidate"
   </FilesMatch>
 # Two weeks for text files
