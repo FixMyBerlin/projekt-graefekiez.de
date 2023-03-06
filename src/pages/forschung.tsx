@@ -9,6 +9,7 @@ import { H1, H3, Prose } from '~/components/typography'
 const parnters = [
   {
     name: 'WZB',
+    link: 'https://www.google.com/url?q=https://www.wzb.eu/de/forschung/digitalisierung-und-gesellschaftlicher-wandel/digitale-mobilitaet&sa=D&source=docs&ust=1678096118092203&usg=AOvVaw2f8f60LJbxdzLzpbn9DG-6',
     image: (
       <StaticImage
         src="../images/logos/WZB_logo_quareise_quer_transparent.png"
@@ -19,18 +20,21 @@ const parnters = [
   },
   {
     name: 'DLR',
+    link: 'https://www.google.com/url?q=https://www.dlr.de/DE/Home/home_node.html&sa=D&source=docs&ust=1678096118092702&usg=AOvVaw2j2XcH3VFp3n5TOs1z4n8i',
     image: (
       <StaticImage src="../components/PageForschung/assets/Logo-DLR_2.jpg" alt="" height={60} />
     ),
   },
   {
     name: 'RIFS',
+    link: 'https://www.google.com/url?q=https://www.rifs-potsdam.de/de&sa=D&source=docs&ust=1678096118091510&usg=AOvVaw1qnQmJRHpkuoUTo26lm9Nq',
     image: (
       <StaticImage src="../components/PageForschung/assets/Logo-RIFS.jpg" alt="" height={60} />
     ),
   },
   {
     name: 'HFWU',
+    link: 'https://www.google.com/url?q=https://www.hfwu.de/&sa=D&source=docs&ust=1678096118091177&usg=AOvVaw1w2Bh6mbPiDPveuvglY_lN',
     image: (
       <StaticImage src="../components/PageForschung/assets/Logo-HFWU.jpg" alt="" height={80} />
     ),
@@ -82,7 +86,9 @@ const ForschungPage: React.FC<PageProps> = () => {
               return (
                 // eslint-disable-next-line react/no-array-index-key
                 <li key={index}>
-                  {partner.image}
+                  <a target="_blank" href={partner.link} rel="noreferrer">
+                    {partner.image}
+                  </a>
                   <span className="sr-only">{partner.name}</span>
                 </li>
               )
