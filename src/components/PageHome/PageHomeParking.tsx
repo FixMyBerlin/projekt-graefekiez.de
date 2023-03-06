@@ -1,6 +1,6 @@
 import React from 'react'
 import { ContainerTwoThirdWidth } from '../layouts/ContainerTwoThirdWidth'
-import { linkStyles } from '../links'
+import { Link } from '../links'
 import { H1, Prose } from '../typography'
 
 export const PageHomeParking: React.FC = () => {
@@ -34,9 +34,9 @@ export const PageHomeParking: React.FC = () => {
             kurzem Weg Roller, Räder, Scooter, Lastenräder oder Autos leihen. An den U-Bahnhöfen
             Schönleinstraße und Südstern besteht die direkte Verbindung zwischen Jelbi und den
             öffentlichen Verkehrsmitteln. Für die Nutzung von Jelbi muss die{' '}
-            <a className={linkStyles} target="_blank" href="https://www.jelbi.de/" rel="noreferrer">
+            <Link blank href="https://www.jelbi.de/">
               Jelbi-App
-            </a>{' '}
+            </Link>{' '}
             installiert werden.
           </p>
         </Prose>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, linkStyles } from '~/components/links'
+import { Link } from '~/components/links'
 import TwitterIcon from '../../../images/twitterIcon.inline.svg'
 
 const aboutItems = [
@@ -31,14 +31,12 @@ export const Footer: React.FC = () => {
                 <Link href={item.href}>{item.title}</Link>
               </li>
             ))}
-            <a
-              target="_blank"
-              className={linkStyles}
+            <Link
+              blank
               href="https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/"
-              rel="noreferrer"
             >
               Presse
-            </a>
+            </Link>
           </ul>
         </div>
         <div>

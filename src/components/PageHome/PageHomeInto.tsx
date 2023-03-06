@@ -1,6 +1,6 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
-import { linkStyles } from '../links'
+import { Link } from '../links'
 import { Quote } from '../Quote/Quote'
 import { H1, Prose } from '../typography'
 
@@ -38,14 +38,12 @@ export const PageHomeInto: React.FC = () => {
           Graefekiez soll dieses Problem testweise behoben werden. Ziel ist es, einen
           verkehrsberuhigten Bereich zu schaffen, der diesen Namen auch verdient. Das Projekt setzt
           einen{' '}
-          <a
-            className={linkStyles}
-            target="_blank"
+          <Link
+            blank
             href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10383"
-            rel="noreferrer"
           >
             Beschlusses der Bezirksverordnetenversammlung (BVV)
-          </a>{' '}
+          </Link>{' '}
           vom 29.6.2022 um.
         </p>
       </Prose>

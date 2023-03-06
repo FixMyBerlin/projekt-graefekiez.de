@@ -1,7 +1,7 @@
 import { ArrowRightIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
 import React from 'react'
-import { lightPinkButtonStyles } from '../links'
+import { Link } from '../links'
 
 export type CardProps = {
   title: string
@@ -25,14 +25,9 @@ export const Card: React.FC<CardProps> = ({ title, description, image, link }) =
             <p className="mt-3 text-base text-gray-500">{description}</p>
           </div>
           {link && (
-            <a
-              target="_blank"
-              className={clsx(lightPinkButtonStyles, 'mt-4 !font-normal')}
-              href={link.href}
-              rel="noreferrer"
-            >
+            <Link button="lightPink" blank className={clsx('mt-4 !font-normal')} href={link.href}>
               <ArrowRightIcon className="h-5" /> {link.title}
-            </a>
+            </Link>
           )}
         </div>
       </div>

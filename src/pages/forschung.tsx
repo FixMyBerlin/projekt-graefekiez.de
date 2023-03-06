@@ -4,6 +4,7 @@ import React from 'react'
 import { Layout, MetaTags } from '~/components/layouts'
 import { Container } from '~/components/layouts/Container'
 import { Hero } from '~/components/layouts/Hero/Hero'
+import { Link } from '~/components/links'
 import { H1, H3, Prose } from '~/components/typography'
 
 const parnters = [
@@ -86,9 +87,7 @@ const ForschungPage: React.FC<PageProps> = () => {
               return (
                 // eslint-disable-next-line react/no-array-index-key
                 <li key={index}>
-                  <a target="_blank" href={partner.link} rel="noreferrer">
-                    {partner.image}
-                  </a>
+                  <Link href={partner.link}>{partner.image}</Link>
                   <span className="sr-only">{partner.name}</span>
                 </li>
               )

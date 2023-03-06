@@ -4,7 +4,7 @@ import { HeadFC, PageProps } from 'gatsby'
 import React, { ReactNode } from 'react'
 import { Layout, MetaTags } from '~/components/layouts'
 import { Hero } from '~/components/layouts/Hero/Hero'
-import { Link, linkStyles } from '~/components/links'
+import { Link } from '~/components/links'
 import { FaqItem } from '~/components/PageFaq/FaqItem'
 import { H1, H3, Prose } from '~/components/typography'
 
@@ -174,14 +174,12 @@ export const faqs: TFaqs = {
         answerNode: (
           <p>
             Es handelt sich um eine Umsetzung eines{' '}
-            <a
-              className={linkStyles}
-              target="_blank"
+            <Link
+              blank
               href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10383"
-              rel="noreferrer"
             >
               Beschlusses der Bezirksverordnetenversammlung vom 29.06.2022 (Drucksache DS/0154/VI)
-            </a>
+            </Link>
             . Darin wird das Bezirksamt aufgefordert, „im Graefekiez einen Feldversuch zur
             Neugestaltung des öffentlichen Raums durchzuführen“.
           </p>
