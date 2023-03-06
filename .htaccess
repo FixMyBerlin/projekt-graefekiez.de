@@ -25,7 +25,7 @@ AddOutputFilterByType DEFLATE application/x-javascript
   Header set Cache-Control "public, max-age=1209600, no-transform, must-revalidate"
   </FilesMatch>
 # Two weeks for text files
-  <FilesMatch "\.(html|htm|js|xml|css|txt)$">
+  <FilesMatch "\.(html|htm|js|xml|css|txt|json)$">
   Header set Cache-Control "public, max-age=1209600, must-revalidate"
   </FilesMatch>
 </IfModule>
