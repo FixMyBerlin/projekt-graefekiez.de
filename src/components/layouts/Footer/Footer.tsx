@@ -19,6 +19,9 @@ const informationItems = [
   },
 ]
 
+const footerLinkClasses =
+  'hover:underline underline-offset-4 hover:decoration-gray-300 hover:text-gray-300'
+
 export const Footer: React.FC = () => {
   return (
     <div className="mt-40 flex-col bg-gray-800 py-10 px-5 text-gray-300 md:px-12">
@@ -28,10 +31,13 @@ export const Footer: React.FC = () => {
           <ul className="mt-4 flex flex-col gap-4">
             {aboutItems.map((item) => (
               <li key={item.title}>
-                <Link href={item.href}>{item.title}</Link>
+                <Link classNameOverwrites={footerLinkClasses} href={item.href}>
+                  {item.title}
+                </Link>
               </li>
             ))}
             <Link
+              classNameOverwrites={footerLinkClasses}
               blank
               href="https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/"
             >
@@ -44,7 +50,9 @@ export const Footer: React.FC = () => {
           <ul className="mt-4 flex flex-col gap-4">
             {informationItems.map((item) => (
               <li key={item.title}>
-                <Link href={item.href}>{item.title}</Link>
+                <Link classNameOverwrites={footerLinkClasses} href={item.href}>
+                  {item.title}
+                </Link>
               </li>
             ))}
           </ul>
