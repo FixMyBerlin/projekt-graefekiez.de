@@ -87,7 +87,9 @@ const ForschungPage: React.FC<PageProps> = () => {
               return (
                 // eslint-disable-next-line react/no-array-index-key
                 <li key={index}>
-                  <Link href={partner.link}>{partner.image}</Link>
+                  <Link blank href={partner.link}>
+                    {partner.image}
+                  </Link>
                   <span className="sr-only">{partner.name}</span>
                 </li>
               )
