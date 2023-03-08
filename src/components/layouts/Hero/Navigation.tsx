@@ -1,7 +1,7 @@
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import { StaticImage } from 'gatsby-plugin-image'
 import React, { Fragment } from 'react'
+import XhainLogo from '../../../images/logos/Logo-BA-Xhain.inline.svg'
 import { DesktopNavigationNavItem, MobileNavigationNavItem } from './NavigationNavItem'
 
 const navigation = [
@@ -19,11 +19,7 @@ export const DesktopNavigation: React.FC<Props> = ({ visibilityClassName }) => {
   return (
     <div className={visibilityClassName}>
       <nav className="pointer-events-auto flex items-center bg-white px-6 py-2 text-sm font-normal text-gray-800 shadow-xl ring-1 ring-gray-400/5">
-        <StaticImage
-          src="../../../images/logos/logo-bezirksamt.png"
-          alt="Bezirksamt Friedrichshain-Kreuzberg"
-          height={50}
-        />
+        <XhainLogo />
         <ul className="flex">
           {navigation.map((item) => {
             return (
@@ -42,7 +38,10 @@ export const MobileNavigation: React.FC<Props> = ({ visibilityClassName }) => {
   return (
     <Popover className={visibilityClassName}>
       <Popover.Button className="group flex items-center bg-white px-4 py-2 text-sm font-normal text-gray-800 shadow-xl ring-1 ring-gray-900/5">
-        Menu
+        <span className="mx-2">
+          <XhainLogo height={50} />
+        </span>
+        <span className="mx-2">Menu</span>
         <ChevronDownIcon className="ml-3 h-auto w-2 stroke-gray-500 group-hover:stroke-gray-700 dark:group-hover:stroke-gray-400" />
       </Popover.Button>
       <Transition.Root>
@@ -76,12 +75,8 @@ export const MobileNavigation: React.FC<Props> = ({ visibilityClassName }) => {
               </Popover.Button>
               <h2 className="sr-only text-sm font-normal text-gray-600">Navigation</h2>
             </div>
-            <div className="text-center">
-              <StaticImage
-                src="../../../images/logos/logo-bezirksamt.png"
-                alt="Bezirksamt Friedrichshain-Kreuzberg"
-                height={100}
-              />
+            <div className="py-2 text-center">
+              <XhainLogo height={100} width={200} />
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-gray-100 text-base text-gray-800">

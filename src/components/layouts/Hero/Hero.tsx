@@ -1,9 +1,10 @@
 import clsx from 'clsx'
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
+import XhainLogo from '../../../images/logos/Logo-BA-Xhain.inline.svg'
 import { DesktopNavigation, MobileNavigation } from './Navigation'
 
 type Props = {
+  className?: string
   title: string
   subtitle?: string
   /** @default 'dark' */
@@ -12,9 +13,15 @@ type Props = {
   image?: React.ReactNode
 }
 
-export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', image }) => {
+export const Hero: React.FC<Props> = ({
+  title,
+  subtitle,
+  titleColor = 'dark',
+  image,
+  className,
+}) => {
   return (
-    <div className="relative isolate overflow-hidden bg-yellow-300">
+    <div className={clsx(className, 'relative isolate overflow-hidden bg-yellow-300')}>
       {/* Image: */}
       {image ? (
         <div className="absolute inset-0 -z-10">{image}</div>
@@ -23,7 +30,7 @@ export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', im
       )}
 
       {/* Gradient Top */}
-      <div className="absolute inset-x-0 top-0 -z-10 h-full overflow-hidden bg-gradient-to-t from-white/70 to-white/0" />
+      <div className="absolute inset-x-0 top-0 -z-10 h-full overflow-hidden" />
 
       {/* Gradient Dots: */}
       {/* <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
@@ -57,14 +64,12 @@ export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', im
         <DesktopNavigation visibilityClassName="hidden md:block" />
       </div>
 
-      <div className="px-6 pt-0 pb-20 sm:pt-10 sm:pb-44 md:pt-16">
+      <div className="px-6 pt-0 pb-28 sm:pt-10 sm:pb-44 md:pt-16">
         <div className="mx-auto max-w-2xl">
           <div className="text-center">
-            <StaticImage
-              src="../../../images/logos/logo-bezirksamt.png"
-              alt="Bezirksamt Friedrichshain-Kreuzberg"
-              height={175}
-            />
+            <div className="mt-6 mb-10 flex w-full flex-col items-center justify-center">
+              <XhainLogo height={130} width={200} />
+            </div>
             <h1
               className={clsx(
                 'text-5xl font-bold tracking-tight sm:text-7xl',
@@ -76,7 +81,7 @@ export const Hero: React.FC<Props> = ({ title, subtitle, titleColor = 'dark', im
             <p
               className={clsx(
                 'mt-10 flex justify-center text-xl leading-8 sm:block sm:text-3xl',
-                titleColor === 'light' ? 'text-gray-300' : 'text-black'
+                'text-black'
               )}
             >
               {subtitle && <span className="bg-yellow-300 py-3 px-12">{subtitle}</span>}

@@ -48,6 +48,7 @@ const ImprintPage: React.FC<PageProps> = () => {
             Alle Bildrechte, sofern nicht anders gekennzeichnet: © Bezirksamt
             Friedrichshain-Kreuzberg
           </p>
+          <p>Foto im Header auf der Startseite: Matthias Heskamp / paper planes e.V.</p>
         </Prose>
       </Container>
     </Layout>

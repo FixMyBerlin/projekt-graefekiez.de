@@ -16,12 +16,26 @@ import { PageHomeStepsTwo } from '~/components/PageHome/PageHomeStepsTwo'
 const IndexPage: React.FC<PageProps> = () => (
   <Layout>
     <Hero
+      className="sm:hidden"
       title="Projekt Graefekiez"
       subtitle="Schrittweise mehr Platz"
-      titleColor="dark"
+      titleColor="light"
       image={
         <StaticImage
-          src="../components/PageHome/assets/Hero/LandingPage_Graefestraße_Ecke_Böckhstraße_(autumn_2008)_Uli Herrmann.jpg"
+          src="../components/PageHome/assets/Hero/Hero-BG-mobile.jpg"
+          alt=""
+          className="h-full w-full"
+        />
+      }
+    />
+    <Hero
+      className="hidden sm:block"
+      title="Projekt Graefekiez"
+      subtitle="Schrittweise mehr Platz"
+      titleColor="light"
+      image={
+        <StaticImage
+          src="../components/PageHome/assets/Hero/Hero-BG-height900.jpg"
           alt=""
           className="h-full w-full"
         />
@@ -41,23 +55,23 @@ const IndexPage: React.FC<PageProps> = () => (
       <div className="sm:col-span-3">
         <div className="sm:hidden">
           <StaticImage
-            src="./../components/PageHome/assets/PageHomeSteps/schritt1-mobile.jpg"
+            src="./../components/PageHome/assets/PageHomeSteps/Kerngebiet-mobile.jpg"
             alt="Kerngebiet des Projektss (Darstellung: FixMyCity)"
           />
         </div>
         <div className="hidden max-w-5xl sm:block">
           <StaticImage
-            src="./../components/PageHome/assets/PageHomeSteps/schritt1.jpg"
+            src="./../components/PageHome/assets/PageHomeSteps/Illu-Kerngebiet.jpg"
             alt="Schematische Darstellung des Kerngebiets („L“)"
           />
         </div>
-        <p className="mt-2">Abb. 1: Kerngebiet des Projektss (Darstellung: FixMyCity)</p>
+        <p className="mt-2 text-sm">Abb. 1: Kerngebiet des Projektss (Darstellung: FixMyCity)</p>
       </div>
       <div className="sm:col-span-2">
         <PageHomeStepsTwo />
-        <p className="mt-2">
+        <p className="mt-2 text-sm">
           {/* Abb 2 ? */}
-          Abb. 2: So funktionieren die Bausteine miteinander (Darstellung: paper planes e.V.)
+          {/* Abb. 2: So funktionieren die Bausteine miteinander (Darstellung: paper planes e.V.) */}
         </p>
       </div>
 
