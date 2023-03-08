@@ -125,25 +125,25 @@ export const PageHomeMapMap: React.FC = () => {
               handleClick={() => toggleMapLayer('jelbi')}
               active={mapConfigState.includes('jelbi')}
             >
-              Jelbi-Stationen
+              Jelbi
             </MapButton>
             <MapButton
               handleClick={() => toggleMapLayer('logistik')}
               active={mapConfigState.includes('logistik')}
             >
-              Lieferflächen
+              Lade-/Lieferflächen (Idee)
             </MapButton>
             <MapButton
               handleClick={() => toggleMapLayer('aktion')}
               active={mapConfigState.includes('aktion')}
             >
-              Aktionsflächen
+              Aktionsflächen (Idee)
             </MapButton>
             <MapButton
               handleClick={() => toggleMapLayer('entsiegelt')}
               active={mapConfigState.includes('entsiegelt')}
             >
-              Entsiegelte Flächen
+              Entsiegelte Flächen (Idee)
             </MapButton>
           </>
         }

@@ -49,13 +49,13 @@ export const faqs: TFaqs = {
         id: 4,
         question: 'Was passiert mit den Stellplätzen für Menschen mit Behinderungen?',
         answer:
-          'Bestehende Stellplätze für Menschen mit Beeinträchtigungen bleiben erhalten oder werden in unmittelbarer Nähe neu ausgewiesen.',
+          'Bestehende Behindertenparkplätze bleiben erhalten oder werden in unmittelbarer Nähe neu ausgewiesen.',
       },
       {
         id: 5,
         question: 'Wie funktionieren Anlieferungen, Paketdienste oder andere Wirtschaftsverkehre?',
         answer:
-          'In der Graefestraße, Böckhstraße, Dieffenbachstraße und Grimmstraße werden Liefer- und Ladeflächen für den Wirtschaftsverkehr ausgewiesen. Für die LKW-Anlieferung werden 20m-Zonen und für die Anlieferung durch Kurier- Express- und Paketlieferungen 10m-Zonen eingerichtet. Die Liefer- und Ladeflächen entstehen schwerpunktmäßig in der Nähe anlieferungsintensiver Gewerbestandorten und werden so ausgewählt, dass eine Belieferung bis zur Zieladresse innerhalb von 75-100 Metern gewährleistet ist. ',
+          'In der Graefestraße, Böckhstraße, Dieffenbachstraße und Grimmstraße werden zuerst Liefer- und Ladeflächen für den Wirtschaftsverkehr ausgewiesen. Die weiteren Flächen werden im Sommer unter Beteiligung von Gewerbetreibenden festgelegt. Für die LKW-Anlieferung werden 20m-Zonen und für die Anlieferung durch Kurier- Express- und Paketlieferungen 10m-Zonen eingerichtet. Die Liefer- und Ladeflächen entstehen schwerpunktmäßig in der Nähe anlieferungsintensiver Gewerbestandorten und werden so ausgewählt, dass eine Belieferung bis zur Zieladresse innerhalb von 75-100 Metern gewährleistet ist.',
       },
       {
         id: 6,
@@ -69,13 +69,13 @@ export const faqs: TFaqs = {
         id: 7,
         question: 'Wo kann ich mich zum Projekt Graefekiez informieren?',
         answer:
-          'Das Bezirksamt Friedrichshain-Kreuzberg informiert laufend über alle geplanten Aktivitäten im Rahmen des Projektes. Alle Aktivitäten und Termine sind auf der Homepage www.projekt-graefekiez.de unter der Rubrik „Aktuelles“ zu finden. Bis Ende 2023 sind eine Reihe Info- und Diskussionsveranstaltungen geplant.',
+          'Alle Aktivitäten und Termine sind auf der Homepage www.projekt-graefekiez.de unter der Rubrik „Aktuelles“ zu finden. Bis Ende 2023 sind eine Reihe Info- und Diskussionsveranstaltungen geplant.',
       },
       {
         id: 8,
         question: 'Wo kann ich meine Ideen und Vorschläge einbringen?',
         answer:
-          'Auf der Homepage des Projekts finden Sie Informationen zu anstehenden Beteiligungsmöglichkeiten. Dort können Sie Ihre Ideen einbringen. Ab Juni gibt es eine Infobox vor Ort, in die Sie Ihre Ideen und Vorschläge einwerfen bzw. abgeben können.',
+          'Auf der Homepage des Projekts finden Sie Informationen zu anstehenden Beteiligungsmöglichkeiten. Dort können Sie Ihre Ideen einbringen.',
       },
     ],
   ],
@@ -97,27 +97,21 @@ export const faqs: TFaqs = {
         id: 3,
         question: 'Was passiert wann im Graefekiez?',
         answer:
-          'Das Projekt läuft in zwei Schritten. Ab Juni werden im „Kerngebiet“ in der Böckh- und Graefestraße Parkplätze für 12 Monate umgenutzt. Durch bessere Querungsmöglichkeiten und Einsehbarkeit werden die Schulwege sicherer. Die Parkplätze werden in enger Beteiligung mit Anwohner*innen neugestaltet und Nutzungsmöglichkeiten entwickelt. In den genannten Straßen werden Lade- und Lieferflächen zur Anlieferung, Ver- und Entsorgung sowie Plätze für Gewerbebetriebe und Behindertenstellplätze zur Verfügung gestellt. Zusätzlich werden Radabstellanlagen und insgesamt 13 Car- bzw. Bikesharing- Stationen der BVG (Jelbi) im gesamten Graefekiez auf früheren Stellplätzen geschaffen. Eine Durchfahrtssperre in der Schönleinstraße zwischen Lachmann- und Dieffenbachstr. wird eingerichtet, um das Abkürzen von Lkw durch das Viertel zu verhindern. Bereits parallel zum ersten Schritt beginnt die Vorbereitung für den zweiten Schritt. Für die zweite Stufe wird ein Freiflächenkonzept erstellt. Das ist auf Grundlage einer umfassenden Bürger*innen-Beteiligung die Voraussetzung für eine Ausweitung der tatsächlichen Verkehrsberuhigung auf den gesamten Graefekiez.',
+          'Im Sommer 2023 setzt das Straßen- und Grünflächenamt Friedrichshain-Kreuzberg mehrere verkehrliche Maßnahmen um. Dazu gehören: Umnutzung von Kfz-Stellplätzen im westlichen Teil der Böckhstraße, Einrichtung von Jelbi-Stationen und Jelbi-Punkten, Ausweisung von Liefer- und Ladezonen, Sperrung der Schönleinstraße zwischen Lachmann- und Dieffenbachstr. Zu den Maßnahmen führen das Wissenschaftszentrum Berlin sowie der Verein paper planes in Kooperation mit vielen weiteren Partnern vielfältige Beteiligungs- und Forschungsschritte durch. Auf Grundlage der Beteiligung und der Evaluation des Projekts wird ein Freiflächenkonzept für den gesamten Kiez erstellt. Die Ergebnisse werden dem Straßen- und Grünflächenamt übergeben.',
       },
       {
         id: 4,
         question: 'Wer führt das Projekt durch?',
         answer:
-          'Das Projekt wird vom Bezirksamt Friedrichshain-Kreuzberg verantwortet, zuständig ist das Straßen- und Grünflächenamt. Es kümmert sich um alle baulichen und verkehrstechnischen Maßnahmen.',
+          'Die verkehrlichen Maßnahmen werden vom Bezirksamt Friedrichshain-Kreuzberg verantwortet, zuständig ist das Straßen- und Grünflächenamt. Es kümmert sich um alle baulichen und verkehrstechnischen Maßnahmen. Forschung und Beteiligung werden unabhängig vom Bezirk durch externe Akteure eigenständig durchgeführt. Die wissenschaftliche Begleitung übernimmt das Wissenschaftszentrum Berlin für Sozialforschung (WZB), weitere Partner wie das DLR, das RIFS, die HfWU und inter 3 (CompAIR). Die Beteiligung übernimmt paper planes e.V. in Kooperation mit weiteren Partnern, wie NaturFreunde Berlin e.V. und Berlin 21 e.V..',
       },
     ],
     [
       {
-        id: 5,
-        question: 'Wer macht die wissenschaftliche Begleitung und die Beteiligung vor Ort?',
-        answer:
-          'Die wissenschaftliche Begleitung und die Koordination der vielfältigen Beteiligungsformen obliegt dem Wissenschaftszentrum Berlin für Sozialforschung (WZB), weitere Partner wie das DLR, das RIFS, die HfWU und inter 3 (CompAIR) sowie die Vereine Berlin 21, NaturFreunde e.V und paper planes e.V. verantworten die Beteiligung und die Befragung der Anwohner*innen und der Gewerbetreibenden.',
-      },
-      {
         id: 6,
         question: 'Was passiert mit den Stellplätzen, die im Kerngebiet umgenutzt werden?',
         answer:
-          'Die Sperrung des Durchgangsverkehrs am Hohenstaufenplatz dient zur Unterbindung von Abkürzungs- und Umwegungsverkehr vom Kottbusser Damm über die Schönleinstraße zur Urbanstraße. Dies soll unterbunden werden, da Durchgangsverkehr auf die Hauptstraßen gehört. Durch weniger Durchgangsverkehr soll die Verkehrssicherheit erhöht werden. Mit Verkehrszählungen wird geprüft, welchen Effekt diese Sperrung hat.',
+          'Die Stellplätze werden teils entsiegelt und begrünt, teils zu Liefer- und Ladeflächen umgestaltet und teils als Aktionsflächen für die Beteiligung und Forschung ausgewiesen oder für das Aufstellen von Parklets genutzt.',
       },
       {
         id: 7,
@@ -137,7 +131,7 @@ export const faqs: TFaqs = {
         id: 9,
         question: 'Wie werden Anwohner*innen und Gewerbetreibende beteiligt?',
         answer:
-          'Im Kerngebiet sind verschiedene Formate der Projektpartner geplant. Für Gewerbetreibende gibt es gesonderte Angebote. Über alle Termine und Aktivitäten wird auf dieser Webseite informiert.',
+          'Der Verein paper planes koordiniert umfangreiche Beteiligungsmöglichkeiten für verschiedene Zielgruppen. Im Rahmen der Forschungsaktivitäten des WZB sind auch vielfältige Workshops und Befragungen geplant. Über geplante Aktivitäten wird auf dieser Webseite oder vor Ort mit Aushängen informiert. Die Beteiligung wird nicht durch den Bezirk oder im Auftrag des Bezirks durchgeführt. Das Straßen- und Grünflächenamt nimmt lediglich die Ergebnisberichte von Forschung und Beteiligung entgegen.',
       },
       {
         id: 10,
@@ -151,12 +145,6 @@ export const faqs: TFaqs = {
         question: 'Werden Rettungs- und Einsatzfahrzeuge eingeschränkt?',
         answer:
           'Nein, alle Rettungswege werden freigehalten. Es ist im Gegenteil zu erwarten, dass Rettungs- und andere Einsatzfahrzeuge besser durchkommen, wenn das Halten in der zweiten Reihe aufgrund neuer Lade- und Lieferflächen weniger häufig vorkommt.',
-      },
-      {
-        id: 12,
-        question: 'Können die Maßnahmen zurückgebaut werden?',
-        answer:
-          'Ja, die Bezirksverordnetenversammlung von Friedrichshain-Kreuzberg kann nach dem Schritt 1 beschließen, dass die Maßnahmen teilweise oder ganz zurückgenommen werden.',
       },
       {
         id: 13,
@@ -181,7 +169,9 @@ export const faqs: TFaqs = {
               Beschlusses der Bezirksverordnetenversammlung vom 29.06.2022 (Drucksache DS/0154/VI)
             </Link>
             . Darin wird das Bezirksamt aufgefordert, „im Graefekiez einen Feldversuch zur
-            Neugestaltung des öffentlichen Raums durchzuführen“.
+            Neugestaltung des öffentlichen Raums durchzuführen“. Nach umfassender Prüfung
+            rechtlicher Voraussetzungen und Machbarkeit wurde das hier beschrieben Vorgehen
+            erarbeitet.
           </p>
         ),
         answer:
@@ -189,10 +179,9 @@ export const faqs: TFaqs = {
       },
       {
         id: 2,
-        question:
-          'Warum gibt es ein zweistufiges Projekt und nicht sofort eine finale Umgestaltung?',
+        question: 'Warum wird nicht der gesamte Kiez sofort umgestaltet?',
         answer:
-          'Nein, es werden weiterhin alle Wohnungen und Betriebe mit dem Auto erreichbar sein.',
+          'Das liegt an der Größe und an den Unwägbarkeiten des Vorhabens. Daher ist es sinnvoll, zunächst Erfahrungen in der versuchsweisen Umgestaltung des öffentlichen Raumes zu sammeln und dann darüber zu entscheiden, ob und falls ja wie die Maßnahmen ausgeweitet werden.',
       },
       {
         id: 9,
@@ -210,15 +199,9 @@ export const faqs: TFaqs = {
       },
       {
         id: 5,
-        question: 'Wie viele haben eigentlich ein Auto im Graefekiez?',
+        question: 'Wie viele Wie viele Menschen besitzen ein Auto im Graefekiez?',
         answer:
           'Wie in allen Kiezen innerhalb des S-Bahnrings liegt auch im Graefekiez der Autobesitz weit unter dem Berliner Durchschnitt. Im Jahr 2021 kommen auf 1.000 Einwohner*innen nur 182 Pkw (Berlinweit: 335 Pkw auf 1.000 Einwohner*innen).',
-      },
-      {
-        id: 6,
-        question: 'Wird das Projekt Auswirkungen auf die Mieten haben?',
-        answer:
-          'Ob Mieten steigen oder nicht, hängt in erster Linie vom Wohnungsmarkt und von seiner Regulierung ab. Die Ziele des Projektes sind eine höhere Verkehrssicherheit und eine bessere Aufenthaltsqualität.',
       },
     ],
     [

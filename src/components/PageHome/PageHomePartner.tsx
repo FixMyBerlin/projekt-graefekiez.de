@@ -66,7 +66,7 @@ export const PageHomePartner: React.FC = () => {
         })}
       </ul>
       <div className="mt-10">
-        <H3>Finanzierungspartner</H3>
+        <H3>Finanzierungspartner für Forschung und Beteiligung</H3>
 
         <ul className="mt-12 grid grid-cols-3 gap-12 md:grid-cols-6 lg:gap-14">
           {financePartners.map((partner, index) => {

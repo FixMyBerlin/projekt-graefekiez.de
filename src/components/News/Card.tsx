@@ -1,6 +1,7 @@
 import React from 'react'
 import clsx from 'clsx'
 import { Link } from '../links'
+import { Prose } from '../typography'
 
 const ChevronRightIcon = (props: any) => {
   return (
@@ -48,7 +49,11 @@ export const CardTitle: React.FC<{ as?: any; href?: string; children: React.Reac
 }
 
 export const CardDescription: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  return <p className="relative z-10 mt-2 text-sm text-gray-600">{children}</p>
+  return (
+    <Prose>
+      <p className="relative z-10 mt-2 text-sm text-gray-600">{children}</p>
+    </Prose>
+  )
 }
 
 export const CardCta: React.FC<{ children: React.ReactNode }> = ({ children }) => {

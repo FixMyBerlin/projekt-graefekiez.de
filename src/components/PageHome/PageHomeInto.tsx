@@ -24,19 +24,18 @@ export const PageHomeInto: React.FC = () => {
       <H1>Mit der Verkehrswende weiter gehen</H1>
       <Prose>
         <p>
-          Seit den 1980er Jahren ist der Graefekiez ein verkehrsberuhigter Bereich. Was damals eine
-          gute Idee für mehr Verkehrsberuhigung war, funktioniert heute nicht mehr. Denn die Anzahl
-          der Autos in der Stadt hat in den letzten vierzig Jahren stark zugenommen. Dadurch kommt
-          es zu immer mehr Problemen. Im verkehrsberuhigten Bereich sind rechtlich alle
-          Verkehrsteilnehmer*innen gleichgestellt. Es muss Schrittgeschwindigkeit gefahren werden
-          und Autos dürfen überall halten. Doch die Straße sieht ganz anders aus: Es gibt weiterhin
-          Fahrbahn, Gehwege und Kfz-Stellplätze wie in einer normalen Nebenstraße. Das ist ein
-          echtes „gebautes Missverständnis“ – mit Folgen für die Verkehrssicherheit: Es wird zu
-          schnell gefahren, es gibt Konflikte mit Lieferverkehren, die Straße ist schlecht
-          einsehbar. Insbesondere für die Schüler*innen der vier Schulen im Kiez ist das gefährlich
-          – aber auch für alle anderen, die zu Fuß oder mit dem Rad unterwegs sind. Mit dem Projekt
-          Graefekiez soll dieses Problem testweise behoben werden. Ziel ist es, einen
-          verkehrsberuhigten Bereich zu schaffen, der diesen Namen auch verdient. Das Projekt setzt
+          Seit den 1980er Jahren ist der Graefekiez ein verkehrsberuhigter Bereich in dem alle
+          Verkehrsteilnehmer*innen gleichgestellt sind, Schrittgeschwindigkeit gefahren werden muss
+          und Autos überall halten dürfen. Die gute Idee für mehr Verkehrsberuhigung von damals
+          funktioniert heute nicht mehr, da die Anzahl der Autos und Lieferfahrzeuge stark
+          zugenommen hat. Auch sieht die Straße nicht verkehrsberuhigt aus: Es gibt Fahrbahn,
+          Gehwege und Kfz-Stellplätze. Die Verkehrsberuhigung wird von viele Nutzer*innen daher
+          nicht erkannt. Das hat Folgen für die Verkehrssicherheit: Es wird zu schnell gefahren, es
+          gibt Konflikte mit Lieferverkehren, die Straßen sind schlecht einsehbar. Insbesondere für
+          die Schüler*innen der vier Schulen im Kiez ist das gefährlich – aber auch für alle
+          anderen, die zu Fuß oder mit dem Rad unterwegs sind. Mit dem Projekt Graefekiez soll
+          dieses Problem behoben werden. Ziel ist es, einen verkehrsberuhigten Bereich zu schaffen,
+          der diesen Namen auch verdient. Mit den Maßnahmen setzt das Straßen- und Grünflächenamt
           einen{' '}
           <Link
             blank
@@ -44,39 +43,24 @@ export const PageHomeInto: React.FC = () => {
           >
             Beschlusses der Bezirksverordnetenversammlung (BVV)
           </Link>{' '}
-          vom 29.6.2022 um.
+          vom 29.6.2022 um. Die Maßnahmen werden begleitet von Beteiligung und Forschung durch das
+          Wissenschaftszentrum Berlin, paper planes e.V. sowie deren Partner*innen.
         </p>
       </Prose>
       <H1>Platz für den Alltag der Vielen</H1>
       <Prose>
         <p>
-          Mit sinnvollen Einzelschritten wird der Alltag aller Menschen, die im Graefekiez leben,
-          arbeiten oder ihre Freizeit verbringen, entspannter. Derzeit stehen die Parkplätze nur
-          einigen wenigen zur Verfügung, die teilweise tagelang ihre Autos darauf abstellen. Täglich
-          suchen derweil andere in ihrem Alltag verzweifelt nach Stellplätzen: Lieferfahrzeuge,
-          Pflegedienste, Mobilitätseingeschränkte. Die Umnutzung der Plätze soll dazu führen, dass
-          der Alltag für viele Menschen entspannter und sicherer wird. Der Raum wird neu verteilt
-          und zweckgebunden, z.B. durch Lade- und Lieferflächen oder Sharing-Stationen. Diese können
-          durch viele Menschen täglich benutzt werden statt nur durch ein abgestelltes Fahrzeug.
-          Dies schafft Verlässlichkeit für alle: Von Anwohnerin zu Kurierdienst bis zur Müllabfuhr.
-          Die meisten Menschen haben im Vergleich zum Berliner Durchschnitt kein Auto. Nur 182 von
-          1.000 Bewohner*innen im Graefekiez haben einen Pkw, im Berliner Durchschnitt sind es 335
-          Pkw. Sie alle profitieren von der veränderten Raumaufteilung. Das Projekt Graefekiez macht
-          Angebote für eine moderne Mobilität, wie sie bereits heute gelebt wird. Immer mehr
-          Menschen steigen auf Sharing-Fahrzeuge um. Im Graefekiez werden erstmals engmaschig
-          Stationen für den Zugang geschaffen (sog. Jelbi-Stationen und Jelbi-Punkte). Zudem kann
-          das Parkhaus am Hermannplatz zu einem verlässlichen Tarif genutzt werden, um das eigene
-          Auto sicher abzustellen. Für die vorhandenen Gewerbetreibenden sowie die seit Jahren
-          zunehmenden Lieferverkehre werden in großer Anzahl Lade- und Lieferflächen geschaffen. So
-          wird der stressige Alltag für alle ein wenig entspannter.
-        </p>
-        <p>
-          Die größte Umgestaltung geschieht 2023 im sogenannten „Kerngebiet“. Dieses befindet sich
-          in der Böckhstraße und in der Graefestraße und damit im direkten Umfeld der
-          Lemgo-Grundschule. Hier werden alle Kfz-Parkplätze umgenutzt. Zusätzlich werden
-          Gehwegvorstreckungen gebaut, Baumscheiben erweitert und Flächen entsiegelt. In
-          Beteiligungsveranstaltungen werden Parklets gebaut und diskutiert, wie die freien
-          Parkplätze durch die Anlieger*innen genutzt werden können.
+          Nur 182 Pkw gibt es im Graefekiz je 1.000 Bewohner*innen, im Berliner Durchschnitt sind es
+          335. Das heißt, ein Großteil der Anwohnenden ist heute schon mit dem öffentlichen
+          Nahverkehr, dem Fahrrad oder Sharing-Angeboten in der Stadt unterwegs. Gleichzeitig steht
+          der öffentliche Raum mit seinen vielen Parkplätzen nur einigen wenigen zur Verfügung, die
+          teilweise tage- oder wochenlang ihre Autos hier abstellen. Täglich suchen derweil andere
+          in ihrem Alltag verzweifelt nach Stellplätzen, zum Beispiel Lieferfahrzeuge oder
+          Pflegedienste. Deshalb soll der Raum neu verteilt werden und zweckgebunden vergeben, z.B.
+          durch Lade- und Lieferflächen oder Sharing-Stationen (sog. Jelbi-Stationen und
+          Jelbi-Punkte). Ziel ist mehr Verlässlichkeit für alle: Von Anwohnerin zu Kurierdienst bis
+          zur Müllabfuhr. Sie alle sollen von der veränderten Raumaufteilung profitieren. So soll
+          der Alltag für alle entspannter werden.
         </p>
       </Prose>
     </section>

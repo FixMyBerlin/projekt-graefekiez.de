@@ -15,29 +15,39 @@ export const PageHomeParking: React.FC = () => {
             <br />
             In unmittelbarer Nähe zum Projektgebiet befindet sich das Parkhaus am Hermannplatz mit
             Dauerparkplätzen. Diese können gegen Gebühr genutzt werden.
+            <Link
+              blank
+              href="https://galeria-parken.de/parkhaus/9bae5f5d-8c1a-4ff2-b09b-127fb9da93bb"
+            >
+              Hier geht es zur Seite des Parkhauses (externer Link).
+            </Link>
           </p>
           <p className="bg-white p-4">
             <strong>Lade- und Lieferflächen</strong>
             <br />
-            Im Graefekiez werden in der Böckhstraße und Graefestraße mehrere Lade- und Lieferflächen
-            eingerichtet. Diese Zonen sind nur für das Be- und Entladen von Fahrzeugen gedacht.
-            Parken ist hier nicht gestattet. Dadurch wird die Belieferung einfacher und der Alltag
-            für Gewerbetreibende und Lieferdienste entspannter. Lieferfahrzeuge müssen nicht mehr in
-            der zweiten Reihe halten und gefährliche Situationen für den Fußverkehr werden
-            entschärft.
+            Im Graefekiez werden mehrere Lade- und Lieferflächen eingerichtet. Diese sind nur für
+            das Be- und Entladen von Fahrzeugen gedacht. Parken ist hier nicht gestattet. Dadurch
+            wird die Belieferung einfacher und der Alltag für Gewerbetreibende und Lieferdienste
+            entspannter. Lieferfahrzeuge müssen nicht mehr in der zweiten Reihe halten und
+            gefährliche Situationen für den Fußverkehr werden entschärft.
           </p>
           <p className="bg-white p-4">
-            <strong>Parkhaus</strong>
+            <strong>Flächendeckendes Netz von Jelbi-Stationen und Jelbi-Punkten</strong>
             <br />
             Die Berliner Verkehrsbetriebe (BVG) richten Jelbi-Stationen und Jelbi-Punkte mit
             Sharing-Angeboten im Graefekiez ein. Hier lassen sich schnell, komfortabel und auf
             kurzem Weg Roller, Räder, Scooter, Lastenräder oder Autos leihen. An den U-Bahnhöfen
-            Schönleinstraße und Südstern besteht die direkte Verbindung zwischen Jelbi und den
-            öffentlichen Verkehrsmitteln. Für die Nutzung von Jelbi muss die{' '}
+            Schönleinstraße und Südstern kann von Jelbi auf den öffentlichen Nahverkehr umgestiegen
+            werden. Für die Nutzung von Jelbi muss die{' '}
             <Link blank href="https://www.jelbi.de/">
               Jelbi-App
             </Link>{' '}
-            installiert werden.
+            (externer Link) installiert werden.
+          </p>
+          <p className="bg-white p-4">
+            <strong>Behindertenstellplätze</strong>
+            <br />
+            Die bestehenden Stellplätze bleiben erhalten.
           </p>
         </Prose>
       </ContainerTwoThirdWidth>

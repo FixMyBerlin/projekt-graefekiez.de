@@ -11,7 +11,6 @@ import { PageHomeMapText } from '~/components/PageHome/PageHomeMapText'
 import { PageHomeNews } from '~/components/PageHome/PageHomeNews'
 import { PageHomeParking } from '~/components/PageHome/PageHomeParking'
 import { PageHomePartner } from '~/components/PageHome/PageHomePartner'
-import { PageHomeStepsOne } from '~/components/PageHome/PageHomeStepsOne'
 import { PageHomeStepsTwo } from '~/components/PageHome/PageHomeStepsTwo'
 
 const IndexPage: React.FC<PageProps> = () => (
@@ -39,14 +38,11 @@ const IndexPage: React.FC<PageProps> = () => (
 
     {/* TODO whole section: evtl refactorn mit 2/3-Container - ist erstmal so bis sich klärt dass Reihenfolge mit News so auf mobile passt - sonst problem mit grid... */}
     <Container grid>
-      <div className="sm:col-span-2">
-        <PageHomeStepsOne />
-      </div>
       <div className="sm:col-span-3">
         <div className="sm:hidden">
           <StaticImage
             src="./../components/PageHome/assets/PageHomeSteps/schritt1-mobile.jpg"
-            alt="Schematische Darstellung des Kerngebiets („L“)"
+            alt="Kerngebiet des Projektss (Darstellung: FixMyCity)"
           />
         </div>
         <div className="hidden max-w-5xl sm:block">
@@ -55,26 +51,16 @@ const IndexPage: React.FC<PageProps> = () => (
             alt="Schematische Darstellung des Kerngebiets („L“)"
           />
         </div>
+        <p className="mt-2">Abb. 1: Kerngebiet des Projektss (Darstellung: FixMyCity)</p>
       </div>
       <div className="sm:col-span-2">
         <PageHomeStepsTwo />
+        <p className="mt-2">
+          {/* Abb 2 ? */}
+          Abb. 2: So funktionieren die Bausteine miteinander (Darstellung: paper planes e.V.)
+        </p>
       </div>
-      <div className="sm:col-span-3">
-        <div className="sm:hidden">
-          <StaticImage
-            className="sm:hidden"
-            src="./../components/PageHome/assets/PageHomeSteps/schritt2-mobile.jpg"
-            alt="Zweischrittigkeit“ bzw. Prozessablauf"
-          />
-        </div>
-        <div className="hidden max-w-5xl sm:block">
-          <StaticImage
-            className="hidden max-w-5xl sm:block"
-            src="./../components/PageHome/assets/PageHomeSteps/schritt2.jpg"
-            alt="Zweischrittigkeit“ bzw. Prozessablauf"
-          />
-        </div>
-      </div>
+
       {/* TODO Grafik kommt noch */}
     </Container>
 

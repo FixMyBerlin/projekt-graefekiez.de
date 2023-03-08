@@ -2,17 +2,17 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Card, CardProps } from '../Card/Card'
 import { ContainerTwoThirdWidth } from '../layouts/ContainerTwoThirdWidth'
-import { Link } from '../links'
 import { H1, H3, Prose } from '../typography'
 
 const cards: CardProps[] = [
   {
-    title: 'Zukunft Straße (Berlin 21 und NaturFreunde)',
+    title: 'paper planes e.V.',
     description:
-      'Grün und sicher! Gemeinsam gestalten wir Parkraum für mehr Verkehrssicherheit und Aufenthaltsqualität.',
+      'Die Kreuzberger „Denkfabrik für ein besseres Leben zwischen den Häusern“ setzt die Beteiligung um und wird die Anwohner*innen dabei unterstützen, ihre Ideen auf die Straße zu bringen.',
+    link: { title: 'Mehr über paper planes e.V.', href: 'https://www.paper-planes.net/' },
     image: (
       <StaticImage
-        src="./assets/PageHomeLanduse/image-zukunft.jpg"
+        src="./assets/PageHomeLanduse/image-paper.jpg"
         alt=""
         className="h-48 w-full object-cover"
         height={192}
@@ -20,13 +20,12 @@ const cards: CardProps[] = [
     ),
   },
   {
-    title: 'paper planes e.V.',
+    title: 'Projekt Zukunft Straße (Berlin 21 e.V.  und NaturFreunde Berlin e.V.)',
     description:
-      'Die Kreuzberger „Denkfabrik für ein besseres Leben zwischen den Häusern“ wird die Anwohner*innen dabei unterstützen, ihre Ideen auf die Straßen zu bringen.',
-    link: { title: 'Mehr über paper planes e.V.', href: 'https://www.paper-planes.net/' },
+      'Grün und sicher! Gemeinsam gestalten wir Parkraum für mehr Verkehrssicherheit und Aufenthaltsqualität.',
     image: (
       <StaticImage
-        src="./assets/PageHomeLanduse/image-paper.jpg"
+        src="./assets/PageHomeLanduse/image-zukunft.jpg"
         alt=""
         className="h-48 w-full object-cover"
         height={192}
@@ -59,42 +58,39 @@ export const PageHomeLanduse: React.FC = () => {
       <ContainerTwoThirdWidth>
         <Prose>
           <p>
-            Mit der temporären Umnutzung von Parkplätzen werden im öffentlichen Raum neue
-            Nutzungsmöglichkeiten erprobt. Mit verschiedenen Aktionen und Angeboten wird der neu
-            gewonnene Raum gestaltet und genutzt. Für die kommenden Monate sind vor Ort viele
-            Termine vorgesehen, bei denen Interessierte sich informieren und beteiligen können. Wie
-            eine autoreduzierte Straße zu einem sicheren und lebenswerten Raum wird, zeigen
-            Anwohnende, Kitas, Schulen, lokale Gewerbetreibende und Nachbarschaftsinitiativen
-            gemeinsam. Es gibt Möglichkeiten, die eigene Meinung einzubringen aber auch sich konkret
-            an der Umgestaltung zu beteiligen, zum Beispiel durch Bauworkshops oder Pflanzaktionen.
+            Wie wird eine Straße mit weniger Parkplätzen zu einem lebenswerten Stadtraum? Welchen
+            Beitrag können und wollen Anwohnende, Kitas, Schulen, lokale Gewerbetreibende und
+            Nachbarschaftsinitiativen leisten? Um diese Fragen zu beantworten und darauf aufbauend
+            Prinzipien für das zukünftige Freiraumkonzept des gesamten Graefekiez zu erarbeiten,
+            werden über den Sommer und Herbst 2023 neue Nutzungsmöglichkeiten im Kerngebiet (Teile
+            der Böckh- und Graefestraße) partizipativ erprobt. Alle Bewohnerinnen und alltäglichen
+            Nutzer des Graefekiezes sind dazu eingeladen, ihre Ideen für den öffentlichen Raum und
+            die Umnutzung der Kfz-Parkplätze einzubringen und bestenfalls auch die Verantwortung für
+            die Betreuung einzelner Flächen zu übernehmen. Information, Inspiration und
+            Hilfestellung erhalten alle Aktiven dabei von der gemeinnützigen Denkfabrik paper planes
+            e.V. – der Verein schafft eine Vor-Ort-Präsenz mit regelmäßigen Sprechstunden, verknüpft
+            gleichgesinnte Engagierte und ist erster Ansprechpartner für Nachfragen.
           </p>
           <p>
-            Aufbauend auf den Ergebnissen werden Ideen und Prinzipien entwickelt, die auf den
-            gesamten Graefekiez übertragen werden können. Alle die wollen können so zum Beispiel das
-            zukunftsfähige Straßenbild ihres Kiezes mitgestalten.
-          </p>
-          <p>
-            Paper planes e.V., Zukunft Straße und das Projektteam von CompAIR werden vor Ort
-            aktivieren, unterstützen und den Prozess begleiten. Unterschiedliche Formate und
-            Workshops reichen den Akteur*innen Ideen, Know-How und Material zur gemeinsamen
-            Umwandlung der Straße. Aktionswochen und Veranstaltungen werden das neue Straßenbild
-            über den gesamten Projektzeitraum beleben.
+            Weitere Beiträge zur temporären Umgestaltung der Straßen im Kerngebiet mit
+            Beteiligungselementen leistet das Projekt Zukunft Straße und das Projektteam von
+            CompAIR. Zudem wird die Beteiligung von vielfältigen Forschungsaktivitäten durch das
+            Wissenschaftszentrum Berlin für Sozialforschung (WZB) begleitet.
           </p>
         </Prose>
-        <H3>Hier können Sie sich beteiligen</H3>
+        <H3>Schon mal vormerken:</H3>
 
         <div className="flex justify-start gap-4">
-          <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-gray-300" />
-          <Link href="aktuelles/auftaktveranstaltung/">
-            22. April 2023 - <strong>Auftaktveranstaltung</strong>
-            <br />
-            Vorstellung des Projekts und der Beteiligungsformate. Alle sind willkommen!
-          </Link>
+          <p>
+            Am Wochenende um den 22. April 2023 wird die Auftaktveranstaltung zur Beteiligung
+            stattfinden. Weitere Infos folgen. Alle Interessierte können auf der paper planes e.V.
+            Website einen Newsletter zu den Beteiligungsformaten im Projekt Graefekiez abonnieren.
+          </p>
         </div>
       </ContainerTwoThirdWidth>
 
       <p className="mt-10">
-        <H3>Unterstützung vor Ort</H3>
+        <H3>Beteiligung vor Ort</H3>
       </p>
       <ol className="mt-6 grid gap-8 sm:grid-cols-2 md:gap-10 lg:grid-cols-3 xl:gap-12">
         {cards.map((card, index) => {
