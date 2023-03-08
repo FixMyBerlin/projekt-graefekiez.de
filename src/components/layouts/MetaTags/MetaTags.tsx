@@ -1,9 +1,10 @@
 import React from 'react'
-import SocialSharingImage from './assets/default.png'
+import SocialSharingImage from './assets/social-sharing.jpg'
 
 const seoDefaultValues = {
-  defaultTitle: 'Projekt Graefekiez Berlin',
-  defaultDescription: 'TODO',
+  defaultTitle: 'Projekt Graefekiez - Schrittweise mehr Platz',
+  defaultDescription:
+    'Mit dem Projekt Graefekiez erprobt der Bezirk Friedrichshain-Kreuzberg, wie Straßen der Zukunft aussehen können. Mit der Umnutzung von Parkplätzen wird Verkehrssicherheit erhöht, die Situation für Gewerbeverkehr verbessert und Zugang zu geteilten Mobilitätsangeboten geschaffen.',
   baseUrl: 'https://projekt-graefekiez.berlin',
 }
 
