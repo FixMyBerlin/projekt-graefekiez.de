@@ -2,6 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Card, CardProps } from '../Card/Card'
 import { ContainerTwoThirdWidth } from '../layouts/ContainerTwoThirdWidth'
+import { Link } from '../links'
 import { H1, H3, Prose } from '../typography'
 
 const cards: CardProps[] = [
@@ -86,8 +87,12 @@ export const PageHomeLanduse: React.FC = () => {
             <strong>
               Auftaktveranstaltung zur Beteiligung stattfinden. Weitere Infos folgen.{' '}
             </strong>{' '}
-            Alle Interessierte können auf der paper planes e.V. Website einen{' '}
-            <strong>Newsletter zu den Beteiligungsformaten</strong> im Projekt Graefekiez
+            Alle Interessierten können auf der
+            <Link href="https://www.paper-planes.net/#projekt-graefekiez" blank>
+              {' '}
+              paper planes e.V. Website
+            </Link>{' '}
+            einen <strong>Newsletter zu den Beteiligungsformaten</strong> im Projekt Graefekiez
             abonnieren.
           </p>
         </div>

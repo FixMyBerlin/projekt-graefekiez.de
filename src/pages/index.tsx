@@ -65,14 +65,10 @@ const IndexPage: React.FC<PageProps> = () => (
             alt="Schematische Darstellung des Kerngebiets („L“)"
           />
         </div>
-        <p className="mt-2 text-sm">Abb. 1: Kerngebiet des Projektss (Darstellung: FixMyCity)</p>
+        <p className="mt-2 text-sm">Abb. 1: Kerngebiet des Projekts (Darstellung: FixMyCity)</p>
       </div>
       <div className="sm:col-span-2">
         <PageHomeStepsTwo />
-        <p className="mt-2 text-sm">
-          {/* Abb 2 ? */}
-          {/* Abb. 2: So funktionieren die Bausteine miteinander (Darstellung: paper planes e.V.) */}
-        </p>
       </div>
 
       {/* TODO Grafik kommt noch */}

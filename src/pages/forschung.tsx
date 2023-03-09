@@ -4,7 +4,7 @@ import React from 'react'
 import { Layout, MetaTags } from '~/components/layouts'
 import { Container } from '~/components/layouts/Container'
 import { Hero } from '~/components/layouts/Hero/Hero'
-import { Link } from '~/components/links'
+import { Link, MailLink } from '~/components/links'
 import { H1, H3, Prose } from '~/components/typography'
 
 const parnters = [
@@ -78,6 +78,10 @@ const ForschungPage: React.FC<PageProps> = () => {
             mehreren Veranstaltungen im Kiez über die laufenden Ergebnisse informieren und mit den
             Anwohnenden im Austausch bleiben. Ebenso werden die Beteiligungs- und
             Gestaltungsaktivitäten beobachtet und ausgewertet.
+          </p>
+          <p>
+            Wer mehr über die wissenschaftliche Begleitforschung wissen oder mitmachen möchte, kann
+            sich über <MailLink>graefe-science@wzb.eu</MailLink> an das WZB wenden.
           </p>
         </Prose>
         <div className="mt-12">
