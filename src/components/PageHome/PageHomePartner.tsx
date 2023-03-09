@@ -1,16 +1,15 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { H3 } from '../typography'
+import XhainLogo from '../../images/logos/Logo-BA-Xhain.inline.svg'
 
 const parnters = [
   {
     name: 'XHain',
     image: (
-      <StaticImage
-        src="../../images/logos/bezirkslogo_farbe_ohne_claim_transparenter.jpg"
-        alt=""
-        height={192}
-      />
+      <div className="flex h-full w-full items-center justify-center">
+        <XhainLogo width={80} height={80} />
+      </div>
     ),
   },
   {

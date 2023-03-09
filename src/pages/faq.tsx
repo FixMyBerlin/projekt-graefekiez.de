@@ -57,14 +57,14 @@ export const faqs: TFaqs = {
         answer:
           'In der Graefestraße, Böckhstraße, Dieffenbachstraße und Grimmstraße werden zuerst Liefer- und Ladeflächen für den Wirtschaftsverkehr ausgewiesen. Die weiteren Flächen werden im Sommer unter Beteiligung von Gewerbetreibenden festgelegt. Für die LKW-Anlieferung werden 20m-Zonen und für die Anlieferung durch Kurier- Express- und Paketlieferungen 10m-Zonen eingerichtet. Die Liefer- und Ladeflächen entstehen schwerpunktmäßig in der Nähe anlieferungsintensiver Gewerbestandorten und werden so ausgewählt, dass eine Belieferung bis zur Zieladresse innerhalb von 75-100 Metern gewährleistet ist.',
       },
+    ],
+    [
       {
         id: 6,
         question: 'Wer darf die Liefer- und Ladeflächen nutzen?',
         answer:
           'Ladeflächen dürfen zum Be- und Entladen genutzt werden – sowohl für gewerbliche als auch für private Zwecke.',
       },
-    ],
-    [
       {
         id: 7,
         question: 'Wo kann ich mich zum Projekt Graefekiez informieren?',
@@ -101,26 +101,26 @@ export const faqs: TFaqs = {
       },
       {
         id: 4,
-        question: 'Wer führt das Projekt durch?',
-        answer:
-          'Die verkehrlichen Maßnahmen werden vom Bezirksamt Friedrichshain-Kreuzberg verantwortet, zuständig ist das Straßen- und Grünflächenamt. Es kümmert sich um alle baulichen und verkehrstechnischen Maßnahmen. Forschung und Beteiligung werden unabhängig vom Bezirk durch externe Akteure eigenständig durchgeführt. Die wissenschaftliche Begleitung übernimmt das Wissenschaftszentrum Berlin für Sozialforschung (WZB), weitere Partner wie das DLR, das RIFS, die HfWU und inter 3 (CompAIR). Die Beteiligung übernimmt paper planes e.V. in Kooperation mit weiteren Partnern, wie NaturFreunde Berlin e.V. und Berlin 21 e.V..',
-      },
-    ],
-    [
-      {
-        id: 6,
         question: 'Was passiert mit den Stellplätzen, die im Kerngebiet umgenutzt werden?',
         answer:
           'Die Stellplätze werden teils entsiegelt und begrünt, teils zu Liefer- und Ladeflächen umgestaltet und teils als Aktionsflächen für die Beteiligung und Forschung ausgewiesen oder für das Aufstellen von Parklets genutzt.',
       },
+    ],
+    [
       {
-        id: 7,
+        id: 5,
+        question: 'Wer führt das Projekt durch?',
+        answer:
+          'Die verkehrlichen Maßnahmen werden vom Bezirksamt Friedrichshain-Kreuzberg verantwortet, zuständig ist das Straßen- und Grünflächenamt. Es kümmert sich um alle baulichen und verkehrstechnischen Maßnahmen. Forschung und Beteiligung werden unabhängig vom Bezirk durch externe Akteure eigenständig durchgeführt. Die wissenschaftliche Begleitung übernimmt das Wissenschaftszentrum Berlin für Sozialforschung (WZB), weitere Partner wie das DLR, das RIFS, die HfWU und inter 3 (CompAIR). Die Beteiligung übernimmt paper planes e.V. in Kooperation mit weiteren Partnern, wie NaturFreunde Berlin e.V. und Berlin 21 e.V..',
+      },
+      {
+        id: 6,
         question: 'Warum wird die Durchfahrt am Hohenstaufenplatz gesperrt?',
         answer:
           'Die Stellplätze werden teils entsiegelt und begrünt, teils zu Liefer- und Ladeflächen umgestaltet und teils als Aktionsflächen ausgewiesen. Auf den Aktionsflächen finden durch die Projektpartner*innen verschiedene Formate zur Diskussion, Beteiligung und Gestaltung mit der Nachbarschaft statt.',
       },
       {
-        id: 8,
+        id: 7,
         question: 'Der Graefekiez ist schon verkehrsberuhigt, warum wird so viel verändert?',
         answer:
           'Die schon in den 1980er Jahren eingeführten verkehrsberuhigten Bereiche im Graefekiez wurden baulich nie umgesetzt. Rechtlich sind alle Verkehrsteilnehmenden gleichgestellt, baulich gibt es jedoch weiterhin Gehweg und Fahrbahn. Hierbei handelt es sich um ein “gebautes Missverständnis“, welches zu unklaren und gefährlichen Situationen im Straßenverkehr führen kann. Es braucht eine eindeutige und im Ergebnis sicherere Straßengestaltung. Dafür muss der gesamte Straßenquerschnitt umgestaltet werden. Dies wird im Rahmen des Projekts ausprobiert.',
@@ -128,26 +128,26 @@ export const faqs: TFaqs = {
     ],
     [
       {
-        id: 9,
+        id: 8,
         question: 'Wie werden Anwohner*innen und Gewerbetreibende beteiligt?',
         answer:
           'Der Verein paper planes koordiniert umfangreiche Beteiligungsmöglichkeiten für verschiedene Zielgruppen. Im Rahmen der Forschungsaktivitäten des WZB sind auch vielfältige Workshops und Befragungen geplant. Über geplante Aktivitäten wird auf dieser Webseite oder vor Ort mit Aushängen informiert. Die Beteiligung wird nicht durch den Bezirk oder im Auftrag des Bezirks durchgeführt. Das Straßen- und Grünflächenamt nimmt lediglich die Ergebnisberichte von Forschung und Beteiligung entgegen.',
       },
       {
-        id: 10,
+        id: 9,
         question:
           'Wie wird das Freihalten der Lieferzonen und der umgenutzten Parkplätze sichergestellt?',
         answer:
           'Das Ordnungsamt wird verstärkt kontrollieren. Die freiwerdenden Plätze werden zudem bespielt und umgenutzt.',
       },
       {
-        id: 11,
+        id: 10,
         question: 'Werden Rettungs- und Einsatzfahrzeuge eingeschränkt?',
         answer:
           'Nein, alle Rettungswege werden freigehalten. Es ist im Gegenteil zu erwarten, dass Rettungs- und andere Einsatzfahrzeuge besser durchkommen, wenn das Halten in der zweiten Reihe aufgrund neuer Lade- und Lieferflächen weniger häufig vorkommt.',
       },
       {
-        id: 13,
+        id: 11,
         question: 'Was kostet das Projekt und wer finanziert es?',
         answer:
           'Das Projekt wird zum Teil aus Mitteln der Senatsverwaltung für Umwelt, Mobilität, Verbraucher- und Klimaschutz und des Straßen- und Grünflächenamtes Friedrichshain-Kreuzberg finanziert. Die mit dem Projekt Graefekiez verbundenen Beteiligungsaktivitäten und Forschungsarbeiten werden aus Drittmitteln finanziert, die die beteiligten Institute eingeworben haben.',
@@ -184,10 +184,10 @@ export const faqs: TFaqs = {
           'Das liegt an der Größe und an den Unwägbarkeiten des Vorhabens. Daher ist es sinnvoll, zunächst Erfahrungen in der versuchsweisen Umgestaltung des öffentlichen Raumes zu sammeln und dann darüber zu entscheiden, ob und falls ja wie die Maßnahmen ausgeweitet werden.',
       },
       {
-        id: 9,
-        question: 'Ist nicht eine Parkraumbewirtschaftung die bessere Lösung?',
+        id: 3,
+        question: 'Wie viele Wie viele Menschen besitzen ein Auto im Graefekiez?',
         answer:
-          'Parkraumbewirtschaftung hat generell eine entlastende Wirkung, sie wird im Bezirk auch schrittweise eingeführt. Sie führt vor allem dazu, dass das Parken von Besucher*innen und Pendler*innen abnimmt und mehr Parkraum für Anwohner*innen zur Verfügung steht. Das Projekt geht jedoch darüber hinaus und erprobt nicht nur die Verteilung, sondern auch die Umnutzung von Kfz-Stellplätzen zu Gunsten aller.',
+          'Wie in allen Kiezen innerhalb des S-Bahnrings liegt auch im Graefekiez der Autobesitz weit unter dem Berliner Durchschnitt. Im Jahr 2021 kommen auf 1.000 Einwohner*innen nur 182 Pkw (Berlinweit: 335 Pkw auf 1.000 Einwohner*innen).',
       },
     ],
     [
@@ -199,27 +199,27 @@ export const faqs: TFaqs = {
       },
       {
         id: 5,
-        question: 'Wie viele Wie viele Menschen besitzen ein Auto im Graefekiez?',
+        question: 'Ist nicht eine Parkraumbewirtschaftung die bessere Lösung?',
         answer:
-          'Wie in allen Kiezen innerhalb des S-Bahnrings liegt auch im Graefekiez der Autobesitz weit unter dem Berliner Durchschnitt. Im Jahr 2021 kommen auf 1.000 Einwohner*innen nur 182 Pkw (Berlinweit: 335 Pkw auf 1.000 Einwohner*innen).',
+          'Parkraumbewirtschaftung hat generell eine entlastende Wirkung, sie wird im Bezirk auch schrittweise eingeführt. Sie führt vor allem dazu, dass das Parken von Besucher*innen und Pendler*innen abnimmt und mehr Parkraum für Anwohner*innen zur Verfügung steht. Das Projekt geht jedoch darüber hinaus und erprobt nicht nur die Verteilung, sondern auch die Umnutzung von Kfz-Stellplätzen zu Gunsten aller.',
       },
     ],
     [
       {
-        id: 7,
+        id: 6,
         question:
           'Führt eine bessere Aufenthaltsqualität nicht zu mehr Lärmbelästigung und mehr Müll?',
         answer:
           'Die Stellplätze werden teils entsiegelt und begrünt, teils zu Liefer- und Ladeflächen umgestaltet und teils als Aktionsflächen ausgewiesen. Auf den Aktionsflächen finden durch die Projektpartner*innen verschiedene Formate zur Diskussion, Beteiligung und Gestaltung mit der Nachbarschaft statt.',
       },
       {
-        id: 8,
+        id: 7,
         question: 'Wird durch das Projekt der Parksuchverkehr in anderen Kiezen erhöht?',
         answer:
           'Das ist kurzfristig möglich. Ähnliche Projekte zeigen, dass diese Effekte jedoch nachlassen, da zum Beispiel auf Alternativen ausgewichen wird. In diesem Fall das Parkhaus am Hermannplatz, die Sharing-Angebote oder der öffentliche Nahverkehr.',
       },
       {
-        id: 3,
+        id: 8,
         question: 'Auf welcher rechtlichen Grundlage wird hier agiert?',
         answer:
           'Die maßgeblichen Gesetze bzw. Verordnungen sind die Straßenverkehrsordnung (StVO sowie das Berliner Straßengesetz (BerlStrG) und das Berliner Mobilitätsgesetz (MobG BE).',

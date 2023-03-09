@@ -82,9 +82,13 @@ export const PageHomeLanduse: React.FC = () => {
 
         <div className="flex justify-start gap-4">
           <p>
-            Am Wochenende um den 22. April 2023 wird die Auftaktveranstaltung zur Beteiligung
-            stattfinden. Weitere Infos folgen. Alle Interessierte können auf der paper planes e.V.
-            Website einen Newsletter zu den Beteiligungsformaten im Projekt Graefekiez abonnieren.
+            Am Wochenende um den 22. April 2023 wird die{' '}
+            <strong>
+              Auftaktveranstaltung zur Beteiligung stattfinden. Weitere Infos folgen.{' '}
+            </strong>{' '}
+            Alle Interessierte können auf der paper planes e.V. Website einen{' '}
+            <strong>Newsletter zu den Beteiligungsformaten</strong> im Projekt Graefekiez
+            abonnieren.
           </p>
         </div>
       </ContainerTwoThirdWidth>

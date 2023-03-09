@@ -14,13 +14,14 @@ export const PageHomeParking: React.FC = () => {
             <strong>Parkhaus</strong>
             <br />
             In unmittelbarer Nähe zum Projektgebiet befindet sich das Parkhaus am Hermannplatz mit
-            Dauerparkplätzen. Diese können gegen Gebühr genutzt werden.
+            Dauerparkplätzen. Diese können gegen Gebühr genutzt werden.{' '}
             <Link
               blank
               href="https://galeria-parken.de/parkhaus/9bae5f5d-8c1a-4ff2-b09b-127fb9da93bb"
             >
-              Hier geht es zur Seite des Parkhauses (externer Link).
-            </Link>
+              Hier geht es zur Seite des Parkhauses
+            </Link>{' '}
+            (externer Link).
           </p>
           <p className="bg-white p-4">
             <strong>Lade- und Lieferflächen</strong>
