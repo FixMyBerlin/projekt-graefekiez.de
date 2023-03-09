@@ -1,5 +1,5 @@
 import React from 'react'
-import SocialSharingImage from './social-sharing/social-sharing.jpg'
+import SocialSharingImg from './assets/social-sharing.jpg'
 
 const seoDefaultValues = {
   defaultTitle: 'Projekt Graefekiez - Schrittweise mehr Platz',
@@ -28,7 +28,7 @@ export const MetaTags: React.FC<Props> = ({
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${baseUrl}${image || SocialSharingImage}`,
+    image: `${baseUrl}${image || SocialSharingImg}`,
   }
 
   if (noindex === true) {
