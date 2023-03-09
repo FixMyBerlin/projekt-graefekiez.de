@@ -1,5 +1,5 @@
 import React from 'react'
-import SocialSharingImage from './assets/social-sharing.jpg'
+import SocialSharingImage from './social-sharing/social-sharing.jpg'
 
 const seoDefaultValues = {
   defaultTitle: 'Projekt Graefekiez - Schrittweise mehr Platz',

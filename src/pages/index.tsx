@@ -99,4 +99,4 @@ const IndexPage: React.FC<PageProps> = () => (
 
 export default IndexPage
 
-export const Head: HeadFC = () => <MetaTags title="Homepage" />
+export const Head: HeadFC = () => <MetaTags title="Projekt Graefekiez - Schrittweise mehr Platz" />
