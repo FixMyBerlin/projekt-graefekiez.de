@@ -60,7 +60,7 @@ export const CardCta: React.FC<{ children: React.ReactNode }> = ({ children }) =
   return (
     <div
       aria-hidden="true"
-      className="relative z-10 mt-4 flex items-center text-sm font-normal text-gray-500"
+      className="relative z-10 mt-2 flex items-center text-sm font-normal text-gray-500"
     >
       {children}
       <ChevronRightIcon className="stroke-current ml-1 h-4 w-4" />

@@ -16,6 +16,7 @@ export const PageHomeNews: React.FC = () => {
               date(formatString: "YYYY-MM-DD")
               slug
               title
+              teaser
             }
           }
         }
@@ -30,7 +31,13 @@ export const PageHomeNews: React.FC = () => {
       <div className="flex max-w-3xl flex-col space-y-16">
         {data.allMdx.edges.map((edge) => {
           const { frontmatter, id } = edge.node
-          if (!frontmatter?.slug || !frontmatter?.title || !frontmatter?.date) return null
+          if (
+            !frontmatter?.slug ||
+            !frontmatter?.title ||
+            !frontmatter?.teaser ||
+            !frontmatter?.date
+          )
+            return null
 
           return (
             <NewsItem
@@ -38,6 +45,7 @@ export const PageHomeNews: React.FC = () => {
               slug={frontmatter.slug}
               title={frontmatter.title}
               date={frontmatter.date}
+              body={frontmatter.teaser}
             />
           )
         })}

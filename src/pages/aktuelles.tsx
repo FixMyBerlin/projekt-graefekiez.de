@@ -17,7 +17,13 @@ const AktuellesPage: React.FC<PageProps<Queries.NewsQuery>> = ({
         <div className="mt-8 flex max-w-3xl flex-col space-y-16">
           {edges.map((edge, index) => {
             const { frontmatter } = edge.node
-            if (!frontmatter?.slug || !frontmatter?.title || !frontmatter?.date) return null
+            if (
+              !frontmatter?.slug ||
+              !frontmatter?.title ||
+              !frontmatter?.teaser ||
+              !frontmatter?.date
+            )
+              return null
 
             return (
               <NewsItem
@@ -25,6 +31,7 @@ const AktuellesPage: React.FC<PageProps<Queries.NewsQuery>> = ({
                 key={index}
                 slug={frontmatter.slug}
                 title={frontmatter.title}
+                body={frontmatter.teaser}
                 date={frontmatter.date}
               />
             )
@@ -52,6 +59,7 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD")
             slug
             title
+            teaser
           }
         }
       }

@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, CardCta, CardDescription, CardEyebrow, CardTitle } from './Card'
 
 export type NewsItemProps = {
+  /** @desc `slug: undefined` hides the title-link  */
   slug?: string
   title: string
   date: string
