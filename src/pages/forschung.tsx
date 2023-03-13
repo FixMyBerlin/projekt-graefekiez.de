@@ -4,43 +4,102 @@ import React from 'react'
 import { Layout, MetaTags } from '~/components/layouts'
 import { Container } from '~/components/layouts/Container'
 import { Hero } from '~/components/layouts/Hero/Hero'
-import { PageForschungTimeline } from '~/components/PageForschung/PageForschungTimeline'
-import { Quote } from '~/components/Quote/Quote'
-import { H1, Prose } from '~/components/typography'
+import { Link, MailLink } from '~/components/links'
+import { H1, H3, Prose } from '~/components/typography'
+
+const parnters = [
+  {
+    name: 'WZB',
+    link: 'https://www.wzb.eu/de/forschung/digitalisierung-und-gesellschaftlicher-wandel/digitale-mobilitaet',
+    image: (
+      <StaticImage
+        src="../images/logos/WZB_logo_quareise_quer_transparent.png"
+        alt=""
+        height={80}
+      />
+    ),
+  },
+  {
+    name: 'DLR',
+    link: 'https://www.dlr.de/DE/Home/home_node.html',
+    image: (
+      <StaticImage src="../components/PageForschung/assets/Logo-DLR_2.jpg" alt="" height={60} />
+    ),
+  },
+  {
+    name: 'RIFS',
+    link: 'https://www.rifs-potsdam.de/de',
+    image: (
+      <StaticImage src="../components/PageForschung/assets/Logo-RIFS.jpg" alt="" height={60} />
+    ),
+  },
+  {
+    name: 'HFWU',
+    link: 'https://www.hfwu.de',
+    image: (
+      <StaticImage src="../components/PageForschung/assets/Logo-HFWU.jpg" alt="" height={80} />
+    ),
+  },
+]
 
 const ForschungPage: React.FC<PageProps> = () => {
   return (
     <Layout>
-      <Hero title="Forschung" subtitle="Warum gibt es dieses Projekt überhaupt?" />
+      <Hero title="Wissenschaftliche Begleitung" />
       <Container colorClass="bg-white mx-auto max-w-prose">
-        <H1>Autofrei im Kiez Mobil - Was soll das alles?</H1>
+        <H1>
+          Wissenschaftliche Begleitung durch das Wissenschaftszentrum Berlin für Sozialforschung
+        </H1>
         <Prose>
           <p>
-            In den Straßen von Friedrichshain-Kreuzberg unterwegs zu sein ist oft mit sehr viel
-            Stress verbunden. Das liegt nicht zuletzt daran, daß der Autoverkehr in den vergangenen
-            Jahren extrem zugenommen hat. Als Bezirk (?) wollen wir für die Entspannung dieser
-            Situation sorgen – speziell in den Wohnvierteln.Das liegt nicht zuletzt daran, daß der
-            Autoverkehr in den vergangenen Jahren extrem zugenommen hat. Als Bezirk (?) wollen wir
-            für die Entspannung dieser Situation sorgen – speziell in den Wohnvierteln.
+            In der wissenschaftlichen Debatte wird darauf hingewiesen, dass einer der Hemmnisse bei
+            der Umsetzung der Verkehrswende die Verfügbarkeit von öffentlichem Raum als Parkplatz
+            ist. Das Projekt Graefekiez soll wissenschaftlich begründet Aufschluss darüber geben, ob
+            mit dem Wegfall von Stellplätzen eine Reduzierung der Anzahl der Autos möglich ist und
+            ob sich die öffentlichen Räume für neue Aktivitäten beleben lassen.
+          </p>
+          <p>
+            Die Evaluation der Akzeptanz der verkehrlichen Maßnahmen und der Beteiligungsprozess im
+            Graefekiez ist der zentrale wissenschaftliche Untersuchungsgegenstand. Durch
+            flächendeckende repräsentative Befragungen werden Ergebnisse zur Wirkung der Maßnahmen
+            zusammengetragen und die Anwohnenden umfassend über die Befragungen informiert und zu
+            Reaktionen eingeladen. Zusätzlich sollen durch Fokusgruppen Personen aus dem Kiez
+            (Schüler*innen, Gewerbetreibende, Menschen mit Einschränkungen u. a.) einbezogen werden,
+            die bei Umfragen nicht mitmachen. Alle Beteiligungsaktivitäten im Kiez werden umfassend
+            beobachtet und dokumentiert. Verkehrsmessungen ergänzen die Erfassung von Veränderungen
+            in der Nutzung der Straßenzüge.
+          </p>
+          <p>
+            Die Forschungsgruppe Digitale Mobilität und gesellschaftliche Differenzierung am
+            Wissenschaftszentrum Berlin für Sozialforschung (WZB) verantwortet die wissenschaftliche
+            Begleitforschung – unterstützt durch Forschungseinrichtungen wie das Deutsche Luft- und
+            Raumfahrtzentrum (DLR), das Research Institute for Sustainability (RIFS Potsdam) und die
+            Hochschule für Wirtschaft und Umwelt in Geislingen-Nürthingen (HfWU). Das WZB wird in
+            mehreren Veranstaltungen im Kiez über die laufenden Ergebnisse informieren und mit den
+            Anwohnenden im Austausch bleiben. Ebenso werden die Beteiligungs- und
+            Gestaltungsaktivitäten beobachtet und ausgewertet.
+          </p>
+          <p>
+            Wer mehr über die wissenschaftliche Begleitforschung wissen oder mitmachen möchte, kann
+            sich über <MailLink>graefe-science@wzb.eu</MailLink> an das WZB wenden.
           </p>
         </Prose>
-        <div className="max-w-prose">
-          <Quote
-            author="Andreas Knie – WZB"
-            quote="Kaninchen gibt es nur in meinem Garten. EIn Auto braucht kein Mensch. In 6 Monaten wollen wir es gemeinsam mit Ihnen herausfinden."
-            image={
-              <StaticImage
-                src="../components/PageForschung/assets/andreas-knie.jpg"
-                alt=""
-                // height={320}
-                // className="h-12 w-12 lg:h-64 lg:w-64 xl:h-80 xl:w-80"
-              />
-            }
-          />
+        <div className="mt-12">
+          <H3>Forschungspartner</H3>
+          <ul className="mt-12 grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-6">
+            {parnters.map((partner, index) => {
+              return (
+                // eslint-disable-next-line react/no-array-index-key
+                <li key={index}>
+                  <Link blank href={partner.link}>
+                    {partner.image}
+                  </Link>
+                  <span className="sr-only">{partner.name}</span>
+                </li>
+              )
+            })}
+          </ul>
         </div>
-      </Container>
-      <Container colorClass="bg-white pb-12 max-w-prose mx-auto">
-        <PageForschungTimeline />
       </Container>
     </Layout>
   )

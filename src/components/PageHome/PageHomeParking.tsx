@@ -1,55 +1,57 @@
 import React from 'react'
+import { ContainerTwoThirdWidth } from '../layouts/ContainerTwoThirdWidth'
+import { Link } from '../links'
 import { H1, Prose } from '../typography'
-
-const steps = [
-  { title: 'Einfahren von der Hasenheide oder der Urbanstraße', description: 's. Karte' },
-  { title: 'Fahrzeug abstellen und Monatsticket kaufen.', description: 'Kosten: 60 €' },
-  {
-    title: 'Von Ihrer Wohnung zum Parkhaus kommen sie am schnellsten mit dem Fahrrad',
-    description: 'Fahrradparkplätze im Erdgeschoss des Parkhauses',
-  },
-]
 
 export const PageHomeParking: React.FC = () => {
   return (
     <section id="parken" className="scroll-mt-10">
-      <H1>Wo kann ich mein Auto parken?</H1>
-      <Prose>
-        <p>
-          <strong className="text-yellow-600">
-            Wir wissen, dass diese Veränderung für Menschen die ihr Auto regelmäßig nutzen eine
-            große Veränderung in ihrem Alltag bedeutet, deswegen wollen wir es Ihnen so einfach wie
-            möglich machen.
-          </strong>
-        </p>
-        <p>
-          Ihr Auto können Sie am einfachsten im Karstadt-Parkhaus abstellen, das geht sehr einfach.
-          Für die Mobiltät ohne Auto probieren Sie die neuen Jelbi-Stationen oder den ÖPNV aus, mehr
-          dazu finden Sie weiter unten. Für Menschen mit körperlichen Einschränkungen gibt es
-          speziell ausgewiesene Parkplätze.
-        </p>
-      </Prose>
-
-      <p className="mt-10">
-        <strong>Karstadt Parkhaus nutzen, so gehts</strong>
-      </p>
-      <ol className="mt-3 grid gap-3 md:grid-cols-3">
-        {steps.map((step, index) => {
-          return (
-            <li key={step.title} className="prose flex gap-3 border bg-white">
-              <div className="flex h-12 w-12 flex-none items-center justify-center bg-blue-600 text-3xl font-bold text-white">
-                {index}
-              </div>
-              <div className="my-2 pr-3 leading-tight">
-                <div>
-                  <strong>{step.title}</strong>
-                </div>
-                <div className="my-2">{step.description}</div>
-              </div>
-            </li>
-          )
-        })}
-      </ol>
+      <H1>Angebote für Gewerbe und Anwohnende</H1>
+      <ContainerTwoThirdWidth>
+        <Prose>
+          <p>So wird der Alltag für alle entspannter.</p>
+          <p className="bg-white p-4">
+            <strong>Parkhaus</strong>
+            <br />
+            In unmittelbarer Nähe zum Projektgebiet befindet sich das Parkhaus am Hermannplatz mit
+            Dauerparkplätzen. Diese können gegen Gebühr genutzt werden.{' '}
+            <Link
+              blank
+              href="https://galeria-parken.de/parkhaus/9bae5f5d-8c1a-4ff2-b09b-127fb9da93bb"
+            >
+              Hier geht es zur Seite des Parkhauses
+            </Link>{' '}
+            (externer Link).
+          </p>
+          <p className="bg-white p-4">
+            <strong>Lade- und Lieferflächen</strong>
+            <br />
+            Im Graefekiez werden mehrere Lade- und Lieferflächen eingerichtet. Diese sind nur für
+            das Be- und Entladen von Fahrzeugen gedacht. Parken ist hier nicht gestattet. Dadurch
+            wird die Belieferung einfacher und der Alltag für Gewerbetreibende und Lieferdienste
+            entspannter. Lieferfahrzeuge müssen nicht mehr in der zweiten Reihe halten und
+            gefährliche Situationen für den Fußverkehr werden entschärft.
+          </p>
+          <p className="bg-white p-4">
+            <strong>Flächendeckendes Netz von Jelbi-Stationen und Jelbi-Punkten</strong>
+            <br />
+            Die Berliner Verkehrsbetriebe (BVG) richten Jelbi-Stationen und Jelbi-Punkte mit
+            Sharing-Angeboten im Graefekiez ein. Hier lassen sich schnell, komfortabel und auf
+            kurzem Weg Roller, Räder, Scooter, Lastenräder oder Autos leihen. An den U-Bahnhöfen
+            Schönleinstraße und Südstern kann von Jelbi auf den öffentlichen Nahverkehr umgestiegen
+            werden. Für die Nutzung von Jelbi muss die{' '}
+            <Link blank href="https://www.jelbi.de/">
+              Jelbi-App
+            </Link>{' '}
+            (externer Link) installiert werden.
+          </p>
+          <p className="bg-white p-4">
+            <strong>Behindertenstellplätze</strong>
+            <br />
+            Die bestehenden Stellplätze bleiben erhalten.
+          </p>
+        </Prose>
+      </ContainerTwoThirdWidth>
     </section>
   )
 }

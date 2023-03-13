@@ -1,5 +1,4 @@
 import { graphql, HeadFC, PageProps } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Layout, MetaTags } from '~/components/layouts'
 import { Container } from '~/components/layouts/Container'
@@ -13,19 +12,9 @@ const AktuellesPage: React.FC<PageProps<Queries.NewsQuery>> = ({
 }) => {
   return (
     <Layout>
-      <Hero
-        title="Aktuelles"
-        subtitle="Neuigkeiten und Termine"
-        image={
-          <StaticImage
-            src="../components/PageAktuelles/assets/hero.jpg"
-            alt=""
-            className="h-full w-full"
-          />
-        }
-      />
+      <Hero title="Aktuelles" subtitle="Neuigkeiten und Termine" />
       <Container colorClass="bg-white mx-auto max-w-prose">
-        <div className="flex max-w-3xl flex-col space-y-16">
+        <div className="mt-8 flex max-w-3xl flex-col space-y-16">
           {edges.map((edge, index) => {
             const { frontmatter } = edge.node
             if (!frontmatter?.slug || !frontmatter?.title || !frontmatter?.date) return null

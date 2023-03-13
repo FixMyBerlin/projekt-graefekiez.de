@@ -1,6 +1,6 @@
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Link } from '~/components/links'
+import TwitterIcon from '../../../images/twitterIcon.inline.svg'
 
 const aboutItems = [
   {
@@ -11,10 +11,6 @@ const aboutItems = [
     title: 'Datenschutz',
     href: '/datenschutz',
   },
-  // {
-  //   title: 'Presse',
-  //   href: '',
-  // },
 ]
 const informationItems = [
   {
@@ -23,18 +19,30 @@ const informationItems = [
   },
 ]
 
+const footerLinkClasses =
+  'hover:underline underline-offset-4 hover:decoration-gray-300 hover:text-gray-300'
+
 export const Footer: React.FC = () => {
   return (
-    <div className="flex-col bg-gray-800 py-10 px-4 text-gray-300">
-      <div className="grid grid-cols-2">
+    <div className="mt-40 flex-col bg-gray-800 py-10 px-5 text-gray-300 md:px-12">
+      <div className="flex gap-8 lg:gap-36">
         <div>
           <p className="index uppercase text-gray-400">About</p>
           <ul className="mt-4 flex flex-col gap-4">
             {aboutItems.map((item) => (
               <li key={item.title}>
-                <Link to={item.href}>{item.title}</Link>
+                <Link classNameOverwrites={footerLinkClasses} href={item.href}>
+                  {item.title}
+                </Link>
               </li>
             ))}
+            <Link
+              classNameOverwrites={footerLinkClasses}
+              blank
+              href="https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/"
+            >
+              Presse
+            </Link>
           </ul>
         </div>
         <div>
@@ -42,7 +50,7 @@ export const Footer: React.FC = () => {
           <ul className="mt-4 flex flex-col gap-4">
             {informationItems.map((item) => (
               <li key={item.title}>
-                <Link newWindow to={item.href}>
+                <Link classNameOverwrites={footerLinkClasses} href={item.href}>
                   {item.title}
                 </Link>
               </li>
@@ -50,20 +58,9 @@ export const Footer: React.FC = () => {
           </ul>
         </div>
       </div>
-      <div className="index mt-20 uppercase">
-        Abonnieren Sie{' '}
-        <Link to="#todo" external newWindow>
-          unseren Telegramkanal Projekt-Graefekiez
-        </Link>{' '}
-        um aktuelle Informationen zu Veranstaltungen und Ergebnissen zu erhalten.
-      </div>
-      <div className="mt-8 border-t border-gray-600">
-        <Link to="https://twitter.com/BA_Xhain" newWindow>
-          <StaticImage
-            className="mt-8 h-5 w-5 opacity-50"
-            src="../../../images/twitterIcon.svg"
-            alt="Twitter @BA_Xhain"
-          />
+      <div className="mt-8 border-t border-gray-600 pt-8">
+        <Link href="https://twitter.com/BA_Xhain">
+          <TwitterIcon width={20} />
         </Link>
         <p className="mt-8 text-gray-400">© 2023 Bezirksamt Friedrichshain-Kreuzberg</p>
       </div>

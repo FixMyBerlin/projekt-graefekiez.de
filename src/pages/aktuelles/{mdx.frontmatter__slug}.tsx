@@ -20,7 +20,7 @@ const NewsPostPage: React.FC<PageProps<Queries.NewsPostQuery>> = ({ data, childr
   return (
     <Layout>
       <Hero
-        title={`Aktuelles: ${data.mdx.frontmatter.title}`}
+        title="Aktuelles"
         subtitle="Neuigkeiten und Termine"
         image={
           <StaticImage
@@ -31,11 +31,13 @@ const NewsPostPage: React.FC<PageProps<Queries.NewsPostQuery>> = ({ data, childr
         }
       />
       <Container colorClass="bg-white mx-auto max-w-prose">
-        <NewsItem
-          title={data.mdx.frontmatter.title}
-          date={data.mdx.frontmatter.date}
-          body={children}
-        />
+        <div className="mt-8">
+          <NewsItem
+            title={data.mdx.frontmatter.title}
+            date={data.mdx.frontmatter.date}
+            body={children}
+          />
+        </div>
       </Container>
     </Layout>
   )

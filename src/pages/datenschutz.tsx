@@ -4,14 +4,16 @@ import { Layout, MetaTags } from '~/components/layouts'
 import { Container } from '~/components/layouts/Container'
 import { Hero } from '~/components/layouts/Hero/Hero'
 import { Link, MailLink } from '~/components/links'
+import { PrivacyPolicyMapConsentInfo } from '~/components/maps/MapConsent/PrivacyPolicyMapConsentInfo'
 import { Prose } from '~/components/typography'
 
 const PrivacyPolicyPage: React.FC<PageProps> = () => {
   return (
     <Layout>
-      <Hero title="Dateschutzerklärung" subtitle="Foo" />
+      <Hero title="Datenschutzerklärung" />
       <Container colorClass="bg-white mx-auto max-w-prose">
-        <Prose>
+        <Prose className="prose-th:pr-2 prose-th:pb-2 lg:mt-6">
+          <h1>Datenschutzerklärung</h1>
           <h2>Einleitung</h2>
           <p>
             Mit den nachfolgenden Informationen wollen wir Ihnen einen Überblick über die
@@ -25,22 +27,22 @@ const PrivacyPolicyPage: React.FC<PageProps> = () => {
           <h2>Inhaltsverzeichnis</h2>{' '}
           <ul>
             <li>
-              <a href="#m1">Verantwortlichkeit</a>
+              <Link href="#m1">Verantwortlichkeit</Link>
             </li>
             <li>
-              <a href="#m2">Einsatz von Drittdiensten</a>
+              <Link href="#m2">Einsatz von Drittdiensten</Link>
             </li>
             <li>
-              <a href="#m3">Bereitstellung des Informationsportals</a>
+              <Link href="#m3">Bereitstellung des Informationsportals</Link>
             </li>
             <li>
-              <a href="#m4">Verwendung des Kartendienstes Mapbox</a>
+              <Link href="#m4">Verwendung des Kartendienstes Mapbox</Link>
             </li>
             <li>
-              <a href="#m5">Kontaktmöglichkeiten</a>
+              <Link href="#m5">Kontaktmöglichkeiten</Link>
             </li>
             <li>
-              <a href="#m6">Ihre Rechte</a>
+              <Link href="#m6">Ihre Rechte</Link>
             </li>
           </ul>
           <h2 id="m1">Verantwortlichkeit</h2>
@@ -55,14 +57,14 @@ const PrivacyPolicyPage: React.FC<PageProps> = () => {
             <br />
             Tel.: +49 30 90298 2169
             <br />
-            E-Mail: stadtraetin.gerold@ba-fk.berlin.de
+            E-Mail: <MailLink>stadtraetin.gerold@ba-fk.berlin.de</MailLink>
           </p>
           <p>
             <strong>Datenschutzbeauftragter</strong>
           </p>
           <p>
             Der/die Datenschutzbeauftragte des Bezirksamtes Friedrichshain-Kreuzberg ist:{' '}
-            <Link to="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/beauftragte/datenschutz/">
+            <Link href="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/beauftragte/datenschutz/">
               Behördlicher Datenschutzbeauftragter
             </Link>
             <br />
@@ -132,27 +134,29 @@ const PrivacyPolicyPage: React.FC<PageProps> = () => {
           <h3>Empfänger personenbezogener Datens</h3>
           <p>Wir setzen folgende Dienstleister ein:</p>
           <table>
-            <tr>
-              <th>Anbieter</th>
-              <th>Anschrift</th>
-              <th>Drittland</th>
-              <th>Geeignete Garantie</th>
-              <th>Zweck</th>
-            </tr>
-            <tr>
-              <td>FixMyCity GmbH</td>
-              <td>Karlsgartenstraße 12, 12049 Berlin</td>
-              <td>-</td>
-              <td>-</td>
-              <td>Bereitstellung und Entwicklung des Dienstes</td>
-            </tr>
-            <tr>
-              <td>IONOS SE</td>
-              <td>Elgendorfer Str. 57, 56410 Montabaur, Deutschland</td>
-              <td>-</td>
-              <td>-</td>
-              <td>Hosting der Website und Bereitstellung der Inhalte</td>
-            </tr>
+            <tbody>
+              <tr>
+                <th className="">Anbieter</th>
+                <th>Anschrift</th>
+                <th>Drittland</th>
+                <th className="w-36">Geeignete Garantie</th>
+                <th>Zweck</th>
+              </tr>
+              <tr>
+                <td>FixMyCity GmbH</td>
+                <td>Karlsgartenstraße 12, 12049 Berlin</td>
+                <td className="text-center">-</td>
+                <td className="text-center">-</td>
+                <td>Bereitstellung und Entwicklung des Dienstes</td>
+              </tr>
+              <tr>
+                <td>IONOS SE</td>
+                <td>Elgendorfer Str. 57, 56410 Montabaur, Deutschland</td>
+                <td className="text-center">-</td>
+                <td className="text-center">-</td>
+                <td>Hosting der Website und Bereitstellung der Inhalte</td>
+              </tr>
+            </tbody>
           </table>
           <h2 id="m4">Verwendung des Kartendienstes Mapbox</h2>
           <h3>Allgemeine Informationen</h3>
@@ -194,8 +198,8 @@ const PrivacyPolicyPage: React.FC<PageProps> = () => {
             auch außerhalb der EU sicherzustellen. Den Beschluss der EU-Kommission zum Erlass der
             Standarddatenschutzklauseln können Sie hier einsehen: <br />
             <Link
-              newWindow
-              to="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=EN"
+              blank
+              href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=EN"
             >
               https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=EN
             </Link>
@@ -204,11 +208,13 @@ const PrivacyPolicyPage: React.FC<PageProps> = () => {
             Weitere Informationen zur Datenverarbeitung durch Mapbox finden Sie in der
             Datenschutzerklärung des Unternehmens:
             <br />
-            <Link newWindow to="https://www.mapbox.com/legal/privacy">
+            <Link blank href="https://www.mapbox.com/legal/privacy">
               mapbox.com/legal/privacy
             </Link>
           </p>
-          {/* TODO Opt-Out Option einfügen */}
+          <div className="border border-blue-300 px-3">
+            <PrivacyPolicyMapConsentInfo />
+          </div>
           <h3>Speicherdauer</h3>
           <p>
             Die IP-Adresse wird aus Sicherheitsgründen durch Mapbox für 30 Tage gespeichert.
@@ -302,8 +308,7 @@ const PrivacyPolicyPage: React.FC<PageProps> = () => {
             <br />
             Tel.: +49 30 13889-0
             <br />
-            E-Mail:{' '}
-            <MailLink to="mailbox@datenschutz-berlin.de">mailbox@datenschutz-berlin.de</MailLink>
+            E-Mail: <MailLink>mailbox@datenschutz-berlin.de</MailLink>
           </p>
         </Prose>
       </Container>

@@ -1,50 +1,62 @@
-import clsx from 'clsx'
 import { Link as GatsbyLink } from 'gatsby'
-import React from 'react'
+import React, { forwardRef } from 'react'
+import { selectLinkStyle } from './styles'
 
 export type LinkProps = {
-  to: string
+  href: string
   className?: string
   activeClassName?: string
-  newWindow?: boolean
-  button?: boolean
-  external?: boolean
+  classNameOverwrites?: string
+  /** @default `false` */
+  blank?: boolean
+  /** @desc Style Link as Button */
+  button?: true | 'regular' | 'pink' | 'lightPink'
   children: React.ReactNode
-}
+} & Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'href'>
 
-export const linkStyle = 'underline-offset-4 hover:underline decoration-pink-500'
-export const buttonStyle =
-  'py-2.5 px-7 font-bold inline-flex items-center justify-center border-[1.5px] border-pink-500 bg-white font-bold no-underline ring-pink-600 hover:bg-pink-50 hover:ring-1 active:border-2 active:border-pink-50 active:bg-pink-500 active:ring-0 leading-tight'
+export const Link: React.FC<LinkProps> = forwardRef<HTMLAnchorElement, LinkProps>(
+  (
+    {
+      href,
+      className,
+      activeClassName,
+      classNameOverwrites,
+      children,
+      blank = false,
+      button,
+      ...props
+    },
+    ref
+  ) => {
+    // external link
+    if (href.startsWith('http')) {
+      return (
+        <a
+          ref={ref}
+          href={href}
+          className={classNameOverwrites || selectLinkStyle(button, className)}
+          rel="noopener noreferrer"
+          {...{ target: blank ? '_blank' : undefined }}
+          {...props}
+        >
+          {children}
+        </a>
+      )
+    }
 
-export const Link: React.FC<LinkProps> = ({
-  to,
-  className,
-  activeClassName,
-  newWindow = false,
-  external = false,
-  button,
-  children,
-}) => {
-  if (newWindow || external) {
     return (
-      <a
-        href={to}
-        className={clsx(button ? buttonStyle : linkStyle, className)}
-        {...(newWindow && { target: '_blank' })}
-        {...((newWindow || external) && { rel: 'noopener noreferrer' })}
+      <GatsbyLink
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore GatsbyLink seems to have TS isses, see https://github.com/gatsbyjs/gatsby/issues/34325. Hope that will work regardless.
+        ref={ref}
+        href={href}
+        {...{ target: blank ? '_blank' : undefined }}
+        className={classNameOverwrites || selectLinkStyle(button, className)}
+        activeClassName={activeClassName}
+        {...props}
       >
         {children}
-      </a>
+      </GatsbyLink>
     )
   }
-
-  return (
-    <GatsbyLink
-      to={to}
-      className={clsx(button ? buttonStyle : linkStyle, className)}
-      activeClassName={activeClassName}
-    >
-      {children}
-    </GatsbyLink>
-  )
-}
+)

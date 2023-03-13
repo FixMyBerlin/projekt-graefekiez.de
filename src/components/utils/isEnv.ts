@@ -1,5 +1,7 @@
 export const isDev = typeof window !== 'undefined' && window.location.host.includes('localhost')
 
+export const isBrowser = typeof window !== 'undefined'
+
 // ☝️ It is not enough to check the SSR state, because rehydration will than bypass this check.
 //   we also need to check the production state inside the browser…
 // CONTEXT: https://docs.netlify.com/configure-builds/environment-variables/#build-metadata
