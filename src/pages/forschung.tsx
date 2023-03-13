@@ -10,7 +10,7 @@ import { H1, H3, Prose } from '~/components/typography'
 const parnters = [
   {
     name: 'WZB',
-    link: 'https://www.wzb.eu/de/forschung/digitalisierung-und-gesellschaftlicher-wandel/digitale-mobilitaet',
+    link: 'https://www.wzb.eu/de/forschung/digitalisierung-und-gesellschaftlicher-wandel/digitale-mobilitaet/projekte/projekt-graefekiez',
     image: (
       <StaticImage
         src="../images/logos/WZB_logo_quareise_quer_transparent.png"
@@ -72,11 +72,11 @@ const ForschungPage: React.FC<PageProps> = () => {
           <p>
             Die Forschungsgruppe Digitale Mobilität und gesellschaftliche Differenzierung am
             Wissenschaftszentrum Berlin für Sozialforschung (WZB) verantwortet die wissenschaftliche
-            Begleitforschung – unterstützt durch Forschungseinrichtungen wie das Deutsche Luft- und
-            Raumfahrtzentrum (DLR), das Research Institute for Sustainability (RIFS Potsdam) und die
-            Hochschule für Wirtschaft und Umwelt in Geislingen-Nürthingen (HfWU). Das WZB wird in
-            mehreren Veranstaltungen im Kiez über die laufenden Ergebnisse informieren und mit den
-            Anwohnenden im Austausch bleiben. Ebenso werden die Beteiligungs- und
+            Begleitforschung – unterstützt durch Forschungseinrichtungen wie das Deutsche Zentrum
+            für Luft- und Raumfahrt (DLR), das Research Institute for Sustainability (RIFS Potsdam)
+            und die Hochschule für Wirtschaft und Umwelt in Geislingen-Nürthingen (HfWU). Das WZB
+            wird in mehreren Veranstaltungen im Kiez über die laufenden Ergebnisse informieren und
+            mit den Anwohnenden im Austausch bleiben. Ebenso werden die Beteiligungs- und
             Gestaltungsaktivitäten beobachtet und ausgewertet.
           </p>
           <p>

@@ -26,7 +26,7 @@ const cards: CardProps[] = [
       'Grün und sicher! Gemeinsam gestalten wir Parkraum für mehr Verkehrssicherheit und Aufenthaltsqualität.',
     image: (
       <StaticImage
-        src="./assets/PageHomeLanduse/image-zukunft.jpg"
+        src="./assets/PageHomeLanduse/image-future.jpg"
         alt=""
         className="h-48 w-full object-cover"
         height={192}

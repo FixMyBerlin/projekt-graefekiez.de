@@ -135,19 +135,12 @@ export const faqs: TFaqs = {
       },
       {
         id: 9,
-        question:
-          'Wie wird das Freihalten der Lieferzonen und der umgenutzten Parkplätze sichergestellt?',
-        answer:
-          'Das Ordnungsamt wird verstärkt kontrollieren. Die freiwerdenden Plätze werden zudem bespielt und umgenutzt.',
-      },
-      {
-        id: 10,
         question: 'Werden Rettungs- und Einsatzfahrzeuge eingeschränkt?',
         answer:
           'Nein, alle Rettungswege werden freigehalten. Es ist im Gegenteil zu erwarten, dass Rettungs- und andere Einsatzfahrzeuge besser durchkommen, wenn das Halten in der zweiten Reihe aufgrund neuer Lade- und Lieferflächen weniger häufig vorkommt.',
       },
       {
-        id: 11,
+        id: 10,
         question: 'Was kostet das Projekt und wer finanziert es?',
         answer:
           'Das Projekt wird zum Teil aus Mitteln der Senatsverwaltung für Umwelt, Mobilität, Verbraucher- und Klimaschutz und des Straßen- und Grünflächenamtes Friedrichshain-Kreuzberg finanziert. Die mit dem Projekt Graefekiez verbundenen Beteiligungsaktivitäten und Forschungsarbeiten werden aus Drittmitteln finanziert, die die beteiligten Institute eingeworben haben.',

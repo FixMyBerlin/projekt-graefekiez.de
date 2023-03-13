@@ -5,7 +5,8 @@ export const PageHomeStepsTwo: React.FC = () => {
     <section>
       <p>
         Die größte Umgestaltung geschieht 2023 im sogenannten „Kerngebiet“ in Böckh- und
-        Graefestraße (siehe Abbildung). In der Böckhstraße werden alle Kfz-Parkplätze umgenutzt. Die
+        Graefestraße (siehe Abbildung). In der östlichen Böckhstraße werden schrittweise die meisten
+        oder – je nach Engagement der Nachbarschaft – auch alle Kfz-Parkplätze umgenutzt. Die
         Flächen werden teils entsiegelt und teils umgestaltet. An einigen Stellen werden Lade- und
         Lieferzonen eingerichtet. In Kooperation mit dem Projekt Zukunft Straße sollen mehrere
         Parklets entstehen. So wird durch das Bezirksamt in einem kurzen Straßenabschnitt sichtbar
