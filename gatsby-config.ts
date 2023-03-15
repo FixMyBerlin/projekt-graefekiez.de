@@ -3,13 +3,12 @@ import type { GatsbyConfig } from 'gatsby'
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Projekt Graefekiez Berlin`,
-    siteUrl: `https://projekt-graefekiez.berlin`,
+    siteUrl: `https://www.projekt-graefekiez.de`,
   },
   graphqlTypegen: true,
   plugins: [
     'gatsby-plugin-postcss',
     'gatsby-plugin-image',
-    'gatsby-plugin-sitemap',
     {
       // Docs https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/
       resolve: 'gatsby-plugin-manifest',
@@ -73,6 +72,12 @@ const config: GatsbyConfig = {
         rule: {
           include: /\.inline\.svg$/,
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        excludes: ['/blog/post1/', '/blog/post2/', '/blog/post3/'],
       },
     },
   ],
