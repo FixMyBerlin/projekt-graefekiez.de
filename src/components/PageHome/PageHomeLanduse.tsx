@@ -24,6 +24,11 @@ const cards: CardProps[] = [
     title: 'Projekt Zukunft Straße (Berlin 21 e.V.  und NaturFreunde Berlin e.V.)',
     description:
       'Grün und sicher! Gemeinsam gestalten wir Parkraum für mehr Verkehrssicherheit und Aufenthaltsqualität.',
+
+    link: {
+      title: 'Mehr über Projekt Zukunft Straße',
+      href: 'https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/fussverkehrsprojekte/projekt-zukunft-strasse/',
+    },
     image: (
       <StaticImage
         src="./assets/PageHomeLanduse/image-future.jpg"
