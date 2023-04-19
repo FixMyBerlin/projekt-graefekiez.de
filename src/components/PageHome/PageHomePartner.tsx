@@ -12,10 +12,7 @@ const parnters = [
       </div>
     ),
   },
-  {
-    name: 'WZB',
-    image: <StaticImage src="../../images/logos/grafik-wzb.jpg" alt="" height={192} />,
-  },
+
   {
     name: 'Senat',
     image: <StaticImage src="../../images/logos/grafik-senat.jpg" alt="" height={192} />,
