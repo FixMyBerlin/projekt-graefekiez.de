@@ -25,4 +25,8 @@ AddOutputFilterByType DEFLATE application/x-javascript
   Header set Cache-Control "public, max-age=1209600, no-transform, must-revalidate"
   </FilesMatch>
 # No cache for text files since those are not finger printed and not refreshed when cached
+# Two weeks for js, css which is finger printed
+  <FilesMatch "\.(js|css)$">
+  Header set Cache-Control "public, max-age=1209600, must-revalidate"
+  </FilesMatch>
 </IfModule>
