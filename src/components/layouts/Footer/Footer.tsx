@@ -14,7 +14,7 @@ const aboutItems = [
 ]
 const informationItems = [
   {
-    title: 'Website Bezirksamt-Kreuzberg',
+    title: 'Webseite Bezirksamt-Kreuzberg',
     href: 'https://www.berlin.de/ba-friedrichshain-kreuzberg/',
   },
 ]
