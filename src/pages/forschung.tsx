@@ -80,8 +80,15 @@ const ForschungPage: React.FC<PageProps> = () => {
             Gestaltungsaktivitäten beobachtet und ausgewertet.
           </p>
           <p>
-            Wer mehr über die wissenschaftliche Begleitforschung wissen oder mitmachen möchte, kann
-            sich über <MailLink>graefe-science@wzb.eu</MailLink> an das WZB wenden.
+            Wer mehr über die <strong>wissenschaftliche Begleitforschung</strong> wissen oder
+            mitmachen möchte, kann sich über die{' '}
+            <Link
+              blank
+              href="https://wzb.eu/de/forschung/digitalisierung-und-gesellschaftlicher-wandel/digitale-mobilitaet/projekte/projekt-graefekiez"
+            >
+              Forschungs-Website des WZB
+            </Link>{' '}
+            informieren oder per Mail an <MailLink>graefe-science@wzb.eu</MailLink>.
           </p>
         </Prose>
         <div className="mt-12">

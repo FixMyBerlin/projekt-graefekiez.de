@@ -27,20 +27,23 @@ const ImprintPage: React.FC<PageProps> = () => {
             <MailLink>sga@ba-fk.berlin.de</MailLink>
           </p>
           <p>
-            Konzeption und Umsetzung der Website durch FixMyCity GmbH{' '}
-            <Link href="https://www.fixmycity.de/">https://www.fixmycity.de/</Link>
+            Konzeption und Umsetzung der Website durch FixMyCity GmbH“ durch diesen Satz ersetzen:
+            „Konzeption und Umsetzung sowie technischer Betrieb der Website durch FixMyCity GmbH{' '}
+            <Link blank href="https://www.fixmycity.de/">
+              https://www.fixmycity.de/
+            </Link>
           </p>
 
           <p>
             Die Daten der interaktiven Karten stammen aus unterschiedlichen Quellen und sind
             entsprechend gekennzeichnet. Die genutzten Geodaten der Stadt Berlin stammen aus dem
             Geodatenportel FIS-Broker und können unter{' '}
-            <Link href="https://fbinter.stadt-berlin.de/fb/index.jsp">
+            <Link blank href="https://fbinter.stadt-berlin.de/fb/index.jsp">
               https://fbinter.stadt-berlin.de/fb/index.jsp
             </Link>{' '}
             eingesehen werden. Für OSM Daten: © OpenStreetMap-Mitwirkende. Weitere Informationen zu
             den Nutzungsrechten unter:{' '}
-            <Link href="https://www.openstreetmap.org/copyright">
+            <Link blank href="https://www.openstreetmap.org/copyright">
               https://www.openstreetmap.org/copyright
             </Link>
           </p>

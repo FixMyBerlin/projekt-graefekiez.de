@@ -2,7 +2,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Card, CardProps } from '../Card/Card'
 import { ContainerTwoThirdWidth } from '../layouts/ContainerTwoThirdWidth'
-import { Link } from '../links'
 import { H1, H3, Prose } from '../typography'
 
 const cards: CardProps[] = [
@@ -44,7 +43,7 @@ const cards: CardProps[] = [
       'Anwohner*innen des Graefekiezes werden zu Bürgerwissenschaftler*innen: Im EU Projekt ComPAIR messen wir gemeinsam die Luftqualität und den Verkehr für eine bessere Berlin Luft!',
     link: {
       title: 'Mehr über CompAIR',
-      href: 'https://www.inter3.de/forschungsfelder/projekte/details/compair-citizen-science-fuer-bessere-luft',
+      href: 'https://www.wecompair.eu/berlin?lang=de',
     },
     image: (
       <StaticImage
@@ -84,23 +83,6 @@ export const PageHomeLanduse: React.FC = () => {
             Wissenschaftszentrum Berlin für Sozialforschung (WZB) begleitet.
           </p>
         </Prose>
-        <H3>Schon mal vormerken:</H3>
-
-        <div className="flex justify-start gap-4">
-          <p>
-            Am Wochenende um den 22. April 2023 wird die{' '}
-            <strong>
-              Auftaktveranstaltung zur Beteiligung stattfinden. Weitere Infos folgen.{' '}
-            </strong>{' '}
-            Alle Interessierten können auf der
-            <Link href="https://www.paper-planes.net/#projekt-graefekiez" blank>
-              {' '}
-              paper planes e.V. Website
-            </Link>{' '}
-            einen <strong>Newsletter zu den Beteiligungsformaten</strong> im Projekt Graefekiez
-            abonnieren.
-          </p>
-        </div>
       </ContainerTwoThirdWidth>
 
       <p className="mt-10">
