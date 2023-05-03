@@ -27,8 +27,7 @@ const ImprintPage: React.FC<PageProps> = () => {
             <MailLink>sga@ba-fk.berlin.de</MailLink>
           </p>
           <p>
-            Konzeption und Umsetzung der Website durch FixMyCity GmbH“ durch diesen Satz ersetzen:
-            „Konzeption und Umsetzung sowie technischer Betrieb der Website durch FixMyCity GmbH{' '}
+            Konzeption und Umsetzung sowie technischer Betrieb der Website durch FixMyCity GmbH{' '}
             <Link blank href="https://www.fixmycity.de/">
               https://www.fixmycity.de/
             </Link>
