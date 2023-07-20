@@ -29,7 +29,7 @@ export const PageHomeNews: React.FC = () => {
     <section>
       <h2 className="mt-10 mb-8 text-xl">Aktuelles</h2>
       <div className="flex max-w-3xl flex-col space-y-16">
-        {data.allMdx.edges.map((edge) => {
+        {data.allMdx.edges.slice(0, 4).map((edge) => {
           const { frontmatter, id } = edge.node
           if (
             !frontmatter?.slug ||
