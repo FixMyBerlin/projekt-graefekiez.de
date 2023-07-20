@@ -85,9 +85,9 @@ export const PageHomeLanduse: React.FC = () => {
         </Prose>
       </ContainerTwoThirdWidth>
 
-      <p className="mt-10">
+      <div className="mt-10">
         <H3>Beteiligung vor Ort</H3>
-      </p>
+      </div>
       <ol className="mt-6 grid gap-8 sm:grid-cols-2 md:gap-10 lg:grid-cols-3 xl:gap-12">
         {cards.map((card, index) => {
           return (
