@@ -10,12 +10,12 @@ type Props = {
 
 export const Quote: React.FC<Props> = ({ quote, author, authorSubline, image }) => {
   return (
-    <section className="my-10 border-t border-b border-yellow-400">
+    <section className="my-10 border-b border-t border-yellow-400">
       <div className="relative mx-auto max-w-7xl px-6 py-12 lg:px-8">
         <div className="relative gap-10 lg:flex lg:items-start">
           <div className="relative lg:ml-10">
             <svg
-              className="-trangray-x-8 -trangray-y-16 absolute top-0 left-0 h-36 w-36 transform text-yellow-200 opacity-50"
+              className="-trangray-x-8 -trangray-y-16 absolute left-0 top-0 h-36 w-36 transform text-yellow-200 opacity-50"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 144 144"

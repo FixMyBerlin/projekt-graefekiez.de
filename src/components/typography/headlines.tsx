@@ -15,7 +15,7 @@ export const H1: React.FC<Props> = ({ className, children, line, noStyle }) => {
       {line && <PinkLine />}
       <h2
         className={clsx(className, {
-          'mt-11 mb-5 text-3xl font-normal leading-10 sm:text-4xl': !noStyle,
+          'mb-5 mt-11 text-3xl font-normal leading-10 sm:text-4xl': !noStyle,
         })}
       >
         {children}
@@ -28,7 +28,7 @@ export const H3: React.FC<Props> = ({ className, noStyle, line, children }) => {
   return (
     <>
       {line && <PinkLine />}
-      <h3 className={clsx(className, { 'mt-5 mb-3 text-xl font-bold': !noStyle })}>{children}</h3>
+      <h3 className={clsx(className, { 'mb-3 mt-5 text-xl font-bold': !noStyle })}>{children}</h3>
     </>
   )
 }

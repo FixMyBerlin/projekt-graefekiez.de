@@ -59,7 +59,7 @@ const cards: CardProps[] = [
 export const PageHomeLanduse: React.FC = () => {
   return (
     <section id="ideen" className="scroll-mt-10">
-      <H1 className="mt-10 mb-8 text-3xl sm:text-4xl">Gemeinsam ausprobieren, wie’s gut geht</H1>
+      <H1 className="mb-8 mt-10 text-3xl sm:text-4xl">Gemeinsam ausprobieren, wie’s gut geht</H1>
       <ContainerTwoThirdWidth>
         <Prose>
           <p>

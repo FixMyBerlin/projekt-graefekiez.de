@@ -31,7 +31,7 @@ export const MapDebugHelper = ({ data }: Props) => {
     ?.filter((s: string) => s.startsWith('hejco'))
 
   return (
-    <section className="border-xl absolute top-1 left-1 z-50 max-h-[98%] overflow-y-auto rounded bg-gray-900 p-1 text-xs text-white shadow-2xl print:hidden">
+    <section className="border-xl absolute left-1 top-1 z-50 max-h-[98%] overflow-y-auto rounded bg-gray-900 p-1 text-xs text-white shadow-2xl print:hidden">
       <div>
         {isDebugHash('showTileBoundaries') ? (
           <span>showTileBoundaries: on</span>

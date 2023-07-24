@@ -165,7 +165,7 @@ export const Tabs = () => {
                 <button
                   type="button"
                   className={classNames(
-                    'font-medium group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center text-sm hover:bg-gray-50 focus:z-10 focus:outline-none',
+                    'font-medium group relative min-w-0 flex-1 overflow-hidden bg-white px-4 py-4 text-center text-sm hover:bg-gray-50 focus:z-10 focus:outline-none',
                     categoryIdx === 0 ? 'rounded-l-md' : '',
                     categoryIdx === Object.keys(categories).length - 1 ? 'rounded-r-lg' : '',
                     selected

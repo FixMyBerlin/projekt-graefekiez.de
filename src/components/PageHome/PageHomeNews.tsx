@@ -27,7 +27,7 @@ export const PageHomeNews: React.FC = () => {
 
   return (
     <section>
-      <h2 className="mt-10 mb-8 text-xl">Aktuelles</h2>
+      <h2 className="mb-8 mt-10 text-xl">Aktuelles</h2>
       <div className="flex max-w-3xl flex-col space-y-16">
         {data.allMdx.edges.slice(0, 4).map((edge) => {
           const { frontmatter, id } = edge.node

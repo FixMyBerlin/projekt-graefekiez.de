@@ -232,7 +232,7 @@ const FaqPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <Hero title="Häufige Fragen" subtitle="und Antworten" />
-      <section className="mx-auto w-full max-w-7xl py-6 px-4 lg:py-8 lg:px-24">
+      <section className="mx-auto w-full max-w-7xl px-4 py-6 lg:px-24 lg:py-8">
         <Prose>
           <div className="mx-auto max-w-5xl px-4">
             <H1>Antworten auf häufige Fragen</H1>
@@ -255,7 +255,7 @@ const FaqPage: React.FC<PageProps> = () => {
 
               <ul
                 role="list"
-                className="mt-10 grid max-w-2xl grid-cols-1 gap-y-2 gap-x-8 lg:max-w-none lg:grid-cols-3"
+                className="mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-2 lg:max-w-none lg:grid-cols-3"
               >
                 {carFaqs.map((column, columnIndex) => (
                   <li key={columnIndex}>
@@ -278,7 +278,7 @@ const FaqPage: React.FC<PageProps> = () => {
 
               <ul
                 role="list"
-                className="mt-10 grid max-w-2xl grid-cols-1 gap-y-2 gap-x-8 lg:max-w-none lg:grid-cols-3"
+                className="mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-2 lg:max-w-none lg:grid-cols-3"
               >
                 {pedestrianFaqs.map((column, columnIndex) => (
                   <li key={columnIndex}>
@@ -301,7 +301,7 @@ const FaqPage: React.FC<PageProps> = () => {
 
               <ul
                 role="list"
-                className="mt-10 grid max-w-2xl grid-cols-1 gap-y-2 gap-x-8 lg:max-w-none lg:grid-cols-3"
+                className="mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-2 lg:max-w-none lg:grid-cols-3"
               >
                 {backgroundFaqs.map((column, columnIndex) => (
                   <li key={columnIndex}>
