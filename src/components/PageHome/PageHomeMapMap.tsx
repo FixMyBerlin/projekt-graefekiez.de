@@ -137,13 +137,13 @@ export const PageHomeMapMap: React.FC = () => {
               handleClick={() => toggleMapLayer('aktion')}
               active={mapConfigState.includes('aktion')}
             >
-              Aktionsflächen (Idee)
+              Aktionsflächen
             </MapButton>
             <MapButton
               handleClick={() => toggleMapLayer('entsiegelt')}
               active={mapConfigState.includes('entsiegelt')}
             >
-              Entsiegelte Flächen (Idee)
+              Entsiegelte Flächen
             </MapButton>
           </>
         }

@@ -27,9 +27,9 @@ export const Card: React.FC<any> = ({ as: Component = 'div', className, children
 const CardLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => {
   return (
     <>
-      <div className="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-gray-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl" />
+      <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-gray-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl" />
       <Link href={href}>
-        <span className="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl" />
+        <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
         <span className="relative z-10">{children}</span>
       </Link>
     </>
@@ -80,7 +80,7 @@ export const CardEyebrow: React.FC<{
       className={clsx(
         className,
         'relative z-10 order-first mb-3 flex items-center text-sm text-gray-400',
-        decorate && 'pl-3.5'
+        decorate && 'pl-3.5',
       )}
       dateTime={dateTime}
     >

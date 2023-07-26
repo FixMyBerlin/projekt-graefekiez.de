@@ -12,7 +12,7 @@ const PrivacyPolicyPage: React.FC<PageProps> = () => {
     <Layout>
       <Hero title="Datenschutzerklärung" />
       <Container colorClass="bg-white mx-auto max-w-prose">
-        <Prose className="prose-th:pr-2 prose-th:pb-2 lg:mt-6">
+        <Prose className="prose-th:pb-2 prose-th:pr-2 lg:mt-6">
           <h1>Datenschutzerklärung</h1>
           <h2>Einleitung</h2>
           <p>

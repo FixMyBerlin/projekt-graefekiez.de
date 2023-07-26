@@ -12,7 +12,7 @@ import type {
 import {
   FullscreenControl,
   Map as ReactMapGl,
-  MapboxEvent,
+  MapEvent,
   NavigationControl,
   useMap,
   ViewState,
@@ -171,7 +171,7 @@ export const MapView: React.FC<MapViewProps> = ({
           ({
             ...prev,
             ...{ ourUpdatedLayers: ourLayers(mainMap.getStyle().layers) },
-          } as MapDebugHelperData)
+          }) as MapDebugHelperData,
       )
     }
   }
@@ -181,7 +181,7 @@ export const MapView: React.FC<MapViewProps> = ({
   }, [layerFilter])
 
   // Intial Load of the map
-  const handleLoad = (event: MapboxEvent) => {
+  const handleLoad = (event: MapEvent) => {
     const map = event.target
 
     if (showMapDebugHelper) {
@@ -241,7 +241,7 @@ export const MapView: React.FC<MapViewProps> = ({
             ({
               ...prev,
               ...{ zoom: event.viewState.zoom },
-            } as MapDebugHelperData)
+            }) as MapDebugHelperData,
         )
       }
       scrollZoom={false}

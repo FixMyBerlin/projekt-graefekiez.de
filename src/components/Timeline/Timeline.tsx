@@ -19,7 +19,7 @@ export const Timeline: React.FC<Props> = ({ activities }) => {
             <div className="relative pb-8">
               {activityItemIdx !== activities.length - 1 ? (
                 <span
-                  className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                  className="absolute left-5 top-5 -ml-px h-full w-0.5 bg-gray-200"
                   aria-hidden="true"
                 />
               ) : null}

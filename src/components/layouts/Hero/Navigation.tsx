@@ -67,7 +67,7 @@ export const MobileNavigation: React.FC<Props> = ({ visibilityClassName }) => {
         >
           <Popover.Panel
             focus
-            className="fixed inset-x-4 top-8 z-50 origin-top bg-white py-12 px-16 ring-1 ring-gray-900/5 dark:ring-gray-800"
+            className="fixed inset-x-4 top-8 z-50 origin-top bg-white px-16 py-12 ring-1 ring-gray-900/5 dark:ring-gray-800"
           >
             <div className="flex flex-row-reverse items-center justify-between">
               <Popover.Button aria-label="Close menu" className="-m-1 p-1">

@@ -64,16 +64,16 @@ export const Hero: React.FC<Props> = ({
         <DesktopNavigation visibilityClassName="hidden md:block" />
       </div>
 
-      <div className="px-6 pt-0 pb-28 sm:pt-10 sm:pb-44 md:pt-16">
+      <div className="px-6 pb-28 pt-0 sm:pb-44 sm:pt-10 md:pt-16">
         <div className="mx-auto max-w-2xl">
           <div className="text-center">
-            <div className="mt-6 mb-10 flex w-full flex-col items-center justify-center">
+            <div className="mb-10 mt-6 flex w-full flex-col items-center justify-center">
               <XhainLogo height={130} width={200} />
             </div>
             <h1
               className={clsx(
                 'text-5xl font-bold tracking-tight sm:text-7xl',
-                titleColor === 'light' ? 'text-white' : 'text-gray-900'
+                titleColor === 'light' ? 'text-white' : 'text-gray-900',
               )}
             >
               {title}
@@ -81,10 +81,10 @@ export const Hero: React.FC<Props> = ({
             <p
               className={clsx(
                 'mt-10 flex justify-center text-xl leading-8 sm:block sm:text-3xl',
-                'text-black'
+                'text-black',
               )}
             >
-              {subtitle && <span className="bg-yellow-300 py-3 px-12">{subtitle}</span>}
+              {subtitle && <span className="bg-yellow-300 px-12 py-3">{subtitle}</span>}
             </p>
           </div>
         </div>
