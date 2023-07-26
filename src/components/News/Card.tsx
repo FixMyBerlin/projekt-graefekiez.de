@@ -80,7 +80,7 @@ export const CardEyebrow: React.FC<{
       className={clsx(
         className,
         'relative z-10 order-first mb-3 flex items-center text-sm text-gray-400',
-        decorate && 'pl-3.5'
+        decorate && 'pl-3.5',
       )}
       dateTime={dateTime}
     >

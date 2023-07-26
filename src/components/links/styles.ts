@@ -8,7 +8,7 @@ export const linkStyles =
 // HOVER:
 const hoverStyleForButtonElement = clsx(
   'enabled:hover:ring-1',
-  'enabled:active:border-pink-50 enabled:active:bg-pink-50 enabled:active:ring-0'
+  'enabled:active:border-pink-50 enabled:active:bg-pink-50 enabled:active:ring-0',
 )
 const hoverStyleForLinkElement = clsx('hover:ring-1', 'active:bg-pink-50 active:ring-0')
 

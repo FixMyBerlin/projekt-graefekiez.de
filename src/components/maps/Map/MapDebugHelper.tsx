@@ -50,7 +50,7 @@ export const MapDebugHelper = ({ data }: Props) => {
           {JSON.stringify(
             ourLayers.map((l) => l.id),
             undefined,
-            2
+            2,
           )}
         </pre>
       </details>

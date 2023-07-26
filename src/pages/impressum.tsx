@@ -62,8 +62,8 @@ const ImprintPage: React.FC<PageProps> = () => {
             eingesehen werden.
           </p>
           <p>
-            Für OSM Daten: © OpenStreetMap-Mitwirkende. Weitere Informationen zu den Nutzungsrechten
-            unter:{' '}
+            Für OSM Daten: © OpenStreetMap-Mitwirkende. Weitere Informationen zu den
+            Nutzungsrechten unter:{' '}
             <Link blank href="https://www.openstreetmap.org/copyright">
               https://www.openstreetmap.org/copyright
             </Link>

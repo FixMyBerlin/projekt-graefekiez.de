@@ -170,7 +170,7 @@ export const Tabs = () => {
                     categoryIdx === Object.keys(categories).length - 1 ? 'rounded-r-lg' : '',
                     selected
                       ? 'text-gray-900 focus:outline-none'
-                      : 'text-gray-500 hover:text-gray-700'
+                      : 'text-gray-500 hover:text-gray-700',
                   )}
                 >
                   {category}
@@ -178,7 +178,7 @@ export const Tabs = () => {
                     aria-hidden="true"
                     className={classNames(
                       selected ? 'bg-pink-500' : 'bg-transparent',
-                      'absolute inset-x-0 bottom-0 h-0.5'
+                      'absolute inset-x-0 bottom-0 h-0.5',
                     )}
                   />
                 </button>
