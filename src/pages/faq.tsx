@@ -203,7 +203,7 @@ export const faqs: TFaqs = {
         question:
           'Führt eine bessere Aufenthaltsqualität nicht zu mehr Lärmbelästigung und mehr Müll?',
         answer:
-          'Der Bezirk arbeitet in Zusammenarbeit mit der BSR und weiteren Akteuren, aktiv an neuen Möglichkeiten und Konzepten das Abfallaufkommen in der Stadt zu reduzieren („Zero Waste Konzept“). Sollte es zu (Lärm)-Folgewirkungen kommen, kann dies nicht mit straßenrechtlichen Mitteln gesteuert werden. Vielmehr sind, wenn es denn zu Lärmproblemen kommen sollte, die einschlägigen gesetzlichen Bestimmungen (z.B. der Schutz der Nachtruhe aus § 3 Landes-Immissionsschutzgesetz Berlin (LImSchG)) anzuwenden und umzusetzen.',
+          'Der Bezirk arbeitet in Zusammenarbeit mit der BSR und weiteren Akteuren, aktiv an neuen Möglichkeiten und Konzepten das Abfallaufkommen in der Stadt zu reduzieren („Zero Waste Konzept“). Sollte es zu (Lärm)-Folgewirkungen kommen, kann dies nicht mit straßenrechtlichen Mitteln gesteuert werden. Vielmehr sind, wenn es denn zu Lärmproblemen kommen sollte, die einschlägigen gesetzlichen Bestimmungen (z.B. der Schutz der Nachtruhe aus § 3 Landes-Immissionsschutzgesetz Berlin (LImSchG) anzuwenden und umzusetzen.',
       },
       {
         id: 7,
