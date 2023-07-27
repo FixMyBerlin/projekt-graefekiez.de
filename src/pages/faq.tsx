@@ -117,7 +117,7 @@ export const faqs: TFaqs = {
         id: 6,
         question: 'Warum wird die Durchfahrt am Hohenstaufenplatz gesperrt?',
         answer:
-          'Die Stellplätze werden teils entsiegelt und begrünt, teils zu Liefer- und Ladeflächen umgestaltet und teils als Aktionsflächen ausgewiesen. Auf den Aktionsflächen finden durch die Projektpartner*innen verschiedene Formate zur Diskussion, Beteiligung und Gestaltung mit der Nachbarschaft statt.',
+          'Die Sperrung des Durchgangsverkehrs am Hohenstaufenplatz dient zur Unterbindung von Abkürzungs- und Umwegungsverkehr vom Kottbusser Damm über die Schönleinstraße zur Urbanstraße. Dies soll unterbunden werden, da Durchgangsverkehr auf die Hauptstraßen gehört. Durch weniger Durchgangsverkehr soll die Verkehrssicherheit erhöht werden. Mit Verkehrszählungen wird geprüft, welchen Effekt diese Sperrung hat.',
       },
       {
         id: 7,
@@ -203,7 +203,7 @@ export const faqs: TFaqs = {
         question:
           'Führt eine bessere Aufenthaltsqualität nicht zu mehr Lärmbelästigung und mehr Müll?',
         answer:
-          'Die Stellplätze werden teils entsiegelt und begrünt, teils zu Liefer- und Ladeflächen umgestaltet und teils als Aktionsflächen ausgewiesen. Auf den Aktionsflächen finden durch die Projektpartner*innen verschiedene Formate zur Diskussion, Beteiligung und Gestaltung mit der Nachbarschaft statt.',
+          'Der Bezirk arbeitet in Zusammenarbeit mit der BSR und weiteren Akteuren, aktiv an neuen Möglichkeiten und Konzepten das Abfallaufkommen in der Stadt zu reduzieren („Zero Waste Konzept“). Sollte es zu (Lärm)-Folgewirkungen kommen, kann dies nicht mit straßenrechtlichen Mitteln gesteuert werden. Vielmehr sind, wenn es denn zu Lärmproblemen kommen sollte, die einschlägigen gesetzlichen Bestimmungen (z.B. der Schutz der Nachtruhe aus § 3 Landes-Immissionsschutzgesetz Berlin (LImSchG)) anzuwenden und umzusetzen.',
       },
       {
         id: 7,
