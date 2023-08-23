@@ -50,7 +50,7 @@ export const CardTitle: React.FC<{ as?: any; href?: string; children: React.Reac
 
 export const CardDescription: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <Prose className="prose-ul:list-disc prose-ul:pl-2 prose-li:m-0.5 prose-li:pl-1">
+    <Prose className="prose-ul:pl-2 prose-li:m-0.5 prose-li:list-disc prose-li:pl-1">
       <p className="relative z-10 mt-2 text-sm text-gray-600">{children}</p>
     </Prose>
   )
