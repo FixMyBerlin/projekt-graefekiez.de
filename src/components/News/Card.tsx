@@ -50,7 +50,7 @@ export const CardTitle: React.FC<{ as?: any; href?: string; children: React.Reac
 
 export const CardDescription: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <Prose>
+    <Prose className="prose-ul:pl-2 prose-li:m-0.5 prose-li:list-disc prose-li:pl-1">
       <p className="relative z-10 mt-2 text-sm text-gray-600">{children}</p>
     </Prose>
   )
@@ -80,7 +80,7 @@ export const CardEyebrow: React.FC<{
       className={clsx(
         className,
         'relative z-10 order-first mb-3 flex items-center text-sm text-gray-400',
-        decorate && 'pl-3.5',
+        decorate && 'pl-3.5'
       )}
       dateTime={dateTime}
     >
