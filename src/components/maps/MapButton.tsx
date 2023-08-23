@@ -17,7 +17,7 @@ export const MapButton: React.FC<Props> = ({ handleClick, active, fly, children 
         pinkButtonStyles,
         'bg-gray-200',
         { '!bg-white !ring-1': active },
-        { 'shadow-xl': fly },
+        { 'shadow-xl': fly }
       )}
       onClick={handleClick}
     >

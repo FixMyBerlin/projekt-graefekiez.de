@@ -26,7 +26,7 @@ export const Link: React.FC<LinkProps> = forwardRef<HTMLAnchorElement, LinkProps
       button,
       ...props
     },
-    ref,
+    ref
   ) => {
     // external link
     if (href.startsWith('http')) {
@@ -58,5 +58,5 @@ export const Link: React.FC<LinkProps> = forwardRef<HTMLAnchorElement, LinkProps
         {children}
       </GatsbyLink>
     )
-  },
+  }
 )
