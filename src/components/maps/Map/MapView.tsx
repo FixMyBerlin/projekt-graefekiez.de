@@ -171,7 +171,7 @@ export const MapView: React.FC<MapViewProps> = ({
           ({
             ...prev,
             ...{ ourUpdatedLayers: ourLayers(mainMap.getStyle().layers) },
-          }) as MapDebugHelperData,
+          } as MapDebugHelperData)
       )
     }
   }
@@ -241,7 +241,7 @@ export const MapView: React.FC<MapViewProps> = ({
             ({
               ...prev,
               ...{ zoom: event.viewState.zoom },
-            }) as MapDebugHelperData,
+            } as MapDebugHelperData)
         )
       }
       scrollZoom={false}

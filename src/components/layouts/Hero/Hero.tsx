@@ -73,7 +73,7 @@ export const Hero: React.FC<Props> = ({
             <h1
               className={clsx(
                 'text-5xl font-bold tracking-tight sm:text-7xl',
-                titleColor === 'light' ? 'text-white' : 'text-gray-900',
+                titleColor === 'light' ? 'text-white' : 'text-gray-900'
               )}
             >
               {title}
@@ -81,7 +81,7 @@ export const Hero: React.FC<Props> = ({
             <p
               className={clsx(
                 'mt-10 flex justify-center text-xl leading-8 sm:block sm:text-3xl',
-                'text-black',
+                'text-black'
               )}
             >
               {subtitle && <span className="bg-yellow-300 px-12 py-3">{subtitle}</span>}
