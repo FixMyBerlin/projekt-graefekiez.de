@@ -32,7 +32,7 @@ const ImprintPage: React.FC<PageProps> = () => {
             <br />
             vertreten durch
             <br />
-            Ismeta Mustafić-Hasifić – Pressestelle Bezirksamt Friedrichshain-Kreuzberg von Berlin
+            Sara Lühmann – Pressestelle Bezirksamt Friedrichshain-Kreuzberg von Berlin
           </p>
           <p>
             Telefon: (030) 90298-2843
