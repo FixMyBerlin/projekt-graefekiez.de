@@ -247,6 +247,8 @@ export const MapView: React.FC<MapViewProps> = ({
       scrollZoom={false}
       {...({ minZoom } || {})}
       {...({ maxZoom } || {})}
+      // @ts-expect-error: See https://github.com/visgl/react-map-gl/issues/2310
+      RTLTextPlugin={null}
       // hash
     >
       <NavigationControl position="bottom-right" showCompass={false} />
