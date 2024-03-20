@@ -5,6 +5,8 @@
   Projektseite für das <a href="https://projekt-graefekiez.de/">Projekt Graefekiez</a> in Berlin
 </h1>
 
+# THIS PROJECT WAS DISCONTINUED IN MARCH 2024
+
 # About
 
 Learn more at https://projekt-graefekiez.de/.
